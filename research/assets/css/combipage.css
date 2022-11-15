@@ -1,0 +1,171 @@
+.output {
+  font-family: 'Courier New', serif;
+  font-weight: normal;
+  color: #3A3B3C;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-bottom: 10px;
+  /* width: 300px;
+  height: 100px;
+  padding: 5px; */
+}
+
+/* .infobox {
+  background-color: #e3ddcc;
+  padding: 10px 30px;
+  border-radius: 10px;
+  width: 90%;
+  margin-right: 0px;
+  margin-left: auto;
+  height: inherit;
+  overflow: auto;
+} */
+
+.boxleft {
+  width: 35%;
+  float: left;
+  position: relative;
+  /* padding-left: 100px; */
+}
+
+/* .boxes{
+
+  margin: auto;
+  width: 1400px;
+  height: inherit;
+  padding-bottom: 30px;
+  overflow: auto;
+} */
+.example {
+  min-height: 70px;
+  background-color: #e3ddcc;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 900px;
+  margin: auto;
+  height: inherit;
+  overflow: auto;
+}
+
+.exampleImage {
+  display: block;
+  width: auto;
+  max-height: 300px;
+  max-width: 350px;
+
+}
+
+.exImg {
+  width: 350px;
+  float: left;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.exText {
+  width: 450px;
+  /* display: block; */
+  float: right;
+}
+
+.exampleHeader {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #1E475E;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.combi {
+  color: #1E475E;
+}
+
+.datatoken {
+  text-align: center;
+  transform: translate(-20%) !important;
+}
+
+.abilitytoken {
+  /* transform: translate(10%) !important; */
+  text-align: left;
+}
+
+.token {
+  color: white;
+  z-index: 3;
+  position: absolute;
+  top: 36%;
+  transform: translate(10%, 0%);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.datacombiimage {
+  z-index: 1;
+  height: 190px;
+  width: auto;
+  left: -100px;
+  padding: 10px;
+  position: relative;
+  top: 0;
+}
+
+.abilitycombiimage {
+  z-index: 2;
+  height: 190px;
+  width: auto;
+  left: -55px;
+  padding: 10px;
+  position: relative;
+  top: 0;
+}
+
+.leftdivcombi {
+  width: 70%;
+  float: left;
+  padding-right: 10px;
+  position: relative;
+  /* text-align: center; */
+}
+
+.rightdivcombi {
+  width: 20%;
+  float: left;
+  padding-right: 0px;
+  position: relative;
+  /* text-align: center; */
+}
+
+.descriptioncombi {
+  font-size: 16px;
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 2px solid #1E475E;
+  border-bottom: 2px solid #1E475E;
+}
+
+.techterms{
+  width: 90%;
+}
+
+.leftheadercombi {
+  width: 35%;
+  float: left;
+  position: relative;
+  padding-left: 100px;
+}
+
+.rightheadercombi {
+  /* padding-left: 70px; */
+  width: 60%;
+  float: right;
+  /* border-left: 2px solid #1E475E;
+  padding-left: 10px; */
+}
