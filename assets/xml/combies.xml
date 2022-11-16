@@ -21,7 +21,7 @@
     <outputtoken>text</outputtoken>
     <techterm>Classification, regression</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>LikelyAI</exname>
         <exdescription> LikelyAI will use your images as input and predicts how popular they will be when you post it on Instagram and choose the best. In this case it is using regression as it shows a percentage score of expected popularity for each image. It uses already existing images with known popularity, and the machine learning model will try to find patterns in these.</exdescription>
         <eximage>assets/photos/likelyai.png</eximage>
@@ -42,12 +42,19 @@ You  might for example want to recognize different animals in a photo or handwri
     <outputtoken>text</outputtoken>
     <techterm>Image classification</techterm>
     <examples>
-      <ex >
+      <ex value='1'>
         <exname>Google Lens</exname>
         <exdescription> Google Lens has many different functionalities and one of them is recognizing what is in the image. It will show you the class to which your image belongs. For example, recognize the type of flower. However, it can only recognize objects on which it has been trained, so it might not be able to recognize it.</exdescription>
         <eximage>assets/photos/googlelens.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://techengage.com/google-lens-now-detects-billion-items/">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/tutorials/images/classification">Link to DIY</diylink>
+      </ex>
+      <ex value='2'>
+        <exname>ObsIdentify</exname>
+        <exdescription>ObsIdentify is an app that can be used to recognize wild animals and plants. For this you will take an image and the app will recognize what is visible in the image and give percentages for how confident it is that it is a certain animal or plant.  Your observations are stored and shared.</exdescription>
+        <eximage>assets/photos/ObsIdentify.jpg</eximage>
+        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://tinyurl.com/yc7zdjxp">Link to example</exlink>
+        <diylink xlink:type="simple" xlink:show="new" xlink:href="https://randerson112358.medium.com/classify-flower-images-using-machine-learning-python-549c98173ca4">Link to DIY</diylink>
       </ex>
     </examples>
   </combi>
@@ -82,7 +89,7 @@ You  might for example want to recognize different animals in a photo or handwri
     <outputtoken>table</outputtoken>
     <techterm>Image clustering</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Google Photos</exname>
         <exdescription>Google Photos will cluster your photos based on metadata it collected (time, location) but it will also try to cluster your images and place similar pictures together. At the end, it will also use categorization to describe what is in the cluster.</exdescription>
         <eximage>assets/photos/googlephotos.jpg</eximage>
@@ -101,7 +108,7 @@ You  might for example want to recognize different animals in a photo or handwri
     <output> <![CDATA[ recommendation 1 <br> recommendation 2 <br> recommendation 3]]></output>
     <techterm>Recommender system images, collaborative filtering images, content based filtering images</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Pinterest</exname>
         <exdescription>Pinterest is build around the ability of recommending images. On Pinterest you can "pin" images and based on what you have "pinned" and on what you  have searched, it will recommend other images that you probably like as well. For this is it will use a combination of the different recommender systems, as it will show you both more images that share the same content but also images that other users liked.</exdescription>
         <eximage>assets/photos/pinterest.png</eximage>
@@ -130,7 +137,7 @@ You  might for example want to recognize different animals in a photo or handwri
     <output> <![CDATA[New image]]></output>
     <techterm>Generative adversarial network, image generation</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Dall-e</exname>
         <exdescription>DALL-E uses the text captions that users can input to generate new images that visualize what was written in the text. It will generate different images for the same input so it can help for example with ideating or when you want to visualize something of which you do not have a photo.</exdescription>
         <eximage>assets/photos/dall-e.JPG</eximage>
@@ -149,7 +156,7 @@ You  might for example want to recognize different animals in a photo or handwri
     <output> <![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
     <techterm>Anomaly detection</techterm>
     <examples exist='no'>
-      <ex>
+      <ex value='1'>
         <exname></exname>
         <exdescription></exdescription>
         <eximage>assets/photos/</eximage>
@@ -168,10 +175,10 @@ You  might for example want to recognize different animals in a photo or handwri
     <output> <![CDATA[Text]]></output>
     <techterm> Image caption generation, NLP, image to text/speech</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Alternative text</exname>
         <exdescription>Describes the content of an image placed in Word or another Microsoft application</exdescription>
-        <eximage>assets/photos/alternativetext.JPG</eximage>
+        <eximage>assets/photos/alternativetext.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://blogs.microsoft.com/ai/azure-image-captioning/ "></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/swlh/automatic-image-captioning-using-deep-learning-5e899c127387"></diylink>
       </ex>
@@ -187,7 +194,7 @@ You  might for example want to recognize different animals in a photo or handwri
     <output> <![CDATA[ Label 2 (67%) <br> Label 7 (33%)]]></output>
     <techterm> Image classification</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Innereye</exname>
         <exdescription> InnerEye is a research project from Microsoft Research Cambridge with the aim to create automatic, quantitative analysis of three-dimensional medical images possible. For this, it uses techniques such as image categorization to recognize what is shown in the image.</exdescription>
         <eximage>assets/photos/innereye.jpg</eximage>
@@ -206,7 +213,7 @@ You  might for example want to recognize different animals in a photo or handwri
     <output> <![CDATA[A restyled image]]></output>
     <techterm>Neural style transfer</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Deepart</exname>
         <exdescription> Based on the style of e.g. a famous painting, your uploaded image will be transformed to this style.  The models are trained on the reference images and when you upload your own image, the model will use what is has learned about the selected reference image and apply that style to your picture.</exdescription>
         <eximage>assets/photos/deepart.jpg</eximage>
@@ -237,7 +244,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
     <output> <![CDATA[ Possible next word 1 (92 %) <br> Possible next word 2 (8%) <br> OR a predicted value (e.g. 23)]]></output>
     <techterm>Autocomplete, predictive text, NLP</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Autocomplete Google</exname>
         <exdescription>When using the Google search engine, it will predict what you are probably searching and suggest several options for completing your search query. To do this, it will use your browsing history and data from all its users to predict what the most probable search query will be.</exdescription>
         <eximage>assets/photos/autocomplete.png</eximage>
@@ -265,7 +272,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
     <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Text classification, NLP</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Sentiment analysis</exname>
         <exdescription>This tool allows you to analyse the sentiment of a fragment of text and will predict if it is positive or negative, and also shows how confident is that it has predicted it correctly. You could use this information to monitor reviews about your product on for example social media.</exdescription>
         <eximage>assets/photos/sentimentanalysis.JPG</eximage>
@@ -284,7 +291,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
     <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Text classification</techterm>
     <examples exist='no'>
-      <ex>
+      <ex value='1'>
         <exname></exname>
         <exdescription></exdescription>
         <eximage>assets/photos/</eximage>
@@ -313,7 +320,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
     <output> <![CDATA[ Coordinates of the centroids <br> Which words/texts belong to which cluster]]></output>
     <techterm>Text clustering, NLP</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Google News</exname>
         <exdescription>Google News clusters articles from different sources that cover the same topic. For this, it will look at similarities between the news articles and group them together. At the end, the extra step of categorization is done to describe what is in these clusters.</exdescription>
         <eximage>assets/photos/googlenews.JPG</eximage>
@@ -342,7 +349,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
     <output> <![CDATA[ recommendation 1 <br> recommendation 2 <br> recommendation 3]]></output>
     <techterm>Recommender system text, text collaborative filtering, text content based filtering, NLP</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>LinkedIn</exname>
         <exdescription>LinkedIn offers job recommendations based on your job searches, job alerts, profile, and activity on LinkedIn. This data is textual data and will be used to recommend jobs that are matching with what you have searched for, what you have liked or what you have written on your profile. For this, it will also need to analyse the job description to see what is being asked.</exdescription>
         <eximage>assets/photos/linkedin.png</eximage>
@@ -372,7 +379,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
     <output> <![CDATA[New text]]></output>
     <techterm>Text generation, generative adversarial network (GAN), NLP</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Plot generator</exname>
         <exdescription>This plot generator allows you to generate different types of texts such as fairy tales, movie scripts or headlines based on a few parameters that you need to set beforehand.</exdescription>
         <eximage>assets/photos/plotgenerator.JPG</eximage>
@@ -402,7 +409,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
     <output> <![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
     <techterm>Anomaly detection, NLP</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Unique movies</exname>
         <exdescription>While anomalies might sound negative, it is also possible to use it to identify unique cases. This model will model the plot of movies into a vector space, where movies with the same plot will be close together. When you know this, you can also look at the movies who are the farthest from all the other movies, and these are the most unique movie plots.</exdescription>
         <eximage>assets/photos/uniquemovies.png</eximage>
@@ -431,7 +438,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
     <output> <![CDATA[Text]]></output>
     <techterm>NLP</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Duolingo chatbot</exname>
         <exdescription>The chatbot from Duolingo helps you practice your conversation skills in French, German and Spanish. You could start a chat and the chatbot would recognize what you are saying and would respond to that.</exdescription>
         <eximage>assets/photos/duolingo.png</eximage>
@@ -461,7 +468,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
     <output> <![CDATA[Text]]></output>
     <techterm>NLP, text classification</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Code oracle</exname>
         <exdescription>Code is one very specific form of text and can be quite hard to understand, especially when using an unfamiliar language. Code Oracle allows you to highlight a snippet of your code to see in "normal" language what it is doing.</exdescription>
         <eximage>assets/photos/codexplainer.jpg</eximage>
@@ -490,7 +497,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
     <output> <![CDATA[Translated text]]></output>
     <techterm>NLP, machine translation</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Google Translate</exname>
         <exdescription>Google Translate recognizes the input text and predicts which language it is, or you can select the input language manually. Next it will translate the whole text to the output language and also give some possible alternatives, e.g. synonyms.</exdescription>
         <eximage>assets/photos/googletranslate.png</eximage>
@@ -521,7 +528,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     <output> <![CDATA[ Possible next value 1 (88 %) <br> Possible next value 2 (12%) <br> OR a predicted value (e.g. 23)]]></output>
     <techterm>Forecasting, time series regression</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Stock market</exname>
         <exdescription>While perfect stock market predictions are not (yet) possible, it is possible to recognize some general trends based on time series data. For the stock market, it is important to take the time component into account, which is why time series data is used. So based on the historic data, the model will try to find patterns and use these to predict the future.</exdescription>
         <eximage>assets/photos/stockmarket.JPG</eximage>
@@ -550,7 +557,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Time series classification</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Acitivity recognition</exname>
         <exdescription>To recognize activity, data from sensors such as accelerometers (measuring the acceleration in the X, Y and Z axis), ECG (heartbeat) and GPS (your location and based on this how fast you are moving) can be used. These data are time series, since one of the measurements (or features) is the time of measuring the other features. Based on the sensor data, classes can be assigned to each fragment of data and the model can learn to recognize what data pattern belongs to cycling or walking, standing still, etc.</exdescription>
         <eximage>assets/photos/activityrecognition.JPG</eximage>
@@ -579,7 +586,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Time series classification</techterm>
     <examples exist='no'>
-      <ex>
+      <ex value='1'>
         <exname></exname>
         <exdescription></exdescription>
         <eximage>assets/photos/</eximage>
@@ -608,7 +615,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <output> <![CDATA[ Coordinates of the centroids <br> Which points belong to which cluster]]></output>
     <techterm>Time series clustering</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Clustering earthquake signals</exname>
         <exdescription>Monitoring seismic data is very labor-intensive and there is more data than can be currently analyzed in a supervised manner. Therefore, clustering can be used to find patterns in these data and use these clusters to for example forecast earthquakes.</exdescription>
         <eximage>assets/photos/earthquake.JPG</eximage>
@@ -637,7 +644,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     <output> <![CDATA[ Recommendation 1 <br> Recommendation 2 <br> Recommendation 3 ]]></output>
     <techterm>Time series recommender systems, latent dirichlet allocation time series</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Netflix</exname>
         <exdescription>Netflix records what you have watched, which movies you liked etc., and also when you watched certain shows. By recording the timestamps of the actions, the data become time series data, and the recommendations can be time dependent. So if you are always watching a show in the morning, Netflix will only recommend it in the morning and recommend different shows in the evening.</exdescription>
         <eximage>assets/photos/netflix.jpg</eximage>
@@ -666,7 +673,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <output> <![CDATA[New time series]]></output>
     <techterm>Generative adversarial networks (GAN), synthetic time series</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Synthetic time series data</exname>
         <exdescription>Creating extra time series data based on some starting data. More data can help to train a better model.</exdescription>
         <eximage>assets/photos/synthetictimeseries.jpg</eximage>
@@ -695,10 +702,10 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     <output> <![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
     <techterm>Anomaly detection</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Heart anomaly ECG</exname>
         <exdescription>One type of sensor data for which this capability can be used is ECG (heart) data. To manually monitor the ECG's of all patients is unfeasible, but by using this capability it is possible to train a model on what normal ECG's look like and then when there is an anomaly, the system will give an alarm to alert the nurses to check in on that patient.</exdescription>
-        <eximage>assets/photos/heartanomaly.JPG</eximage>
+        <eximage>assets/photos/heartanamolay.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://ieeexplore.ieee.org/document/7344872"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/devavratatripathy/ecg-anomaly-detection-using-autoencoders"></diylink>
       </ex>
@@ -724,7 +731,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     <output> <![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
     <techterm>Anomaly detection</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname></exname>
         <exdescription></exdescription>
         <eximage>assets/photos/</eximage>
@@ -754,7 +761,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     <output> <![CDATA[Labels or text]]></output>
     <techterm>Time series classification</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Understanding sign language</exname>
         <exdescription>Based on the sensor data from sensors inside a glove, the movements of the hands can be tracked. By training a classification (categorize) model on this data, a model will be able to learn which movements fit with which gesture. Once this is known, the words can be for example written down or spoken out loud by a computer so that the gestures can be understood by others.</exdescription>
         <eximage>assets/photos/signlanguage.jfif</eximage>
@@ -783,7 +790,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     <output> <![CDATA[ Label 5 (86%), Label 3 (14%) <br/> OR a predicted value (e.g. 453)]]></output>
     <techterm></techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname></exname>
         <exdescription></exdescription>
         <eximage>assets/photos/</eximage>
@@ -812,7 +819,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     <output> <![CDATA[ Label 5 (86%), Label 3 (14%) <br/> OR a predicted value (e.g. 453)]]></output>
     <techterm></techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname></exname>
         <exdescription></exdescription>
         <eximage>assets/photos/</eximage>
@@ -842,7 +849,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Audio classification</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Lego Duplo Stories</exname>
         <exdescription>With Lego Duplo stories, children can experience interactive stories. For this, it is using Alexa to tell the story. During this story, Alexa will give prompts to the child to build along with their Duplo and it will ask for input for the story. For example, it will ask what the theme is of the story (limited options) and the child can say for example 'Animal story'. Machine learning is here used to recognize what is being said and incorporates that into the story.</exdescription>
         <eximage>assets/photos/legoduplostories.jpg</eximage>
@@ -871,7 +878,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     <output> <![CDATA[ Label 5 (86%), Label 3 (14%) <br/> OR a predicted value (e.g. 453)]]></output>
     <techterm>Audio classification, NLP</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Voice match</exname>
         <exdescription>You can teach Google Assistant to recognize your voice with Voice Match. It will differentiate your voice from other speakers, so it can address you personally and give personal results. For example, when asking for your next meeting it will look at your personal calendar.</exdescription>
         <eximage>assets/photos/voicematch.jpg</eximage>
@@ -901,7 +908,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <output> <![CDATA[ Coordinates of the centroids <br> Which audio samples belong to which cluster]]></output>
     <techterm>Audio clustering</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Bird sounds</exname>
         <exdescription>In this project, smart segments of bird sounds were taken and used without label as the input for a machine learning model. The model created some kind of fingerprints/ or images from the sounds and next group similar sounds closer together in a two-dimensional space. This eventually led to a map with bird sounds in which similar sounding birds are grouped closer together. After this process the labels of the sounds were added again to the data so you as user can see the name of the bird.</exdescription>
         <eximage>assets/photos/birdsounds.JPG</eximage>
@@ -931,7 +938,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <output> <![CDATA[ recommendation 1 <br> recommendation 2 <br> recommendation 3 ]]></output>
     <techterm>Recommender system audio, collaborative filtering audio, content based filtering audio</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Spotify</exname>
         <exdescription>Spotify's Discover Weekly will use what you have listened to so far, as well as other information it has about you (your age, gender, location, etc.) and general information (season, hits, etc.) to recommend new music to you. For this they will use both filtering approaches as it will look at what similar users listened to and look for similar music.</exdescription>
         <eximage>assets/photos/spotify.png</eximage>
@@ -960,7 +967,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <output> <![CDATA[New audio]]></output>
     <techterm>Audio synthesis, generative adversarial networks (GAN)</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>AIVA</exname>
         <exdescription>AIVA is a service that creates new music for different kind of purposes. You can select a genre for the new music piece or upload a track of music to with which it should match.</exdescription>
         <eximage>assets/photos/aiva.png</eximage>
@@ -989,7 +996,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     <output> <![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
     <techterm>Audio anomaly detection</techterm>
     <examples exist='no'>
-      <ex>
+      <ex value='1'>
         <exname></exname>
         <exdescription></exdescription>
         <eximage>assets/photos/</eximage>
@@ -1019,7 +1026,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <output> <![CDATA[Speech]]></output>
     <techterm>NLP, text to speech</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Digital humans</exname>
         <exdescription>A digital human can be seen as the upgraded function of a chatbot. Instead of communicating only via text, you will talk to a human face which shows expressions and which will talk back to you. For this it will of course needs to understand what you are saying (audio understanding), decide how to respond, and respond in understandable spoken human language. The digital human can - and are - used for, for example, customer support.</exdescription>
         <eximage>assets/photos/digitalhuman.png</eximage>
@@ -1049,7 +1056,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <output> <![CDATA[Text or actions]]></output>
     <techterm>Classification, NLP, Automatic Speech Recognition (ASR)</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Smart assistants</exname>
         <exdescription> Smart assistants use this function to understand the commands you are giving and the questions you are asking. Based on this, it will often make an extra step to interpret what is being said and either execute that action (e.g. "Turn off the lights") or to respond (this will be covered by Audio communication).</exdescription>
         <eximage>assets/photos/smartassistants.jpg</eximage>
@@ -1078,7 +1085,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <output> <![CDATA[Translated text or speech]]></output>
     <techterm>NLP, Speech to text, machine translation</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Live translate</exname>
         <exdescription>The live translate function from Microsoft makes it possible to speak in your own language and have it directly translated into different languages. This is done by first capturing what you are saying, converting that to words, translating those words and displaying this text to the other participants.</exdescription>
         <eximage>assets/photos/livetranslate.jpg</eximage>
@@ -1106,7 +1113,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     </limitations>
     <output> <![CDATA[ Label 5 (82%), Label 3 (18%) <br/> OR a predicted value (e.g. 23)]]></output>    <techterm>Regression, classification</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Credit card fraud detection</exname>
         <exdescription> To detect credit card fraud, all transactions are stored in a table. Each row contains the information for one transaction, and each column contains the information about one feature. For this example, the features are not the original measurements but are combinations of multiple original measurements so that in the end we have fewer columns. Finally, one column contains the label if it was or was not a fraudulent transaction.
 Based on all columns, except the one with the labels, the model will try to predict if it is credit card fraud.</exdescription>
@@ -1136,12 +1143,12 @@ Based on all columns, except the one with the labels, the model will try to pred
     <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Classification</techterm>
     <examples>
-      <ex>
-        <exname>Spotify</exname>
-        <exdescription>Spotify, for example, stores the information about all the songs in a tabular format. The columns could be instruments, artists, length, etc., and one column contains the labels which in this case are the genres. The ML model will try to match each row to the correct genre based on the information in the other columns.</exdescription>
-        <eximage>assets/photos/spotify.png</eximage>
-        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.spotify.com/nl/"></exlink>
-        <diylink xlink:type="simple" xlink:show="new" xlink:href="https://data-flair.training/blogs/python-project-music-genre-classification/"></diylink>
+      <ex value='1'>
+        <exname>Palmer penguins</exname>
+        <exdescription>At the Palmer research area in the Antarctic, researchers collected all kind of characteristics of the penguins in that area. This data is saved in a tabular format, where each row contains the data from one penguin, and each column a specific characteristic. Based on this data, predictions can be made about the species a penguin belongs to. </exdescription>
+        <eximage>assets/photos/penguins.png</eximage>
+        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://allisonhorst.github.io/palmerpenguins/"></exlink>
+        <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/mcnakhaee/palmerpenguins"></diylink>
       </ex>
     </examples>
   </combi>
@@ -1165,7 +1172,7 @@ Based on all columns, except the one with the labels, the model will try to pred
     <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Classification tabular data</techterm>
     <examples  exist='no'>
-      <ex>
+      <ex value='1'>
         <exname></exname>
         <exdescription></exdescription>
         <eximage>assets/photos/</eximage>
@@ -1194,7 +1201,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <output> <![CDATA[ Coordinates of the centroids <br> Which instances belong to which cluster]]></output>
     <techterm>Clustering</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Customer clustering</exname>
         <exdescription>To cluster customers, for example to send targeted discounts, all the information of the customers is saved in a table. Each row contains the information of one customer and the columns contain the features such as the products they buy, their usual time spend in the shop and if they buy products that are discounted. Based on these attributes, the clustering model will try to find patterns among these users and group customers together who buy for example similar products. There might be one group who always buys fast food and candy, and one group who mainly buys fresh products. However, in real life these groups will be more nuanced and overlap.</exdescription>
         <eximage>assets/photos/customersegment.png</eximage>
@@ -1224,7 +1231,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <output> <![CDATA[ Recommendation 1 <br> Recommendation 2 <br> Recommendation 3 ]]></output>
     <techterm>Recommender system, collaborative filtering, content based filtering</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Amazon</exname>
         <exdescription> Amazon uses both tables which contain the specifics of each product as well as the information about the users and their interactions with the product. So when you look at a product, it will recommend similar items based on the content of the item, for example recommend similar laptops, and it will look at what other similar users bought and also recommend a mouse, a laptop cover or a tablet.</exdescription>
         <eximage>assets/photos/amazon.png</eximage>
@@ -1253,7 +1260,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <output> <![CDATA[New table]]></output>
     <techterm>Generative adversarial networks (GAN), synthetic tabular data</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Tonic.ai</exname>
         <exdescription>TONIC.ai is a company whose specialty it is to generate new, fake, data based on the original data you provide. So you can have a dataset of tabular data and TONIC.ai will use this to generate more data that is similar but still different.</exdescription>
         <eximage>assets/photos/tonic.png</eximage>
@@ -1282,7 +1289,7 @@ Based on all columns, except the one with the labels, the model will try to pred
     <output> <![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
     <techterm>Anomaly detection</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Amazon monitron</exname>
         <exdescription>Amazon Monitron use this capability to monitor industrial equipment so that you can detect abnormal conditions and predict when maintenance is needed. For example, the temperature might suddenly be higher than the average, indicating a possible problem.</exdescription>
         <eximage>assets/photos/amazonmonitron.png</eximage>
@@ -1311,7 +1318,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <output> <![CDATA[Written text or speech]]></output>
     <techterm></techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname></exname>
         <exdescription></exdescription>
         <eximage>assets/photos/</eximage>
@@ -1340,7 +1347,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <output> <![CDATA[Written text or speech]]></output>
     <techterm></techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname></exname>
         <exdescription></exdescription>
         <eximage>assets/photos/</eximage>
@@ -1369,7 +1376,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <output> <![CDATA[Written text or speech]]></output>
     <techterm></techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname></exname>
         <exdescription></exdescription>
         <eximage>assets/photos/</eximage>
@@ -1398,7 +1405,7 @@ Based on all columns, except the one with the labels, the model will try to pred
     <output> <![CDATA[ Possible next frame 1 (92%) <br> Possible next frame 2 (8%) <br> OR a predicted value (e.g. 67)]]></output>
     <techterm>Video prediction</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Self-driving cars</exname>
         <exdescription>Video prediction is nowadays being used for self-driving cars. Here, a camera will film the environment of the car and detect where other vehicles or people are. Using the ability foresee, they are trying to predict the next frame, which in this situation will inform you where other vehicles or people are going to. This can then be used to anticipate and redirect the trajectory of the car if needed.</exdescription>
         <eximage>assets/photos/selfdrivingcars.jpg</eximage>
@@ -1428,7 +1435,7 @@ Another option is to see each frame of the video as an image and have labels for
         <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Video classification</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Zenia</exname>
         <exdescription>Zenia is an app which provide yoga classes and uses pose recognition to give personalized feedback. For this it will analyse each frame of the image, recognize the locations of the joints and next use this to see if you are doing the right pose and if you do the pose right.</exdescription>
         <eximage>assets/photos/zenia.png</eximage>
@@ -1457,7 +1464,7 @@ Another option is to see each frame of the video as an image and have labels for
         <output> <![CDATA[ Coordinates of the centroids <br> Which videos belong to which cluster]]></output>
     <techterm>Video clustering</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Video summarization</exname>
         <exdescription>In this paper, they describe a technique to use video clustering to create a summary of the video. For this they split the video in short segments, use the first frame of each segment and use these for the clustering. If the frames are not too much alike (they do not belong to the same cluster), their segment will be used for the summary.</exdescription>
         <eximage>assets/photos/videocluster.png</eximage>
@@ -1487,7 +1494,7 @@ Another option is to see each frame of the video as an image and have labels for
         <output> <![CDATA[ recommendation 1 <br> recommendation 2 <br> recommendation 3]]></output>
     <techterm>Recommender system video, collaborative filtering video, content based filtering video</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Youtube</exname>
         <exdescription>YouTube is doing exactly what is described above, it will use both approaches to recommend new videos to you as well recommend the overall popular videos.</exdescription>
         <eximage>assets/photos/youtube.jpg</eximage>
@@ -1516,7 +1523,7 @@ Another option is to see each frame of the video as an image and have labels for
         <output> <![CDATA[New video]]></output>
     <techterm>Video generative adversarial network (GAN)</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Deep fakes</exname>
         <exdescription>Videos that are adapted from an original video where for example faces are swapped or where the person is saying something else compared to the original video.</exdescription>
         <eximage>assets/photos/deepfake.jpg</eximage>
@@ -1546,7 +1553,7 @@ Next to that, videos can also contain audio and for this you can audio identific
   <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Facial recognition</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Face ID</exname>
         <exdescription>After an initial training phase where the ML model is learned to recognize your face specifically, it is possible to use this as a unique identifier to for example unlock your phone or verify your online payment.</exdescription>
         <eximage>assets/photos/faceid.jpg</eximage>
@@ -1575,7 +1582,7 @@ Next to that, videos can also contain audio and for this you can audio identific
     <output> <![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
     <techterm>Anomaly detection</techterm>
     <examples exist='no'>
-      <ex>
+      <ex value='1'>
         <exname></exname>
         <exdescription></exdescription>
         <eximage>assets/photos/</eximage>
@@ -1604,7 +1611,7 @@ Next to that, videos can also contain audio and for this you can audio identific
         <output> <![CDATA[Written text or speech]]></output>
     <techterm></techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname></exname>
         <exdescription></exdescription>
         <eximage>assets/photos/</eximage>
@@ -1633,7 +1640,7 @@ Next to that, videos can also contain audio and for this you can audio identific
         <output> <![CDATA[Written text]]></output>
     <techterm>NLP, speech to text, image to text</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Automatic subtitles</exname>
         <exdescription> YouTube videos can automatically create captions for videos. To do this, they use speech recognition (audio understanding) and display the text at the right time in the video. </exdescription>
         <eximage>assets/photos/youtube.jpg</eximage>
@@ -1662,7 +1669,7 @@ Next to that, videos can also contain audio and for this you can audio identific
     <output> <![CDATA[Video in a different style]]></output>
     <techterm>Neural style transfer</techterm>
     <examples>
-      <ex>
+      <ex value='1'>
         <exname>Video style transfer</exname>
         <exdescription>With video style transfer you can give your video for example an animated look. You select a reference style and next this style will be transferred to your video frame for frame. To make sure that the frames still match, this is done sequentially so that the new frame can be connected to the previous frame,</exdescription>
         <eximage>assets/photos/videostyletransfer.png</eximage>
