@@ -79,7 +79,7 @@
   <abilitytoken>
     <ability>Categorize</ability>
     <token>109</token>
-    <description>Match an item with a category</description>
+    <description>Match an item (an object, an activity, a position, a sound, etc.) with a corresponding category (e.g. recognizing a cat in a picture, or a yoga position in a video)</description>
     <type>Unsupervised learning</type>
     <image>assets/photos/mlabilities_icon_categorize.png</image>
     <imageHorizontal>assets/photos/mlabilities_horizontal_icon_categorize.png</imageHorizontal>
@@ -104,7 +104,7 @@
   <abilitytoken>
     <ability>Identify</ability>
     <token>111</token>
-    <description>Recognize the identity of a specific individual/item from a trait</description>
+    <description>Recognize the identity of a unique individual/item from a trait (e.g. recognizing a specific building from a partial picture, or a person from a video o a voice recording)</description>
     <type>Supervised learning</type>
       <image>assets/photos/mlabilities_icon_identify.png</image>
       <imageHorizontal>assets/photos/mlabilities_horizontal_icon_identify.png</imageHorizontal>

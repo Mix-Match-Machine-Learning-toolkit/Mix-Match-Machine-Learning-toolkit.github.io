@@ -98,10 +98,10 @@ function handleNotifications(data) {
     checkMode2(myValue);
     } else if (myValue == 254) {
     disconnectToBle();
-  }
-  else if (myValue==38){
+  } else if (myValue==38){
     print("errorness reading");
-  }else {
+  }
+   else {
     incomingValues[identifier] = myValue;
   }
   readValues();

@@ -42,14 +42,15 @@ You  might for example want to recognize different animals in a photo or handwri
     <outputtoken>text</outputtoken>
     <techterm>Image classification</techterm>
     <examples>
-      <ex value='1'>
-        <exname>Google Lens</exname>
-        <exdescription> Google Lens has many different functionalities and one of them is recognizing what is in the image. It will show you the class to which your image belongs. For example, recognize the type of flower. However, it can only recognize objects on which it has been trained, so it might not be able to recognize it.</exdescription>
-        <eximage>assets/photos/googlelens.jpg</eximage>
-        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://techengage.com/google-lens-now-detects-billion-items/">Link to example</exlink>
+      <!-- <ex value='1'>
+        <exname>Pl@ntNet</exname>
+        <exdescription> Pl@ntNet is an app for your mobile phone to recognize wild plants from photos. You can select your region and the app will tell you which plant is in the photo. This work best if you take photos of details or leaves against a clean background. It can only work on what it has been trained on so it will only recognize wild plants.
+</exdescription>
+        <eximage>assets/photos/plantnet.jpg</eximage>
+        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://plantnet.org/en/">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/tutorials/images/classification">Link to DIY</diylink>
-      </ex>
-      <ex value='2'>
+      </ex> -->
+      <ex value='1'>
         <exname>ObsIdentify</exname>
         <exdescription>ObsIdentify is an app that can be used to recognize wild animals and plants. For this you will take an image and the app will recognize what is visible in the image and give percentages for how confident it is that it is a certain animal or plant.  Your observations are stored and shared.</exdescription>
         <eximage>assets/photos/ObsIdentify.jpg</eximage>
@@ -71,8 +72,9 @@ You  might for example want to recognize different animals in a photo or handwri
     <examples>
       <ex >
         <exname>Google Lens Landmark</exname>
-        <exdescription>Google Lens has many different functionalities, and one of them is recognizing specific landmarks in images. However, it can only recognize objects on which it has been trained, so it might not be able to recognize it.</exdescription>
-        <eximage>assets/photos/googlelens.jpg</eximage>
+        <exdescription>Google Lens has many different functionalities, and one of them is recognizing specific landmarks in images. In this function, it recognizes unique buildings (e.g. the Big Ben) and not just that it is a building (this would be image categorization).
+However, it can only recognize objects on which it has been trained, so it might not be able to recognize it.</exdescription>
+        <eximage>assets/photos/googlens_landmark.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://techengage.com/google-lens-now-detects-billion-items/">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/tutorials/images/classification">Link to DIY</diylink>
       </ex>
@@ -1298,13 +1300,14 @@ Based on all columns, except the one with the labels, the model will try to pred
       </ex>
     </examples>
   </combi>
-  <combi exist='no' NLP='yes'>
-    <name></name>
+  <combi>
+    <name>Table communication</name>
     <datatype>Table</datatype>
     <ability>Communicate</ability>
     <datatoken>99</datatoken>
     <abilitytoken>113</abilitytoken>
-    <description></description>
+    <description>In tabular data, instances are stored as rows and features as columns. In each cell, numerical or textual data (or a different type of data) can be stored. Using the information in the cells, ML models can communicate in human language what is being presented in the table.
+</description>
     <capabilities>
       <c1 value=""></c1>
       <c2 value=""></c2>
@@ -1316,24 +1319,25 @@ Based on all columns, except the one with the labels, the model will try to pred
       <l3 value=""></l3>
     </limitations>
         <output> <![CDATA[Written text or speech]]></output>
-    <techterm></techterm>
+    <techterm>Table to text</techterm>
     <examples>
       <ex value='1'>
-        <exname></exname>
-        <exdescription></exdescription>
-        <eximage>assets/photos/</eximage>
-        <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
-        <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
+        <exname>ToTTO</exname>
+        <exdescription>This ML model can generate one sentence descriptions about the content in selected cells. These sentences are human understandable sentences. A challenge for these kinds of tasks is getting the labels, in this case the one sentence descriptions. </exdescription>
+        <eximage>assets/photos/totto.jpg</eximage>
+        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://ai.googleblog.com/2021/01/totto-controlled-table-to-text.html"></exlink>
+        <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/google-research-datasets/totto"></diylink>
       </ex>
     </examples>
   </combi>
-  <combi exist='no' NLP='yes'>
-    <name></name>
+  <combi>
+    <name>Understanding tabular data</name>
     <datatype>Table</datatype>
     <ability>Understand</ability>
     <datatoken>99</datatoken>
     <abilitytoken>122</abilitytoken>
-    <description></description>
+    <description>Tabular data is structured data, this makes it for ML models in general easier to use for learning as it doesn't need preprocessing. However, for understanding tabular data, it should have labels that describe the meaning of the information in the table and this can be challenging to collect. If the information in the table is textual data, it could be treated as text + understand.
+</description>
     <capabilities>
       <c1 value=""></c1>
       <c2 value=""></c2>
@@ -1345,24 +1349,26 @@ Based on all columns, except the one with the labels, the model will try to pred
       <l3 value=""></l3>
     </limitations>
         <output> <![CDATA[Written text or speech]]></output>
-    <techterm></techterm>
+    <techterm>NLP, tabular data</techterm>
     <examples>
       <ex value='1'>
-        <exname></exname>
-        <exdescription></exdescription>
-        <eximage>assets/photos/</eximage>
-        <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
-        <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
+        <exname>Ask Questions to Tabular Data using Voice</exname>
+        <exdescription>This example shows how you can use multiple ML models together to first ask your question using your voice, next transform your speech to text, and finally find the answer to the question in the table.
+</exdescription>
+        <eximage>assets/photos/tableunderstand.jpg</eximage>
+        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/bhattbhavesh91/table-question-answering-with-automatic-speech-recognition"></exlink>
+        <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/bhattbhavesh91/table-question-answering-with-automatic-speech-recognition"></diylink>
       </ex>
     </examples>
   </combi>
-  <combi exist='no' NLP='yes'>
-    <name></name>
+  <combi>
+    <name>Translating text in tables</name>
     <datatype>Table</datatype>
     <ability>Translate</ability>
     <datatoken>99</datatoken>
     <abilitytoken>117</abilitytoken>
-    <description></description>
+    <description>If your tabular data consists of natural language (i.e. words and sentences), then ML models normally used for translating text from one language to another could also be applied to the text in each cell.
+</description>
     <capabilities>
       <c1 value=""></c1>
       <c2 value=""></c2>
@@ -1374,14 +1380,14 @@ Based on all columns, except the one with the labels, the model will try to pred
       <l3 value=""></l3>
     </limitations>
         <output> <![CDATA[Written text or speech]]></output>
-    <techterm></techterm>
+    <techterm>NLP, machine translation</techterm>
     <examples>
       <ex value='1'>
-        <exname></exname>
-        <exdescription></exdescription>
-        <eximage>assets/photos/</eximage>
-        <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
-        <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
+        <exname>Excel</exname>
+        <exdescription>Excel offers you the option to translate the content of a selected cell to another language. For this, it is using the same type of model as for translating text documents. When translating the text, it does not translate each word individually, but looks at the context of the word (words before and after) to find the best translation. </exdescription>
+        <eximage>assets/photos/excel_long.png</eximage>
+        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://support.microsoft.com/en-us/office/translate-text-into-a-different-language-287380e4-a56c-48a1-9977-f2dca89ce93f"></exlink>
+        <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/@ageitgey/build-your-own-google-translate-quality-machine-translation-system-d7dc274bd476"></diylink>
       </ex>
     </examples>
   </combi>
