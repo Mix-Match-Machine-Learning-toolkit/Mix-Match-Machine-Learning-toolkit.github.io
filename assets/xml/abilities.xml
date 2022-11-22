@@ -79,7 +79,7 @@
   <abilitytoken>
     <ability>Categorize</ability>
     <token>109</token>
-    <description>Match an item (e.g. an object in a picture) with a category it corresponds to (e.g. a cat)</description>
+    <description>Match an item (e.g. a picture) with a category it corresponds to (e.g. a cat)</description>
     <type>Unsupervised learning</type>
     <image>assets/photos/mlabilities_icon_categorize.png</image>
     <imageHorizontal>assets/photos/mlabilities_horizontal_icon_categorize.png</imageHorizontal>
