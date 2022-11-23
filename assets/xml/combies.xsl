@@ -196,7 +196,7 @@
                             </xsl:attribute>
                             Train it yourself</a>
                         </p>
-                          <p>Image by: <span><xsl:value-of select="sourcename"/></span> from <xsl:value-of select="sourcelink"/></p>
+                  <p>Image by: <span><xsl:value-of select="source"/></span></p>
 
                       </div>
                     </xsl:for-each>

@@ -28,7 +28,7 @@
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.likelyai.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/analytics-vidhya/fastai-image-regression-age-prediction-based-on-image-68294d34f2ed"></diylink>
 
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -50,7 +50,7 @@ You  might for example want to recognize different animals in a photo or handwri
         <eximage>assets/photos/plantnet.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://plantnet.org/en/">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/tutorials/images/classification">Link to DIY</diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex> -->
+      <source></source></ex> -->
       <ex value='1'>
         <exname>ObsIdentify</exname>
         <exdescription>ObsIdentify is an app that can be used to recognize wild animals and plants. For this you will take an image and the app will recognize what is visible in the image and give percentages for how confident it is that it is a certain animal or plant.  Your observations are stored and shared.</exdescription>
@@ -58,7 +58,7 @@ You  might for example want to recognize different animals in a photo or handwri
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://tinyurl.com/yc7zdjxp">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://randerson112358.medium.com/classify-flower-images-using-machine-learning-python-549c98173ca4">Link to DIY</diylink>
 
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -80,7 +80,7 @@ However, it can only recognize objects on which it has been trained, so it might
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://techengage.com/google-lens-now-detects-billion-items/">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/tutorials/images/classification">Link to DIY</diylink>
 
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -97,10 +97,10 @@ However, it can only recognize objects on which it has been trained, so it might
       <ex value='1'>
         <exname>Google Photos</exname>
         <exdescription>Google Photos will cluster your photos based on metadata it collected (time, location) but it will also try to cluster your images and place similar pictures together. At the end, it will also use categorization to describe what is in the cluster.</exdescription>
-        <eximage>assets/photos/googlephotos.jpg</eximage>
+        <eximage>assets/photos/googlephotos_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://photos.google.com/explore"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/how-to-cluster-images-based-on-visual-similarity-cd6e7209fe34"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source>Rubaitul Azad on Unsplash</source></ex>
     </examples>
   </combi>
   <combi>
@@ -116,10 +116,10 @@ However, it can only recognize objects on which it has been trained, so it might
       <ex value='1'>
         <exname>Pinterest</exname>
         <exdescription>Pinterest is build around the ability of recommending images. On Pinterest you can "pin" images and based on what you have "pinned" and on what you  have searched, it will recommend other images that you probably like as well. For this is it will use a combination of the different recommender systems, as it will show you both more images that share the same content but also images that other users liked.</exdescription>
-        <eximage>assets/photos/pinterest.png</eximage>
+        <eximage>assets/photos/pinterest_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://pinterest.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/geekculture/building-a-visual-similarity-based-recommendation-system-using-python-872a5bea568e"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source>charlesdeluvio on Unsplash</source></ex>
     </examples>
   </combi>
   <combi>
@@ -148,7 +148,7 @@ However, it can only recognize objects on which it has been trained, so it might
         <eximage>assets/photos/dall-e.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://openai.com/blog/dall-e/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/image-generation-in-10-minutes-with-generative-adversarial-networks-c2afc56bfa3b"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -167,7 +167,7 @@ However, it can only recognize objects on which it has been trained, so it might
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -186,7 +186,7 @@ However, it can only recognize objects on which it has been trained, so it might
         <eximage>assets/photos/alternativetext.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://blogs.microsoft.com/ai/azure-image-captioning/ "></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/swlh/automatic-image-captioning-using-deep-learning-5e899c127387"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -205,7 +205,7 @@ However, it can only recognize objects on which it has been trained, so it might
         <eximage>assets/photos/innereye.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.microsoft.com/en-us/research/project/medical-image-analysis/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://cainvas.ai-tech.systems/use-cases/breast-cancer-detection-app/"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -224,7 +224,7 @@ However, it can only recognize objects on which it has been trained, so it might
         <eximage>assets/photos/deepart.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://deepart.io/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/tutorials/generative/style_transfer"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -255,7 +255,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/autocomplete.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.google.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/analytics-vidhya/build-a-simple-autocomplete-model-with-your-own-google-search-history-ead26b3b6bd4"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -283,7 +283,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/sentimentanalysis.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://monkeylearn.com/sentiment-analysis-online/">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/text/tutorials/text_classification_rnn">Link to DIY</diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -302,7 +302,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -331,7 +331,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/googlenews.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://news.google.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/making-sense-of-text-clustering-ca649c190b20"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -357,10 +357,10 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <ex value='1'>
         <exname>LinkedIn</exname>
         <exdescription>LinkedIn offers job recommendations based on your job searches, job alerts, profile, and activity on LinkedIn. This data is textual data and will be used to recommend jobs that are matching with what you have searched for, what you have liked or what you have written on your profile. For this, it will also need to analyse the job description to see what is being asked.</exdescription>
-        <eximage>assets/photos/linkedin.png</eximage>
+        <eximage>assets/photos/linkedin_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.linkedin.com/help/linkedin/answer/11783/job-recommendations-overview?lang=en"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/@armandj.olivares/building-nlp-content-based-recommender-systems-b104a709c042"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source>Souvik Banerjee on Unsplash</source></ex>
     </examples>
   </combi>
 
@@ -390,7 +390,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/plotgenerator.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.plot-generator.org.uk/">"</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/the-making-of-an-ai-storyteller-c3b8d5a983f5"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
 
@@ -420,7 +420,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/uniquemovies.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://smartclick.ai/articles/how-artificial-intelligence-is-used-in-the-film-industry/">"</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.datadriveninvestor.com/unsupervised-outlier-detection-in-text-corpus-using-deep-learning-41d4284a04c8"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -449,7 +449,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/duolingo.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.tristatetechnology.com/blog/best-language-learning-chatbot-apps/">"</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/how-to-create-a-chatbot-with-python-deep-learning-in-less-than-an-hour-56a063bdfc44"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
 
@@ -479,7 +479,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/codexplainer.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://gpt3demo.com/apps/repl-it">"</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/analytics-vidhya/ai-generates-code-using-python-and-openais-gpt-3-2ddc95047cba"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -505,10 +505,10 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <ex value='1'>
         <exname>Google Translate</exname>
         <exdescription>Google Translate recognizes the input text and predicts which language it is, or you can select the input language manually. Next it will translate the whole text to the output language and also give some possible alternatives, e.g. synonyms.</exdescription>
-        <eximage>assets/photos/googletranslate.png</eximage>
+        <eximage>assets/photos/googletranslate_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://translate.google.com/">"</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/@ageitgey/build-your-own-google-translate-quality-machine-translation-system-d7dc274bd476"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source>Rubaitul Azad on Unsplash</source></ex>
     </examples>
   </combi>
 
@@ -539,7 +539,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/stockmarket.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.wallstreetzen.com/stock-screener/stock-forecast"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://data-flair.training/blogs/stock-price-prediction-machine-learning-project-in-python/"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -565,10 +565,10 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>Acitivity recognition</exname>
         <exdescription>To recognize activity, data from sensors such as accelerometers (measuring the acceleration in the X, Y and Z axis), ECG (heartbeat) and GPS (your location and based on this how fast you are moving) can be used. These data are time series, since one of the measurements (or features) is the time of measuring the other features. Based on the sensor data, classes can be assigned to each fragment of data and the model can learn to recognize what data pattern belongs to cycling or walking, standing still, etc.</exdescription>
-        <eximage>assets/photos/activityrecognition.JPG</eximage>
+        <eximage>assets/photos/activityrecognition_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://tinyurl.com/ytms74s9"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://machinelearningmastery.com/how-to-load-and-explore-a-standard-human-activity-recognition-problem/"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source>Charlotte Karlsen on Unsplash</source></ex>
     </examples>
   </combi>
   <combi >
@@ -597,7 +597,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -626,7 +626,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/earthquake.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.nature.com/articles/s41467-020-17841-x"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/izzettunc/introduction-to-time-series-clustering"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
     <combi>
@@ -652,10 +652,10 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>Netflix</exname>
         <exdescription>Netflix records what you have watched, which movies you liked etc., and also when you watched certain shows. By recording the timestamps of the actions, the data become time series data, and the recommendations can be time dependent. So if you are always watching a show in the morning, Netflix will only recommend it in the morning and recommend different shows in the evening.</exdescription>
-        <eximage>assets/photos/netflix.jpg</eximage>
+        <eximage>assets/photos/netflix_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://help.netflix.com/en/node/100639"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/create-a-recommendation-system-based-on-time-series-data-using-latent-dirichlet-allocation-2aa141b99e19"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source>Thibault Penin on Unsplash</source></ex>
     </examples>
   </combi>
   <combi>
@@ -684,7 +684,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/synthetictimeseries.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.osti.gov/servlets/purl/1607585"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/creating-synthetic-time-series-data-67223ff08e34"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -713,7 +713,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/heartanomaly.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://ieeexplore.ieee.org/document/7344872"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/devavratatripathy/ecg-anomaly-detection-using-autoencoders"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi exist='no' NLP='yes'>
@@ -742,7 +742,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
 
@@ -772,7 +772,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/signlanguage.jfif</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://iopscience.iop.org/article/10.1088/1742-6596/1019/1/012017/pdf"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://cainvas.ai-tech.systems/use-cases/sign-language-sensor-app/"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source>Radzi Ambar et al 2018 J. Phys.: Conf. Ser. 1019 012017</source></ex>
     </examples>
   </combi>
   <combi exist='no' NLP='yes'>
@@ -801,7 +801,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi exist='no' NLP='yes'>
@@ -830,7 +830,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
 
@@ -857,10 +857,10 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>Lego Duplo Stories</exname>
         <exdescription>With Lego Duplo stories, children can experience interactive stories. For this, it is using Alexa to tell the story. During this story, Alexa will give prompts to the child to build along with their Duplo and it will ask for input for the story. For example, it will ask what the theme is of the story (limited options) and the child can say for example 'Animal story'. Machine learning is here used to recognize what is being said and incorporates that into the story.</exdescription>
-        <eximage>assets/photos/legoduplostories.jpg</eximage>
+        <eximage>assets/photos/legoduplostories_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.amazon.com/LEGO-System-A-S-Stories/dp/B07C225J2T"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/tutorials/audio/simple_audio"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source>Sven Brandsma on Unsplash</source></ex>
     </examples>
   </combi>
   <combi>
@@ -889,7 +889,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/voicematch.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://support.google.com/chromecast/answer/9071681"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/jurgenarias/Portfolio/tree/master/Voice%20Classification"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
 
@@ -919,7 +919,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/birdsounds.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://experiments.withgoogle.com/ai/bird-sounds/view/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/clustering-music-to-create-your-personal-playlists-on-spotify-using-python-and-k-means-a39c4158589a"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
 
@@ -946,10 +946,10 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>Spotify</exname>
         <exdescription>Spotify's Discover Weekly will use what you have listened to so far, as well as other information it has about you (your age, gender, location, etc.) and general information (season, hits, etc.) to recommend new music to you. For this they will use both filtering approaches as it will look at what similar users listened to and look for similar music.</exdescription>
-        <eximage>assets/photos/spotify.png</eximage>
+        <eximage>assets/photos/spotify_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.spotify.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/making-your-own-discover-weekly-f1ac7546fedb"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source>Thibault Penin on Unsplash</source></ex>
     </examples>
   </combi>
   <combi>
@@ -978,7 +978,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/aiva.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.aiva.ai/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/neuronio/audio-generation-with-gans-428bc2de5a89"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -1007,7 +1007,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
 
@@ -1037,7 +1037,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/digitalhuman.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://digitalhumans.com/what-are-digital-humans/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/human2b"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
 
@@ -1064,10 +1064,10 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>Smart assistants</exname>
         <exdescription> Smart assistants use this function to understand the commands you are giving and the questions you are asking. Based on this, it will often make an extra step to interpret what is being said and either execute that action (e.g. "Turn off the lights") or to respond (this will be covered by Audio communication).</exdescription>
-        <eximage>assets/photos/smartassistants.jpg</eximage>
+        <eximage>assets/photos/smartassistants_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://en.wikipedia.org/wiki/Amazon_Alexa"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/how-to-build-your-own-ai-personal-assistant-using-python-f57247b4494b"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source>Thomas Kolnowski on Unsplash</source></ex>
     </examples>
   </combi>
   <combi>
@@ -1096,7 +1096,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/livetranslate.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://translator.microsoft.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.geeksforgeeks.org/create-a-real-time-voice-translator-using-python/"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -1125,7 +1125,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/creditcardfraud.jfif</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.mastercard.us/en-us/business/issuers/business-payments/fraud-prevention.html"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/credit-card-fraud-detection-using-machine-learning-python-5b098d4a8edc"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -1154,7 +1154,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/penguins.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://allisonhorst.github.io/palmerpenguins/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/mcnakhaee/palmerpenguins"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source>@allison_horst</source></ex>
     </examples>
   </combi>
   <combi>
@@ -1183,7 +1183,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -1212,7 +1212,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/customersegment.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.segmentify.com/blog/customer-consumer-user-segmentation-examples"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/codex/customer-segmentation-with-k-means-in-python-18336fb915be"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
 
@@ -1239,10 +1239,10 @@ Based on all columns, except the one with the labels, the model will try to pred
       <ex value='1'>
         <exname>Amazon</exname>
         <exdescription> Amazon uses both tables which contain the specifics of each product as well as the information about the users and their interactions with the product. So when you look at a product, it will recommend similar items based on the content of the item, for example recommend similar laptops, and it will look at what other similar users bought and also recommend a mouse, a laptop cover or a tablet.</exdescription>
-        <eximage>assets/photos/amazon.png</eximage>
+        <eximage>assets/photos/amazon_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.amazon.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/saurav9786/recommender-system-using-amazon-reviews"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source>Christian Wiediger on Unsplash</source></ex>
     </examples>
   </combi>
   <combi>
@@ -1271,7 +1271,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/tonic.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.tonic.ai/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/analytics-vidhya/a-step-by-step-guide-to-generate-tabular-synthetic-dataset-with-gans-d55fc373c8db"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -1300,7 +1300,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/amazonmonitron.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://aws.amazon.com/monitron/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/anomaly-detection-in-manufacturing-part-1-an-introduction-8c29f70fc68b"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -1330,7 +1330,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/totto.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://ai.googleblog.com/2021/01/totto-controlled-table-to-text.html"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/google-research-datasets/totto"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -1361,7 +1361,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/tableunderstand.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/bhattbhavesh91/table-question-answering-with-automatic-speech-recognition"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/bhattbhavesh91/table-question-answering-with-automatic-speech-recognition"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -1388,10 +1388,10 @@ Based on all columns, except the one with the labels, the model will try to pred
       <ex value='1'>
         <exname>Excel</exname>
         <exdescription>Excel offers you the option to translate the content of a selected cell to another language. For this, it is using the same type of model as for translating text documents. When translating the text, it does not translate each word individually, but looks at the context of the word (words before and after) to find the best translation. </exdescription>
-        <eximage>assets/photos/excel_long.png</eximage>
+        <eximage>assets/photos/excel_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://support.microsoft.com/en-us/office/translate-text-into-a-different-language-287380e4-a56c-48a1-9977-f2dca89ce93f"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/@ageitgey/build-your-own-google-translate-quality-machine-translation-system-d7dc274bd476"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source>Rubaitul Azad on Unsplash</source></ex>
     </examples>
   </combi>
   <combi>
@@ -1420,7 +1420,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/selfdrivingcars.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.youtube.com/watch?v=yEtH23rKY8Q"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/deeppicar-part-1-102e03c83f2c"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -1450,7 +1450,7 @@ Another option is to see each frame of the video as an image and have labels for
         <eximage>assets/photos/zenia.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://zenia.app/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://thecodingtrain.com/learning/ml5/7.1-posenet.html"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -1479,7 +1479,7 @@ Another option is to see each frame of the video as an image and have labels for
         <eximage>assets/photos/videocluster.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.researchgate.net/publication/266032463_Video_Summarization_Using_Clustering"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
 
@@ -1506,10 +1506,11 @@ Another option is to see each frame of the video as an image and have labels for
       <ex value='1'>
         <exname>Youtube</exname>
         <exdescription>YouTube is doing exactly what is described above, it will use both approaches to recommend new videos to you as well recommend the overall popular videos.</exdescription>
-        <eximage>assets/photos/youtube.jpg</eximage>
+        <eximage>assets/photos/youtube_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.youtube.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.datacamp.com/community/tutorials/recommender-systems-python"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source>Christian Wiediger on Unsplash</source>
+    </ex>
     </examples>
   </combi>
   <combi>
@@ -1538,7 +1539,7 @@ Another option is to see each frame of the video as an image and have labels for
         <eximage>assets/photos/deepfake.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://edition.cnn.com/interactive/2019/01/business/pentagons-race-against-deepfakes/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/xaliceli/video-GAN"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -1568,7 +1569,7 @@ Next to that, videos can also contain audio and for this you can audio identific
         <eximage>assets/photos/faceid.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://support.apple.com/en-us/HT208108"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/ageitgey/face_recognition"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -1597,7 +1598,7 @@ Next to that, videos can also contain audio and for this you can audio identific
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi exist='no' NLP='yes'>
@@ -1626,7 +1627,7 @@ Next to that, videos can also contain audio and for this you can audio identific
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
   <combi>
@@ -1652,10 +1653,10 @@ Next to that, videos can also contain audio and for this you can audio identific
       <ex value='1'>
         <exname>Automatic subtitles</exname>
         <exdescription> YouTube videos can automatically create captions for videos. To do this, they use speech recognition (audio understanding) and display the text at the right time in the video. </exdescription>
-        <eximage>assets/photos/youtube.jpg</eximage>
+        <eximage>assets/photos/youtube_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://support.google.com/youtube/answer/6373554"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://pypi.org/project/autosub/"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source>Christian Wiediger on Unsplash</source></ex>
     </examples>
   </combi>
   <combi>
@@ -1684,7 +1685,7 @@ Next to that, videos can also contain audio and for this you can audio identific
         <eximage>assets/photos/videostyletransfer.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://rcorin.medium.com/video-style-transfer-with-art-app-d0d73abe7963"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/neural-style-transfer-on-real-time-video-with-full-implementable-code-ac2dbc0e9822"></diylink>
-      <sourcename>To be completed</sourcename><sourcelink></sourcelink></ex>
+      <source></source></ex>
     </examples>
   </combi>
 </combinations>
