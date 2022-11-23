@@ -150,6 +150,7 @@
                           <xsl:attribute name="class">exampleImage
                           </xsl:attribute>
                         </img>
+
                       </div>
                       <div class='exText'>
                         <h3 class='exampleHeader'><xsl:value-of select="exname"/></h3>
@@ -170,6 +171,7 @@
                             </xsl:attribute>
                             Train it yourself</a>
                         </p>
+                        <p>Image source:</p>
                       </div>
                     </xsl:for-each>
                   </div>
