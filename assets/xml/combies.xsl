@@ -162,7 +162,7 @@
                   <div class='example'>
 
                     <xsl:for-each select="combinations/combi[datatoken=$tokenselected1 and abilitytoken=$tokenselected2]/examples/ex">
-
+                      <!-- <div class='img_caption'> -->
                       <div class='exImg'>
                         <img>
 
@@ -173,7 +173,10 @@
                           <xsl:attribute name="class">exampleImage
                           </xsl:attribute>
                         </img>
+                      <p class='caption'>Image <span><xsl:value-of select="source"/></span></p>
                       </div>
+
+                    <!-- </div> -->
                       <div class='exText'>
                         <h3 class='exampleHeader'><xsl:value-of select="exname"/></h3>
                         <p>
@@ -196,9 +199,7 @@
                             </xsl:attribute>
                             Train it yourself</a>
                         </p>
-                  <p>Image <span><xsl:value-of select="source"/></span></p>
-
-                      </div>
+                    </div>
                     </xsl:for-each>
                   </div>
                 </xsl:otherwise>

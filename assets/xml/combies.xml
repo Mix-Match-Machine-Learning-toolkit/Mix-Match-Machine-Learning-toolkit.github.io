@@ -52,13 +52,13 @@ You  might for example want to recognize different animals in a photo or handwri
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/tutorials/images/classification">Link to DIY</diylink>
       <source></source></ex> -->
       <ex value='1'>
-        <exname>via: ObsIdentify</exname>
+        <exname>ObsIdentify</exname>
         <exdescription>ObsIdentify is an app that can be used to recognize wild animals and plants. For this you will take an image and the app will recognize what is visible in the image and give percentages for how confident it is that it is a certain animal or plant.  Your observations are stored and shared.</exdescription>
         <eximage>assets/photos/ObsIdentify.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://tinyurl.com/yc7zdjxp">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://randerson112358.medium.com/classify-flower-images-using-machine-learning-python-549c98173ca4">Link to DIY</diylink>
 
-      <source>ObsIdentify</source></ex>
+      <source>via: ObsIdentify</source></ex>
     </examples>
   </combi>
   <combi>
@@ -255,7 +255,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/autocomplete2.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.google.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/analytics-vidhya/build-a-simple-autocomplete-model-with-your-own-google-search-history-ead26b3b6bd4"></diylink>
-      <source>Via: Google</source></ex>
+      <source>via: Google</source></ex>
     </examples>
   </combi>
   <combi>
@@ -283,7 +283,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/sentimentanalysis.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://monkeylearn.com/sentiment-analysis-online/">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/text/tutorials/text_classification_rnn">Link to DIY</diylink>
-      <source>Via: MonkeyLearn sentiment analyzer</source></ex>
+      <source>via: MonkeyLearn sentiment analyzer</source></ex>
     </examples>
   </combi>
   <combi>
@@ -331,7 +331,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/googlenews.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://news.google.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/making-sense-of-text-clustering-ca649c190b20"></diylink>
-      <source>Via: Google News</source></ex>
+      <source>via: Google News</source></ex>
     </examples>
   </combi>
   <combi>
@@ -390,7 +390,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/plotgenerator.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.plot-generator.org.uk/">"</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/the-making-of-an-ai-storyteller-c3b8d5a983f5"></diylink>
-      <source>Via: https://www.plot-generator.org.uk/</source></ex>
+      <source>via: https://www.plot-generator.org.uk/</source></ex>
     </examples>
   </combi>
 
