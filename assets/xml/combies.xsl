@@ -196,6 +196,7 @@
                             </xsl:attribute>
                             Train it yourself</a>
                         </p>
+                          <p>Image source:</p>
                       </div>
                     </xsl:for-each>
                   </div>
