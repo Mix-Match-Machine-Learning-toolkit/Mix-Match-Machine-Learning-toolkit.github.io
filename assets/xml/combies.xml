@@ -183,7 +183,7 @@ However, it can only recognize objects on which it has been trained, so it might
       <ex value='1'>
         <exname>Alternative text</exname>
         <exdescription>Describes the content of an image placed in Word or another Microsoft application</exdescription>
-        <eximage>assets/photos/alternativetext.jpg</eximage>
+        <eximage>assets/photos/alternativetext.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://blogs.microsoft.com/ai/azure-image-captioning/ "></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/swlh/automatic-image-captioning-using-deep-learning-5e899c127387"></diylink>
       <source>by: Microsoft (https://blogs.microsoft.com/ai/azure-image-captioning/)</source></ex>
