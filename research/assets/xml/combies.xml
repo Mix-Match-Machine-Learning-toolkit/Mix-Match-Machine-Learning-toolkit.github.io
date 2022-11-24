@@ -163,7 +163,7 @@ You  might for example want to recognize different animals in a photo or handwri
       <ex>
         <exname>Alternative text</exname>
         <exdescription>Describes the content of an image placed in Word or another Microsoft application</exdescription>
-        <eximage>assets/photos/alternativetext.jpg</eximage>
+        <eximage>assets/photos/alternativetext.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://blogs.microsoft.com/ai/azure-image-captioning/ "></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/swlh/automatic-image-captioning-using-deep-learning-5e899c127387"></diylink>
       <source>by: Microsoft (https://blogs.microsoft.com/ai/azure-image-captioning/)</source></ex>
@@ -456,7 +456,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <ex>
         <exname>Code oracle</exname>
         <exdescription>Code is one very specific form of text and can be quite hard to understand, especially when using an unfamiliar language. Code Oracle allows you to highlight a snippet of your code to see in "normal" language what it is doing.</exdescription>
-        <eximage>assets/photos/codexplainer.jpg</eximage>
+        <eximage>assets/photos/codexplainer.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://gpt3demo.com/apps/repl-it">"</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/analytics-vidhya/ai-generates-code-using-python-and-openais-gpt-3-2ddc95047cba"></diylink>
       <source>by: Amjad Masad</source></ex>
@@ -690,7 +690,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex>
         <exname>Heart anomaly ECG</exname>
         <exdescription>One type of sensor data for which this capability can be used is ECG (heart) data. To manually monitor the ECG's of all patients is unfeasible, but by using this capability it is possible to train a model on what normal ECG's look like and then when there is an anomaly, the system will give an alarm to alert the nurses to check in on that patient.</exdescription>
-        <eximage>assets/photos/heartanomaly.jpg</eximage>
+        <eximage>assets/photos/heartanomaly.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://ieeexplore.ieee.org/document/7344872"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/devavratatripathy/ecg-anomaly-detection-using-autoencoders"></diylink>
       <source>by: S. Chauhan and L. Vig, "Anomaly detection in ECG time signals via deep long short-term memory networks," 2015 IEEE International Conference on Data Science and Advanced Analytics (DSAA), 2015, pp. 1-7, doi: 10.1109/DSAA.2015.7344872.</source></ex>
