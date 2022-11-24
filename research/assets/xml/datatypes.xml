@@ -16,9 +16,9 @@
     <format>.jpg, .png, .tiff</format>
     <image>assets/photos/image.png</image>
     <image2>assets/photos/image_image.png</image2>
-    <source>https://webkid.io/blog/datasets-for-machine-learning/</source>
+    <source>CIFAR-10 dataset(https://www.cs.toronto.edu/~kriz/cifar.html)</source>
     <ulimage>assets/photos/ul_image.png</ulimage>
-    <ulsource>https://neurohive.io/en/datasets/tencent-dataset/</ulsource>
+    <ulsource>Tencent ML-Images (https://github.com/Tencent/tencent-ml-images)</ulsource>
     <collection>Camera</collection>
   </datatoken>
   <datatoken>
@@ -33,9 +33,9 @@
     <format>.mp4, .mov, .avi, .mpeg</format>
     <image>assets/photos/video.png</image>
     <image2>assets/photos/image_video.png</image2>
-    <source>https://kili-technology.com/annotation-tool/video-annotation-tool/</source>
+    <source>Kili technology (https://kili-technology.com/annotation-tool/video-annotation-tool/)</source>
     <ulimage>assets/photos/ul_video.png</ulimage>
-    <ulsource>https://medium.com/syncedreview/epic-kitchens-largest-egocentric-video-dataset-gets-new-baselines-5632ce9992bc</ulsource>
+    <ulsource>Damen, D., Doughty, H., Farinella, et. al (2020). The epic-kitchens dataset: Collection, challenges and baselines. IEEE Transactions on Pattern Analysis and Machine Intelligence, 43(11), 4125-4141.</ulsource>
     <collection>Video camera</collection>
   </datatoken>
   <datatoken>
@@ -49,7 +49,7 @@
     <format>.doc, .pdf, .txt, .csv (with labels)</format>
     <image>assets/photos/text.png</image>
     <image2>assets/photos/image_text.png</image2>
-    <source>https://valohai.com/blog/production-machine-learning-pipeline-text-classification-fasttext/</source>
+    <source>Ari Bajo (https://valohai.com/blog/production-machine-learning-pipeline-text-classification-fasttext/) - BBC dataset</source>
     <ulimage>assets/photos/ul_text.jpg</ulimage>
     <ulsource>Photo by Glen Carrie on Unsplash</ulsource>
     <collection>Reviews, books, social media</collection>
@@ -66,9 +66,9 @@
     <format>.mp3, .wav, .m4a</format>
     <image>assets/photos/audio.png</image>
     <image2>assets/photos/image_audio.png</image2>
-    <source>https://nl.mathworks.com/help/audio/ref/audiolabeler-app.html</source>
+    <source>MathWorks - audio labeler (https://nl.mathworks.com/help/audio/ref/audiolabeler-app.html)</source>
     <ulimage>assets/photos/ul_audio.png</ulimage>
-    <ulsource>https://www.analyticsvidhya.com/blog/2017/08/audio-voice-processing-deep-learning/</ulsource>
+    <ulsource>JalFaizy Shaikh (https://www.analyticsvidhya.com/blog/2017/08/audio-voice-processing-deep-learning/)</ulsource>
     <collection>Microphone</collection>
   </datatoken>
   <datatoken>
@@ -84,9 +84,9 @@
     <format>.csv, .tsd, .arff</format>
     <image>assets/photos/timeseries.png</image>
     <image2>assets/photos/image_timeseries.png</image2>
-    <source>https://towardsdatascience.com/labelling-time-series-data-in-python-af62325e8f60</source>
+    <source>Lucy Rothwell (https://towardsdatascience.com/labelling-time-series-data-in-python-af62325e8f60)</source>
     <ulimage>assets/photos/ul_timeseries.png</ulimage>
-    <ulsource>https://www.aptech.com/blog/introduction-to-the-fundamentals-of-time-series-data-and-analysis/</ulsource>
+    <ulsource>Eric (https://www.aptech.com/blog/introduction-to-the-fundamentals-of-time-series-data-and-analysis/)</ulsource>
     <collection>Accelerometer</collection>
   </datatoken>
   <datatoken>
@@ -100,9 +100,9 @@
     <format>.csv, .xls, .json</format>
     <image>assets/photos/table.png</image>
     <image2>assets/photos/image_table.png</image2>
-    <source>https://bishwamittra.github.io/imli.html</source>
+    <source>Bishwamittra Ghosh (https://bishwamittra.github.io/imli.html)</source>
     <ulimage>assets/photos/ul_table.png</ulimage>
-    <ulsource>https://www.myonlinetraininghub.com/excel-tabular-data-format</ulsource>
+    <ulsource>Mynda Treacy (https://www.myonlinetraininghub.com/excel-tabular-data-format)</ulsource>
     <collection>Excel</collection>
   </datatoken>
   <!-- *********************************************************************** -->

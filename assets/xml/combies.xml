@@ -714,7 +714,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/heartanomaly.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://ieeexplore.ieee.org/document/7344872"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/devavratatripathy/ecg-anomaly-detection-using-autoencoders"></diylink>
-      <source></source></ex>
+      <source>by: S. Chauhan and L. Vig, "Anomaly detection in ECG time signals via deep long short-term memory networks," 2015 IEEE International Conference on Data Science and Advanced Analytics (DSAA), 2015, pp. 1-7, doi: 10.1109/DSAA.2015.7344872.</source></ex>
     </examples>
   </combi>
   <combi exist='no' NLP='yes'>
@@ -1540,7 +1540,7 @@ Another option is to see each frame of the video as an image and have labels for
         <eximage>assets/photos/deepfake.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://edition.cnn.com/interactive/2019/01/business/pentagons-race-against-deepfakes/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/xaliceli/video-GAN"></diylink>
-      <source>by: CNN</source></ex>
+      <source>by: Justin Weiss, Shane Csontos-Popko, Padraic Driscoll (CNN business)</source></ex>
     </examples>
   </combi>
   <combi>
