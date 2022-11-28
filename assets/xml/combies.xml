@@ -753,7 +753,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     <ability>Understand</ability>
     <datatoken>101</datatoken>
     <abilitytoken>122</abilitytoken>
-    <description>Time series are data where the time, and hence the sequence, is an important feature. Examples are periodic measurements over time, sensor data and much more. To understand what is captured in the time series you can use time series categorization, as this will allow you to recognize the category to which the data belongs, and you can use that label to 'understand' it.</description>
+    <description>Time series are data where the time, and hence the sequence, is an important feature. Examples are periodic measurements over time, sensor data and much more. To understand what is captured in the time series you can use time series categorization, as this will allow you to recognize the category to which the data belongs. In some cases, this can be used to “understand” what a person is communicating, e.g., in sign language or Morse code, by reading time series data coming from sensors.</description>
     <capabilities>
       <c1 value=""></c1>
       <c2 value=""></c2>
