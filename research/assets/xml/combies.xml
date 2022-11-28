@@ -727,7 +727,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
   </combi>
 
   <combi>
-    <name>Understanding + time series</name>
+    <name>Understand + time series</name>
     <datatype>Time series</datatype>
     <ability>Understand</ability>
     <datatoken>101</datatoken>
