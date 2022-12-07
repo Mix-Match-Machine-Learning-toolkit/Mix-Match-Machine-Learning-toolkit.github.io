@@ -173,7 +173,7 @@
                           <xsl:attribute name="class">exampleImage
                           </xsl:attribute>
                         </img>
-                      <p class='caption'>Image <span><xsl:value-of select="source"/></span></p>
+                      <p class='caption'><span>&#169;	</span> Image <span><xsl:value-of select="source"/></span></p>
                       </div>
 
                     <!-- </div> -->
