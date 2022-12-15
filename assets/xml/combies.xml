@@ -76,11 +76,11 @@ You  might for example want to recognize different animals in a photo or handwri
         <exname>Google Lens Landmark</exname>
         <exdescription>Google Lens has many different functionalities, and one of them is recognizing specific landmarks in images. In this function, it recognizes unique buildings (e.g. the Big Ben) and not just that it is a building (this would be image categorization).
 However, it can only recognize objects on which it has been trained, so it might not be able to recognize it.</exdescription>
-        <eximage>assets/photos/googlens_landmark.jpg</eximage>
+        <eximage>assets/photos/googlelenslandmark.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://techengage.com/google-lens-now-detects-billion-items/">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/tutorials/images/classification">Link to DIY</diylink>
 
-      <source>by: https://www.droidapp.nl/nieuws/google-lens-filter-plaatsen/ (via Google Lens)</source></ex>
+      <source>by: Anniek Jansen (via: Google Lens)</source></ex>
     </examples>
   </combi>
   <combi>
