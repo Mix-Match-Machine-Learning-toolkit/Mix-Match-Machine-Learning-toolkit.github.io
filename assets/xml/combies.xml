@@ -536,10 +536,10 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>Stock market</exname>
         <exdescription>While perfect stock market predictions are not (yet) possible, it is possible to recognize some general trends based on time series data. For the stock market, it is important to take the time component into account, which is why time series data is used. So based on the historic data, the model will try to find patterns and use these to predict the future.</exdescription>
-        <eximage>assets/photos/stockmarket.JPG</eximage>
+        <eximage>assets/photos/stockmarket_unsplash.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.wallstreetzen.com/stock-screener/stock-forecast"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://data-flair.training/blogs/stock-price-prediction-machine-learning-project-in-python/"></diylink>
-      <source>via: wallstreetzen stock forecasts </source></ex>
+      <source>by: Nick Chong on Unsplash </source></ex>
     </examples>
   </combi>
   <combi>
@@ -890,7 +890,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/voicematch.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://support.google.com/chromecast/answer/9071681"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/jurgenarias/Portfolio/tree/master/Voice%20Classification"></diylink>
-      <source>by: Ryne Hager (via Google)</source></ex>
+      <source>by: Ryne Hager https://www.androidpolice.com/2020/05/25/google-assistant-gets-new-confirm-with-voice-match-setting-for-payments/#1 (via Google)</source></ex>
     </examples>
   </combi>
 
