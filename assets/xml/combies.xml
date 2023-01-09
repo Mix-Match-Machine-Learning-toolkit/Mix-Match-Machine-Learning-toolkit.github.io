@@ -1567,7 +1567,7 @@ Next to that, videos can also contain audio and for this you can audio identific
       <ex value='1'>
         <exname>Face ID</exname>
         <exdescription>After an initial training phase where the ML model is learned to recognize your face specifically, it is possible to use this as a unique identifier to for example unlock your phone or verify your online payment.</exdescription>
-        <eximage>assets/photos/faceid.jpg</eximage>
+        <eximage>assets/photos/faceid2.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://support.apple.com/en-us/HT208108"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/ageitgey/face_recognition"></diylink>
       <source>by: Apple </source></ex>
