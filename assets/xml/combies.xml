@@ -220,12 +220,12 @@ However, it can only recognize objects on which it has been trained, so it might
     <techterm>Neural style transfer</techterm>
     <examples>
       <ex value='1'>
-        <exname>Deepart</exname>
+        <exname>Deep dream generator</exname>
         <exdescription> Based on the style of e.g. a famous painting, your uploaded image will be transformed to this style.  The models are trained on the reference images and when you upload your own image, the model will use what is has learned about the selected reference image and apply that style to your picture.</exdescription>
-        <eximage>assets/photos/deepart2.jpg</eximage>
-        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://deepart.io/"></exlink>
+        <eximage>assets/photos/deepdream.jpg</eximage>
+        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://deepdreamgenerator.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/tutorials/generative/style_transfer"></diylink>
-      <source>by: Lawrence Francis (content image: John Cena; style image: starry night by Vincent van Gogh)</source></ex>
+      <source>by: Deep dream generator</source></ex>
     </examples>
   </combi>
   <combi>
