@@ -225,7 +225,7 @@ However, it can only recognize objects on which it has been trained, so it might
         <eximage>assets/photos/deepdream.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://deepdreamgenerator.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/tutorials/generative/style_transfer"></diylink>
-      <source>by: Deep dream generator</source></ex>
+      <source>by: Deep Dream Generator (https://deepdreamgenerator.com/)</source></ex>
     </examples>
   </combi>
   <combi>
@@ -1682,12 +1682,12 @@ Next to that, videos can also contain audio and for this you can audio identific
     <techterm>Neural style transfer</techterm>
     <examples>
       <ex value='1'>
-        <exname>Video style transfer</exname>
+        <exname>EbSynth - Video style transfer</exname>
         <exdescription>With video style transfer you can give your video for example an animated look. You select a reference style and next this style will be transferred to your video frame for frame. To make sure that the frames still match, this is done sequentially so that the new frame can be connected to the previous frame,</exdescription>
-        <eximage>assets/photos/videostyletransfer.png</eximage>
-        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://rcorin.medium.com/video-style-transfer-with-art-app-d0d73abe7963"></exlink>
+        <eximage>assets/photos/ebsynth.jpg</eximage>
+        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://ebsynth.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/neural-style-transfer-on-real-time-video-with-full-implementable-code-ac2dbc0e9822"></diylink>
-      <source>by: Ricardo Corin (via art.app)</source></ex>
+      <source>by: EbSynth</source></ex>
     </examples>
   </combi>
 </combinations>
