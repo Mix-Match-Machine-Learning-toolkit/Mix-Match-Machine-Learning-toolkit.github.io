@@ -682,10 +682,10 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>Synthetic time series data</exname>
         <exdescription>Creating extra time series data based on some starting data. More data can help to train a better model.</exdescription>
-        <eximage>assets/photos/synthetictimeseries.jpg</eximage>
+        <eximage>assets/photos/data_timeseriesUL.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.osti.gov/servlets/purl/1607585"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/creating-synthetic-time-series-data-67223ff08e34"></diylink>
-      <source>by: Zhang, Chi, Kuppannagari, Sanmukh, Kannan, Rajgopal, and Prasanna, Viktor K. Generative Adversarial Network for Synthetic Time Series Data Generation in Smart Grids. United States. https://doi.org/10.1109/SmartGridComm.2018.8587464
+      <source>by: Anniek Jansen
 </source></ex>
     </examples>
   </combi>
@@ -891,7 +891,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/voicematch.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://support.google.com/chromecast/answer/9071681"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/jurgenarias/Portfolio/tree/master/Voice%20Classification"></diylink>
-      <source>by: Ryne Hager https://www.androidpolice.com/2020/05/25/google-assistant-gets-new-confirm-with-voice-match-setting-for-payments/#1 (via Google)</source></ex>
+      <source>by: Google</source></ex>
     </examples>
   </combi>
 
@@ -921,7 +921,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/birdsounds.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://experiments.withgoogle.com/ai/bird-sounds/view/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/clustering-music-to-create-your-personal-playlists-on-spotify-using-python-and-k-means-a39c4158589a"></diylink>
-      <source>via: https://experiments.withgoogle.com/ai/bird-sounds/view/</source></ex>
+      <source>by: Kyle McDonald, Manny Tan, Yotam Mann, and friends at Google Creative Lab</source></ex>
     </examples>
   </combi>
 
@@ -1214,7 +1214,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/mlabilities_icon_cluster.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.segmentify.com/blog/customer-consumer-user-segmentation-examples"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/codex/customer-segmentation-with-k-means-in-python-18336fb915be"></diylink>
-      <source>by: original image</source></ex>
+      <source>by: Anniek Jansen</source></ex>
     </examples>
   </combi>
 
@@ -1538,10 +1538,10 @@ Another option is to see each frame of the video as an image and have labels for
       <ex value='1'>
         <exname>Deep fakes</exname>
         <exdescription>Videos that are adapted from an original video where for example faces are swapped or where the person is saying something else compared to the original video.</exdescription>
-        <eximage>assets/photos/deepfake.jpg</eximage>
+        <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://edition.cnn.com/interactive/2019/01/business/pentagons-race-against-deepfakes/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/xaliceli/video-GAN"></diylink>
-      <source>by: Justin Weiss, Shane Csontos-Popko, Padraic Driscoll (CNN business)</source></ex>
+      <source>by: </source></ex>
     </examples>
   </combi>
   <combi>
