@@ -22,13 +22,13 @@
     <techterm>Classification, regression</techterm>
     <examples>
       <ex value='1'>
-        <exname>LikelyAI</exname>
-        <exdescription> LikelyAI will use your images as input and predicts how popular they will be when you post it on Instagram and choose the best. In this case it is using regression as it shows a percentage score of expected popularity for each image. It uses already existing images with known popularity, and the machine learning model will try to find patterns in these.</exdescription>
-        <eximage>assets/photos/likelyai.png</eximage>
-        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.likelyai.com/"></exlink>
+        <exname>FloodHub</exname>
+        <exdescription> The Flood Forecasting team at Google Research developed FloodHub. FloodHub can forecast when and where there is a chance of floods. To make these predictions, they have used satellite image data to create 3D height cards and model the behavior of water in rivers. These models are combined with river and weather data to make predictions and send out alerts. </exdescription>
+        <eximage>assets/photos/googlefloodhub.png</eximage>
+        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://sites.research.google/floods/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/analytics-vidhya/fastai-image-regression-age-prediction-based-on-image-68294d34f2ed"></diylink>
 
-      <source>by: LikelyAI</source></ex>
+      <source>by: Google (Data from the Google Flood Forecasting models that use data from ECMWF, NASA and NOAA) </source></ex>
     </examples>
   </combi>
   <combi>
