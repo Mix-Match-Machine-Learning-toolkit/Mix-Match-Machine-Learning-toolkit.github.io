@@ -53,7 +53,7 @@ You  might for example want to recognize different animals in a photo or handwri
       <source></source></ex> -->
       <ex value='1'>
         <exname>ObsIdentify</exname>
-        <exdescription>ObsIdentify is an app that can be used to recognize wild animals and plants. To do this, you simply take an image and the app will recognize what is visible in the image and give percentages for how confident it is that it is a certain animal or plant.  The technology used behind the app is NIA (Nature Identification API) and is also used on their platform observation.org. The observations you make in the app are stored and shared.
+        <exdescription>ObsIdentify is an app that can be used to recognize certain animals, plants and fungi. To do this, you simply take an image and the app will recognize what is visible in the image and give percentages for how confident it is that it is a certain animal or plant. The technology used behind the app is NIA (Nature Identification API) and is also used on their platform Observation.org. The observations you make in the app are stored and shared if you create an account.
         </exdescription>
         <eximage>assets/photos/ObsIdentify.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://tinyurl.com/yc7zdjxp">Link to example</exlink>
