@@ -1297,12 +1297,12 @@ Based on all columns, except the one with the labels, the model will try to pred
     <techterm>Anomaly detection</techterm>
     <examples>
       <ex value='1'>
-        <exname>Amazon monitron</exname>
-        <exdescription>Amazon Monitron use this capability to monitor industrial equipment so that you can detect abnormal conditions and predict when maintenance is needed. For example, the temperature might suddenly be higher than the average, indicating a possible problem.</exdescription>
-        <eximage>assets/photos/amazonmonitron.png</eximage>
-        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://aws.amazon.com/monitron/"></exlink>
+        <exname>Health care fraud</exname>
+        <exdescription>Health care fraud can cost the government much money. It can happen due to overbilling, waste and fraud by care providers as they will receive higher payments. By looking at the claims data, it is possible to detect patterns using unsupervised methods, i.e. no labels need to be present. The patterns will indicate if there is or is not fraud and are explainable to end users. </exdescription>
+        <eximage>assets/photos/healthcarefraud.jpg</eximage>
+        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://arxiv.org/abs/2211.02927"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/anomaly-detection-in-manufacturing-part-1-an-introduction-8c29f70fc68b"></diylink>
-      <source>by: Amazon Monitron</source></ex>
+      <source>by: Marcelo Leal on Unsplash</source></ex>
     </examples>
   </combi>
   <combi>
