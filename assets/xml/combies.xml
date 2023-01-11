@@ -624,10 +624,10 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>Clustering earthquake signals</exname>
         <exdescription>Monitoring seismic data is very labor-intensive and there is more data than can be currently analyzed in a supervised manner. Therefore, clustering can be used to find patterns in these data and use these clusters to for example forecast earthquakes.</exdescription>
-        <eximage>assets/photos/</eximage>
+        <eximage>assets/photos/seismogram.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.nature.com/articles/s41467-020-17841-x"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/izzettunc/introduction-to-time-series-clustering"></diylink>
-      <source>by:</source></ex>
+      <source>by:Tumisu from Pixabay </source></ex>
     </examples>
   </combi>
     <combi>
