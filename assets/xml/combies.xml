@@ -624,10 +624,10 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>Clustering earthquake signals</exname>
         <exdescription>Monitoring seismic data is very labor-intensive and there is more data than can be currently analyzed in a supervised manner. Therefore, clustering can be used to find patterns in these data and use these clusters to for example forecast earthquakes.</exdescription>
-        <eximage>assets/photos/earthquake.JPG</eximage>
+        <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.nature.com/articles/s41467-020-17841-x"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/izzettunc/introduction-to-time-series-clustering"></diylink>
-      <source>by: Seydoux, L., Balestriero, R., Poli, P. et al. Clustering earthquake signals and background noises in continuous seismic data with unsupervised deep learning. Nat Commun 11, 3972 (2020). https://doi.org/10.1038/s41467-020-17841-x </source></ex>
+      <source>by:</source></ex>
     </examples>
   </combi>
     <combi>
@@ -1269,11 +1269,11 @@ Based on all columns, except the one with the labels, the model will try to pred
     <examples>
       <ex value='1'>
         <exname>Tonic.ai</exname>
-        <exdescription>TONIC.ai is a company whose specialty it is to generate new, fake, data based on the original data you provide. So you can have a dataset of tabular data and TONIC.ai will use this to generate more data that is similar but still different.</exdescription>
+        <exdescription>Tonic.ai is a data mimicking company pioneering data de-identification, synthesis, and subsetting, i.e. taking parts of the data set, for modern data pipelines. Using the mimicked data, developers and data practitioners can create high-fidelity versions of their data for use in software development and testing, data analysis, and ML model training, while protecting customer privacy. </exdescription>
         <eximage>assets/photos/tonic.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.tonic.ai/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/analytics-vidhya/a-step-by-step-guide-to-generate-tabular-synthetic-dataset-with-gans-d55fc373c8db"></diylink>
-      <source>by: TONIC.ai</source></ex>
+      <source>by: Tonic.ai</source></ex>
     </examples>
   </combi>
   <combi>
