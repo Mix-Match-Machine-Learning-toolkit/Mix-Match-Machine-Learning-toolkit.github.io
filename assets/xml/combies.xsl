@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> -->
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
 
   <xsl:param name="tokenselected1"></xsl:param>
 
@@ -32,10 +33,13 @@
                         <xsl:attribute name="class">datacombiimage
                         </xsl:attribute>
 
-                        <xsl:attribute name="src"><xsl:value-of select="../images/im[@value=$label]"/>
+                        <xsl:attribute name="src">
+                          <xsl:value-of select="../images/im[@value=$label]"/>
                         </xsl:attribute>
                       </img>
-                      <h3 class='datatoken token'><xsl:value-of select="datatype"/></h3>
+                      <h3 class='datatoken token'>
+                        <xsl:value-of select="datatype"/>
+                      </h3>
                     </div>
                     <div class='rightdiv'>
 
@@ -44,10 +48,13 @@
                         <xsl:attribute name="class">abilitycombiimage
                         </xsl:attribute>
 
-                        <xsl:attribute name="src"><xsl:value-of select="../images/im[@value=$learning]"/>
+                        <xsl:attribute name="src">
+                          <xsl:value-of select="../images/im[@value=$learning]"/>
                         </xsl:attribute>
                       </img>
-                      <h3 class='abilitytoken token'><xsl:value-of select="ability"/></h3>
+                      <h3 class='abilitytoken token'>
+                        <xsl:value-of select="ability"/>
+                      </h3>
 
                     </div>
                   </div>
@@ -55,112 +62,113 @@
                     <h3 class='type combi'>Sorry!</h3>
                     <p class='description'>This is not a common combination and no examples currently exist on this website</p>
                     <xsl:if test="@NLP= 'yes'">
-                      <p class= 'description'>The ML capability <span class='highlight combi'><xsl:value-of select="ability"/></span> works (only) with human language. So try combining it with audio or text!</p>
-                    </xsl:if>
-                  </div>
-                </xsl:for-each>
-              </div>
-            </header>
-          </xsl:when>
+                      <p class= 'description'>The ML capability <span class='highlight combi'>
+                        <xsl:value-of select="ability"/>
+                      </span> works (only) with human language. So try combining it with audio or text!</p>
+                  </xsl:if>
+                </div>
+              </xsl:for-each>
+            </div>
+          </header>
+        </xsl:when>
 
-          <xsl:otherwise>
-            <header>
-              <div class="headerData">
-
-                <xsl:for-each select="combinations/combi[datatoken=$tokenselected1 and abilitytoken=$tokenselected2]">
-                  <div class='leftheadercombi'>
-
-                    <div class='leftdivcombi'>
-
-                      <img>
-
-                        <xsl:attribute name="class">datacombiimage
-                        </xsl:attribute>
-
-                        <xsl:attribute name="src"><xsl:value-of select="../images/im[@value=$label]"/>
-                        </xsl:attribute>
-                      </img>
-                      <h3 class='datatoken token'><xsl:value-of select="datatype"/></h3>
-                      <!-- <p> <xsl:value-of select = "$label" /></p> <p> <xsl:value-of select = "../images/im[@value=$label]" /></p> -->
-
-                    </div>
-                    <div class='middivcombi'>
-
-                      <img>
-
-                        <xsl:attribute name="class">abilitycombiimage
-                        </xsl:attribute>
-
-                        <xsl:attribute name="src"><xsl:value-of select="../images/im[@value=$learning]"/>
-                        </xsl:attribute>
-                      </img>
-                      <h3 class='abilitytoken token'><xsl:value-of select="ability"/></h3>
-                      <!-- <p> <xsl:value-of select = "$learning" /></p> <p> <xsl:value-of select = "../images/im[@value=$learning]" /></p> -->
-
-                    </div>
-                    <!-- <div class='rightdivcombi'>
-                      <img>
-
-                        <xsl:attribute name="class">outputcombiimage
-                        </xsl:attribute>
-
-                        <xsl:attribute name="src"><xsl:value-of select="../images/im[@value='combi']"/>
-                        </xsl:attribute>
-                      </img>
-                      <h3 class='outputtoken token'><xsl:value-of select="outputtoken"/></h3>
-                    </div> -->
-
-                  </div>
-
-                  <div class='rightheadercombi'>
-                    <h3 class='type combi'><xsl:value-of select="name"/></h3>
-                    <p class='descriptioncombi'>
-                      <xsl:value-of select="description"/></p>
-                    <p class='techterms'>
-                      <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #1E475E;">&#160;
-                      </i>
-                      <span class='bold'>Technical term(s):
-                      </span>
-
-                      <span><xsl:value-of select="techterm"/></span>
-                    </p>
-
-                    <div class='techterms'>
-
-                      <i class="fa-solid fa-print fa-lg" style="color: #1E475E;">&#160;</i>
-                      <span class='bold'>Output:&#160;
-                      </span>
-                      <img>
-
-                        <xsl:attribute name="class">smalloutputimage
-                        </xsl:attribute>
-
-                        <xsl:attribute name="src"><xsl:value-of select="../images/im[@value='output']"/>
-                        </xsl:attribute>
-                      </img>
-                      <span class="output"><xsl:value-of select="output" disable-output-escaping="yes"/></span>
-
-                    </div>
-
-                  </div>
-                </xsl:for-each>
-              </div>
-            </header>
+        <xsl:otherwise>
+          <header>
             <div class="headerData">
-              <!-- <xsl:value-of select="combinations/combi[datatoken=$tokenselected1 and abilitytoken=$tokenselected2]/examples/@exist"/> -->
-              <xsl:choose>
 
-                <xsl:when test="combinations/combi[datatoken=$tokenselected1 and abilitytoken=$tokenselected2]/examples/@exist = 'no'">
-                  <div class='example'>
+              <xsl:for-each select="combinations/combi[datatoken=$tokenselected1 and abilitytoken=$tokenselected2]">
+                <div class='leftheadercombi'>
 
-                  <h3 class='exampleHeader' style='text-align: center; '>There is no example (yet) for this combination</h3>
+                  <div class='leftdivcombi'>
+
+                    <img>
+
+                      <xsl:attribute name="class">datacombiimage
+                      </xsl:attribute>
+
+                      <xsl:attribute name="src">
+                        <xsl:value-of select="../images/im[@value=$label]"/>
+                      </xsl:attribute>
+                    </img>
+                    <h3 class='datatoken token'>
+                      <xsl:value-of select="datatype"/>
+                    </h3>
+                  </div>
+                  <div class='middivcombi'>
+                    <img>
+
+                      <xsl:attribute name="class">abilitycombiimage
+                      </xsl:attribute>
+
+                      <xsl:attribute name="src">
+                        <xsl:value-of select="../images/im[@value=$learning]"/>
+                      </xsl:attribute>
+                    </img>
+                    <h3 class='abilitytoken token'>
+                      <xsl:value-of select="ability"/>
+                    </h3>
+                  </div>
+                </div>
+
+                <div class='rightheadercombi'>
+                  <h3 class='type combi'>
+                    <xsl:value-of select="name"/>
+                  </h3>
+                  <p class='descriptioncombi'>
+                    <xsl:value-of select="description"/>
+                  </p>
+                  <p class='techterms'>
+                    <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #1E475E;">&#160;
+                    </i>
+                    <span class='bold'>Technical term(s):
+                    </span>
+
+                    <span>
+                      <xsl:value-of select="techterm"/>
+                    </span>
+                  </p>
+
+                  <div class='techterms'>
+
+                    <i class="fa-solid fa-print fa-lg" style="color: #1E475E;">&#160;</i>
+                    <span class='bold'>Output:&#160;
+                    </span>
+                    <img>
+
+                      <xsl:attribute name="class">smalloutputimage
+                      </xsl:attribute>
+
+                      <xsl:attribute name="src">
+                        <xsl:value-of select="../images/im[@value='output']"/>
+                      </xsl:attribute>
+                    </img>
+                    <span class="output">
+                      <xsl:value-of select="output" disable-output-escaping="yes"/>
+                    </span>
+
+                  </div>
 
                 </div>
-                </xsl:when>
+              </xsl:for-each>
+            </div>
+          </header>
+          <div class="headerData">
 
+            <div class="tab">
+              <button class="tablinks" onclick="openTab(event, 'application')" id="defaultOpen">Application</button>
+              <button class="tablinks" onclick="openTab(event, 'interactive')">Interactive example</button>
+              <button class="tablinks" onclick="openTab(event, 'weka')">Weka</button>
+            </div>
+
+            <div id='application' class='tabcontent'>
+              <xsl:choose>
+                <xsl:when test="combinations/combi[datatoken=$tokenselected1 and abilitytoken=$tokenselected2]/examples/@exist = 'no'">
+                  <div class='example'>
+                     <p>There is no example (yet) for this combination but you could try making it yourself!</p>
+                  </div>
+                </xsl:when>
                 <xsl:otherwise>
                   <div class='example'>
-
                     <xsl:for-each select="combinations/combi[datatoken=$tokenselected1 and abilitytoken=$tokenselected2]/examples/ex">
                       <!-- <div class='img_caption'> -->
                       <div class='exImg'>
@@ -173,44 +181,86 @@
                           <xsl:attribute name="class">exampleImage
                           </xsl:attribute>
                         </img>
-                      <p class='caption'>Image <span><xsl:value-of select="source"/></span></p>
-                      </div>
+                        <p class='caption'>
+                          <span>&#169;	</span> Image <span>
+                          <xsl:value-of select="source"/>
+                        </span>
+                      </p>
+                    </div>
 
                     <!-- </div> -->
-                      <div class='exText'>
-                        <h3 class='exampleHeader'><xsl:value-of select="exname"/></h3>
-                        <p>
-                          <span class='bold'>Description:
-                          </span><xsl:value-of select="exdescription"/></p>
-                          <p>  <i class="fa-solid fa-triangle-exclamation fa-lg" style="color: #1E475E;">&#160;
-                          </i> <i> Please be aware that these are applicatons from the public domain, they might contain biases. </i>
-                          </p>
-                        <p>
-                          <a href="{exlink/@xlink:href}" target="_blank">
+                    <div class='exText'>
+                      <h3 class='exampleHeader'>
+                        <xsl:value-of select="exname"/>
+                      </h3>
+                      <p>
+                        <span class='bold'>Description:
+                        </span>
+                        <xsl:value-of select="exdescription"/>
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-triangle-exclamation fa-lg" style="color: #1E475E;">&#160;
+                        </i>
+                        <i> Please be aware that these are applicatons from the public domain, they might contain biases. </i>
+                      </p>
+                      <p>
+                        <a href="{exlink/@xlink:href}" target="_blank">
 
-                            <xsl:attribute name="onclick">sendlinkOOCSI("examplelink","<xsl:value-of select="exlink/@xlink:href"/>")
-                            </xsl:attribute>
+                          <xsl:attribute name="onclick">sendlinkOOCSI("examplelink","<xsl:value-of select="exlink/@xlink:href"/>
+")
+                          </xsl:attribute>
                             See example</a>
-                        </p>
-                        <p>
-                          <a href="{diylink/@xlink:href}" target="_blank">
+                      </p>
+                      <p>
+                        <a href="{diylink/@xlink:href}" target="_blank">
 
-                            <xsl:attribute name="onclick">sendlinkOOCSI("diylink","<xsl:value-of select="diylink/@xlink:href"/>")
-                            </xsl:attribute>
+                          <xsl:attribute name="onclick">sendlinkOOCSI("diylink","<xsl:value-of select="diylink/@xlink:href"/>
+")
+                          </xsl:attribute>
                             Train it yourself</a>
-                        </p>
+                      </p>
                     </div>
-                    </xsl:for-each>
-                  </div>
-                </xsl:otherwise>
-              </xsl:choose>
-            </div>
-          </xsl:otherwise>
-        </xsl:choose>
+                  </xsl:for-each>
+                </div>
+              </xsl:otherwise>
+            </xsl:choose>
+          </div>
+          <div id='interactive' class='tabcontent '>
+            <div id='interactiveExample'>
+              <p>Sorry, there is no interactive example yet for this combination!</p>
 
-      </body>
-      <footer></footer>
-    </html>
-  </xsl:template>
+            </div>
+          </div>
+          <div id='weka' class='tabcontent '  >
+            <xsl:choose>
+              <xsl:when test="combinations/combi[datatoken=$tokenselected1 and abilitytoken=$tokenselected2]/weka/@exist = 'no'">
+                <!-- <p>It is not possible to do this kind of ML training in Weka.</p> -->
+                <p>
+                  <xsl:value-of select="combinations/combi[datatoken=$tokenselected1 and abilitytoken=$tokenselected2]/weka/reason"/>
+                </p>
+              </xsl:when>
+              <xsl:otherwise>
+                <h3 class='exampleHeader' >Instructions for Weka:</h3>
+                <ol>
+                  <li>Open the explorer</li>
+                  <xsl:for-each select="combinations/combi[datatoken=$tokenselected1 and abilitytoken=$tokenselected2]/weka/instructions/*">
+                    <li>
+                      <xsl:value-of select="@value"/>
+                    </li>
+                  </xsl:for-each>
+                </ol>
+              </xsl:otherwise>
+            </xsl:choose>
+          </div>
+          <!-- </xsl:otherwise>
+          </xsl:choose> -->
+        </div>
+      </xsl:otherwise>
+    </xsl:choose>
+
+  </body>
+  <footer></footer>
+</html>
+</xsl:template>
 
 </xsl:stylesheet>

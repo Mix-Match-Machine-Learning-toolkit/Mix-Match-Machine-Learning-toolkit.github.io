@@ -1,0 +1,30 @@
+<div id="Classifier">
+    <div class="input">
+        <h3 class="exampleHeader">Toxicity classifier</h3>
+        <p><span class='bold'>Model: </span> <a href="https://tfhub.dev/tensorflow/tfjs-model/toxicity/1/default/1"
+                target="_blank" rel="noreferrer noopener">TensorFlow Hub </a>
+            <br>
+            <span class='bold'>Data: </span><a href="https://www.tensorflow.org/datasets/catalog/civil_comments"
+                target="_blank" rel="noreferrer noopener"> civil comments dataset</a>
+        </p>
+
+        <!-- <p><span class='bold'>Try the model: </span></p> -->
+        <form onsubmit="return false">
+            <p>Input text to classify: &nbsp;
+                <input type="text" id="textToClassify" autocomplete="off" value="">
+                <br>
+            </p>
+            <div class="buttondiv">
+            <a href="#" id='buttonClassify'  class="buttonFancy" onclick="textClassification(); return false;">Classify</a>
+        </div>
+        </form>
+    </div>
+
+    <div id="predictions">
+        <p class="bold">Predictions for "<span id="inputtedText"></span>":</p>
+        <p><span>Insult: </span> <span id="probInsult"></span>
+            <br>
+            <span>Toxicity: </span> <span id="probToxicity"></span>
+        </p>
+    </div>
+</div>

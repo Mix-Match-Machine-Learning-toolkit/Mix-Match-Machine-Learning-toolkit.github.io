@@ -34,7 +34,9 @@ function setup() {
   connectButton = select('#connectBLE');
   connectButton.mousePressed(connectToBle);
 
+
 }
+
 
 function connectToBle() {
   // Connect to a device by passing the service UUID
@@ -57,6 +59,8 @@ function onDisconnected() {
   location.reload();
   isConnected = false;
 }
+
+
 
 
 // A function that will be called once got characteristics

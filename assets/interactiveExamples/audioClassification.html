@@ -1,0 +1,47 @@
+<div id="Classifier">
+    <div class="input">
+        <h3 class="exampleHeader">Audio classifier</h3>
+
+        <p style="width:80%;">This model can recognize the words: the ten digits from "zero" to "nine", "up", "down", "left", "right",
+            "go", "stop", "yes", "no", and the categories "unknown word" and "background noise"</p>
+        <p><span class='bold'>Model: </span> <a href="https://tfhub.dev/tensorflow/tfjs-model/speech-commands/18w/4"
+                target="_blank" rel="noreferrer noopener">TensorFlow Hub </a>
+            <br>
+            <span class='bold'>Data: </span><a href="https://www.tensorflow.org/datasets/catalog/speech_commands"
+                target="_blank" rel="noreferrer noopener"> speech commands dataset</a>
+        </p>
+        <div class="buttondiv">
+            <a href="#" onclick="startListening();return false;" class="buttonFancy" id="startListening">Start listening</a>
+            <a href="#" onclick="stopListening(); return false;" class="buttonFancy" id="stopListening" style="display:none;">Stop
+                listening</a>
+        </div>
+    </div>
+
+    <div id="predictions">
+        <p class="bold">Predictions:</p>
+        <div class="labels_prob">
+            <div class="labels">
+
+                <p>
+                    <span id="wordPredicted1"></span>
+                    <br><br>
+                    <span id="wordPredicted2"></span>
+                    <br><br>
+                    <span id="wordPredicted3"></span>
+                </p>
+            </div>
+            <div class="probablities">
+                <p>
+                    <span id="probWord1"></span>
+                    <br><br>
+                    <span id="probWord2"></span>
+                    <br><br>
+                    <span id="probWord3"></span>
+                    <br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</div>

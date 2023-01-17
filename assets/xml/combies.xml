@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <combinations xmlns:xlink="http://www.w3.org/1999/xlink">
   <images>
-  <im value='labeled'>assets/photos/ld.png</im>
-  <im value='unlabeled'>assets/photos/ud.png</im>
-  <im value='supervised'>assets/photos/sl.png</im>
-  <im value='unsupervised'>assets/photos/us.png</im>
-  <im value='output'>assets/photos/icons_v2-11.png</im>
-  <im value='output_l'>assets/photos/output_l.png</im>
-  <im value='combi'>assets/photos/icons_combi.svg</im>
-  <im value='humanintheloop'>assets/photos/hitl.png</im>
-</images>
+    <im value='labeled'>assets/photos/ld.png</im>
+    <im value='unlabeled'>assets/photos/ud.png</im>
+    <im value='supervised'>assets/photos/sl.png</im>
+    <im value='unsupervised'>assets/photos/us.png</im>
+    <im value='output'>assets/photos/icons_v2-11.png</im>
+    <im value='output_l'>assets/photos/output_l.png</im>
+    <im value='combi'>assets/photos/icons_combi.svg</im>
+    <im value='humanintheloop'>assets/photos/hitl.png</im>
+  </images>
   <combi>
     <name>Predictions based on images</name>
     <datatype>Image</datatype>
@@ -17,7 +17,7 @@
     <datatoken>98</datatoken>
     <abilitytoken>110</abilitytoken>
     <description>Images could also be used as input for making predictions about for example next actions, states e.g. emotional states (overlap with categorizing images, in this case will it predict your future emotion) and values (on e.g. a continuous scale). For this, the model will learn to recognize certain features in the images and link these with the provided ground truth.  </description>
-    <output> <![CDATA[ Label 5 (82%), Label 3 (18%) <br/> OR a predicted value (e.g. 23)]]></output>
+    <output><![CDATA[ Label 5 (82%), Label 3 (18%) <br/> OR a predicted value (e.g. 23)]]></output>
     <outputtoken>text</outputtoken>
     <techterm>Classification, regression</techterm>
     <examples>
@@ -28,7 +28,8 @@
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.likelyai.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/analytics-vidhya/fastai-image-regression-age-prediction-based-on-image-68294d34f2ed"></diylink>
 
-      <source>by: LikelyAI</source></ex>
+        <source>by: LikelyAI</source>
+      </ex>
     </examples>
   </combi>
   <combi>
@@ -39,7 +40,7 @@
     <abilitytoken>109</abilitytoken>
     <description>Images are easy to recognize for people, but can be very hard for computers as there will always be slight variations between photos of the same class, e.g. the angle or the lighting.
 You  might for example want to recognize different animals in a photo or handwritten numbers. However not all cats look alike and everyone's handwritten 2 looks different. ML models for this ability will learn to recognize what is shown in the images. Some models can recognize only one object in each image and others can detect multiple objects, as well as their location. In the case of the latter, the images will not only need a label but also a bounding box around the different objects in the image with a label for what is in each bounding box.</description>
-    <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
+    <output><![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <outputtoken>text</outputtoken>
     <techterm>Image classification</techterm>
     <examples>
@@ -58,8 +59,12 @@ You  might for example want to recognize different animals in a photo or handwri
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://tinyurl.com/yc7zdjxp">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://randerson112358.medium.com/classify-flower-images-using-machine-learning-python-549c98173ca4">Link to DIY</diylink>
 
-      <source>via: ObsIdentify</source></ex>
+        <source>via: ObsIdentify</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support image data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Image identification</name>
@@ -68,7 +73,7 @@ You  might for example want to recognize different animals in a photo or handwri
     <datatoken>98</datatoken>
     <abilitytoken>111</abilitytoken>
     <description>Image identification is a specific subset of image recognition. Image recognition (categorize) places an image in one of the possible categories, but these categories are general "buckets" and do not identify individuals or individual objects. If you do want to be able to specifically identify an individual (e.g. to attach a name to an image) or an individual object (e.g. to recognize the name of a building), you can use image identification.</description>
-    <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
+    <output><![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <outputtoken>text</outputtoken>
     <techterm>Image classification</techterm>
     <examples>
@@ -80,8 +85,12 @@ However, it can only recognize objects on which it has been trained, so it might
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://techengage.com/google-lens-now-detects-billion-items/">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/tutorials/images/classification">Link to DIY</diylink>
 
-      <source>by: https://www.droidapp.nl/nieuws/google-lens-filter-plaatsen/ (via Google Lens)</source></ex>
+        <source>by: https://www.droidapp.nl/nieuws/google-lens-filter-plaatsen/ (via Google Lens)</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support image data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Image clustering</name>
@@ -90,7 +99,7 @@ However, it can only recognize objects on which it has been trained, so it might
     <datatoken>98</datatoken>
     <abilitytoken>112</abilitytoken>
     <description>When the images are not labeled, but you still want to find images that might belong to the same category or you might want to find similar images for other purposes, you can use image clustering. The model will look for similarities between the images and group those together. It could for example cluster based on color or on the object visible in the image. However, since it is unsupervised learning, it will not be able to give labels to the clusters. </description>
-    <output> <![CDATA[ Coordinates of the centroids <br> Which points belong to which cluster]]></output>
+    <output><![CDATA[ Coordinates of the centroids <br> Which points belong to which cluster]]></output>
     <outputtoken>table</outputtoken>
     <techterm>Image clustering</techterm>
     <examples>
@@ -100,8 +109,12 @@ However, it can only recognize objects on which it has been trained, so it might
         <eximage>assets/photos/googlephotos_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://photos.google.com/explore"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/how-to-cluster-images-based-on-visual-similarity-cd6e7209fe34"></diylink>
-      <source>by: Rubaitul Azad on Unsplash</source></ex>
+        <source>by: Rubaitul Azad on Unsplash</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support image data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Image recommendation</name>
@@ -110,7 +123,7 @@ However, it can only recognize objects on which it has been trained, so it might
     <datatoken>98</datatoken>
     <abilitytoken>116</abilitytoken>
     <description>Image recommendation can use two main approaches. The first approach is content-based filtering, in this approach the machine learning model will look at what images are similar to the one you liked in the past and recommend similar images to you. The second approach is collaborative filtering, and in this case the machine learning model will look at what images similar users liked and recommend those images (user-user) or look at which images are also often liked when image X is liked by users and recommend those images (item-item).</description>
-    <output> <![CDATA[ recommendation 1 <br> recommendation 2 <br> recommendation 3]]></output>
+    <output><![CDATA[ recommendation 1 <br> recommendation 2 <br> recommendation 3]]></output>
     <techterm>Recommender system images, collaborative filtering images, content based filtering images</techterm>
     <examples>
       <ex value='1'>
@@ -119,8 +132,12 @@ However, it can only recognize objects on which it has been trained, so it might
         <eximage>assets/photos/pinterest_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://pinterest.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/geekculture/building-a-visual-similarity-based-recommendation-system-using-python-872a5bea568e"></diylink>
-      <source>by: charlesdeluvio on Unsplash</source></ex>
+        <source>by: charlesdeluvio on Unsplash</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support image data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Image generation</name>
@@ -139,7 +156,7 @@ However, it can only recognize objects on which it has been trained, so it might
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[New image]]></output>
+    <output><![CDATA[New image]]></output>
     <techterm>Generative adversarial network, image generation</techterm>
     <examples>
       <ex value='1'>
@@ -148,8 +165,12 @@ However, it can only recognize objects on which it has been trained, so it might
         <eximage>assets/photos/dall-e.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://openai.com/blog/dall-e/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/image-generation-in-10-minutes-with-generative-adversarial-networks-c2afc56bfa3b"></diylink>
-      <source>via: Dall-e (https://openai.com/blog/dall-e/)</source></ex>
+        <source>via: Dall-e (https://openai.com/blog/dall-e/)</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support image data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Distinguishing image</name>
@@ -158,7 +179,7 @@ However, it can only recognize objects on which it has been trained, so it might
     <datatoken>98</datatoken>
     <abilitytoken>114</abilitytoken>
     <description>Based on a large set of (unlabeled) images, is it possible to find some general trends or an average. When you, or the model, have found this general trend, it is also possible to notice some images that are far from this general trend or average. These images can be outliers or anomalies. An alternative to unsupervised distinguishing is to use supervised data, where the data is labeled as either being an outlier or not. In this case, the model will learn to predict if it is an outlier or not.</description>
-    <output> <![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
+    <output><![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
     <techterm>Anomaly detection</techterm>
     <examples exist='no'>
       <ex value='1'>
@@ -167,8 +188,12 @@ However, it can only recognize objects on which it has been trained, so it might
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <source></source></ex>
+        <source></source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support image data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Image descriptions</name>
@@ -177,7 +202,7 @@ However, it can only recognize objects on which it has been trained, so it might
     <datatoken>98</datatoken>
     <abilitytoken>113</abilitytoken>
     <description>To be able to communicate what is visible in an image, a model will look at the content shown in the image and couple this to words or sentences. You can think of it as first recognizing the objects in the image (image categorization) and next crafting understandable sentences by combining all the labels of the recognized objects in the image. As an extra step, this text can also be converted to speech.</description>
-    <output> <![CDATA[Text]]></output>
+    <output><![CDATA[Text]]></output>
     <techterm> Image caption generation, NLP, image to text/speech</techterm>
     <examples>
       <ex value='1'>
@@ -186,8 +211,12 @@ However, it can only recognize objects on which it has been trained, so it might
         <eximage>assets/photos/alternativetext.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://blogs.microsoft.com/ai/azure-image-captioning/ "></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/swlh/automatic-image-captioning-using-deep-learning-5e899c127387"></diylink>
-      <source>by: Microsoft (https://blogs.microsoft.com/ai/azure-image-captioning/)</source></ex>
+        <source>by: Microsoft (https://blogs.microsoft.com/ai/azure-image-captioning/)</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support image data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Image understanding</name>
@@ -196,7 +225,7 @@ However, it can only recognize objects on which it has been trained, so it might
     <datatoken>98</datatoken>
     <abilitytoken>122</abilitytoken>
     <description>To understand what is visible in an image, you can train an image categorization or identification model. This will learn to label objects or elements in an image and use this to come to some sense of 'understanding'. However, it can never really understand it, as it will for example not be able to tell the cause of something. Moreover, it will only recognize on what it has been trained.</description>
-    <output> <![CDATA[ Label 2 (67%) <br> Label 7 (33%)]]></output>
+    <output><![CDATA[ Label 2 (67%) <br> Label 7 (33%)]]></output>
     <techterm> Image classification</techterm>
     <examples>
       <ex value='1'>
@@ -205,8 +234,12 @@ However, it can only recognize objects on which it has been trained, so it might
         <eximage>assets/photos/innereye.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.microsoft.com/en-us/research/project/medical-image-analysis/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://cainvas.ai-tech.systems/use-cases/breast-cancer-detection-app/"></diylink>
-      <source>by: InnerEye research project - Microsoft Research</source></ex>
+        <source>by: InnerEye research project - Microsoft Research</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support image data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Image translation</name>
@@ -215,7 +248,7 @@ However, it can only recognize objects on which it has been trained, so it might
     <datatoken>98</datatoken>
     <abilitytoken>117</abilitytoken>
     <description>Image translation can be considered in two ways: (i) translating an image into text, this option can be found under image understanding, or (ii) as transfer the style from one image to another image. For the latter, you can use e.g. famous paintings as reference style and apply this style to your image. While it uses some models from Machine Learning it is not really ML, but can be seen as a side effect or a different way  of using the models. </description>
-    <output> <![CDATA[A restyled image]]></output>
+    <output><![CDATA[A restyled image]]></output>
     <techterm>Neural style transfer</techterm>
     <examples>
       <ex value='1'>
@@ -224,8 +257,12 @@ However, it can only recognize objects on which it has been trained, so it might
         <eximage>assets/photos/deepart2.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://deepart.io/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/tutorials/generative/style_transfer"></diylink>
-      <source>by: Lawrence Francis (content image: John Cena; style image: starry night by Vincent van Gogh)</source></ex>
+        <source>by: Lawrence Francis (content image: John Cena; style image: starry night by Vincent van Gogh)</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support image data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Text prediction</name>
@@ -246,7 +283,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Possible next word 1 (92 %) <br> Possible next word 2 (8%) <br> OR a predicted value (e.g. 23)]]></output>
+    <output><![CDATA[ Possible next word 1 (92 %) <br> Possible next word 2 (8%) <br> OR a predicted value (e.g. 23)]]></output>
     <techterm>Autocomplete, predictive text, NLP</techterm>
     <examples>
       <ex value='1'>
@@ -255,8 +292,15 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/autocomplete2.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.google.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/analytics-vidhya/build-a-simple-autocomplete-model-with-your-own-google-search-history-ead26b3b6bd4"></diylink>
-      <source>via: Google</source></ex>
+        <source>via: Google</source>
+      </ex>
     </examples>
+    <weka exist='yes'>
+      <instructions>
+        <i1 value="Load the data (open file)"/>
+
+      </instructions>
+    </weka>
   </combi>
   <combi>
     <name>Text classification</name>
@@ -274,7 +318,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <l1 value=""></l1>
       <l2 value=""></l2>
       <l3 value=""></l3>Categories should be predefined, does not understand the text</limitations>
-    <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
+    <output><![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Text classification, NLP</techterm>
     <examples>
       <ex value='1'>
@@ -283,8 +327,20 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/sentimentanalysis.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://monkeylearn.com/sentiment-analysis-online/">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/text/tutorials/text_classification_rnn">Link to DIY</diylink>
-      <source>via: MonkeyLearn sentiment analyzer</source></ex>
+        <source>via: MonkeyLearn sentiment analyzer</source>
+      </ex>
     </examples>
+    <weka exist='yes'>
+      <instructions>
+        <i1 value="Load the data (open file)"/>
+        <i2 value="Apply the filter: StringToWordVector"/>
+        <i3 value="Optional: change the settings of this filter (e.g. choose a stopwordsHandler)"/>
+        <i4 value="Go to the classifier tab"/>
+        <i5 value="Choose the classifier of your choice"/>
+        <i6 value="Press start"/>
+        <i7 value= "Evaluate and compare"/>
+      </instructions>
+    </weka>
   </combi>
   <combi>
     <name>Text identification</name>
@@ -293,7 +349,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
     <datatoken>100</datatoken>
     <abilitytoken>111</abilitytoken>
     <description>Text data might also be used to categorize the identity of a specific individual/item from a trait, given that the text data contains enough information to make distinctions between individuals. For example, the writing style might be linked to a specific writer. However, compared to e.g. facial recognition or fingerprints, text data is less likely to be unique to a person.</description>
-    <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
+    <output><![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Text classification</techterm>
     <examples exist='no'>
       <ex value='1'>
@@ -302,8 +358,20 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <source></source></ex>
+        <source></source>
+      </ex>
     </examples>
+    <weka exist='yes'>
+      <instructions>
+        <i1 value="Load the data (open file)"/>
+        <i2 value="Apply the filter: StringToWordVector"/>
+        <i3 value="Optional: change the settings of this filter (e.g. choose a stopwordsHandler)"/>
+        <i4 value="Go to the classifier tab"/>
+        <i5 value="Choose the classifier of your choice"/>
+        <i6 value="Press start"/>
+        <i7 value= "Evaluate and compare"/>
+      </instructions>
+    </weka>
   </combi>
   <combi>
     <name>Text clustering</name>
@@ -322,7 +390,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Coordinates of the centroids <br> Which words/texts belong to which cluster]]></output>
+    <output><![CDATA[ Coordinates of the centroids <br> Which words/texts belong to which cluster]]></output>
     <techterm>Text clustering, NLP</techterm>
     <examples>
       <ex value='1'>
@@ -331,8 +399,21 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/googlenews.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://news.google.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/making-sense-of-text-clustering-ca649c190b20"></diylink>
-      <source>via: Google News</source></ex>
+        <source>via: Google News</source>
+      </ex>
     </examples>
+    <weka exist='yes'>
+      <instructions>
+        <i1 value="Load the data (open file)"/>
+        <i2 value="Apply the filter: StringToWordVector"/>
+        <i3 value="Optional: change the settings of this filter (e.g. choose a stopwordsHandler)"/>
+        <i4 value="Go to the cluster tab"/>
+        <i5 value="Choose the cluster algorithm of your choice"/>
+        <i6 value="If labels are available in the dataset: select Ignore attributes and select the labels"/>
+        <i7 value="Press start"/>
+        <i8 value= "Evaluate and compare"/>
+      </instructions>
+    </weka>
   </combi>
   <combi>
     <name>Text recommendation</name>
@@ -351,7 +432,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ recommendation 1 <br> recommendation 2 <br> recommendation 3]]></output>
+    <output><![CDATA[ recommendation 1 <br> recommendation 2 <br> recommendation 3]]></output>
     <techterm>Recommender system text, text collaborative filtering, text content based filtering, NLP</techterm>
     <examples>
       <ex value='1'>
@@ -360,8 +441,12 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/linkedin_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.linkedin.com/help/linkedin/answer/11783/job-recommendations-overview?lang=en"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/@armandj.olivares/building-nlp-content-based-recommender-systems-b104a709c042"></diylink>
-      <source>By: Souvik Banerjee on Unsplash</source></ex>
+        <source>By: Souvik Banerjee on Unsplash</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka has limited functionality for handling text data</reason>
+    </weka>
   </combi>
 
   <combi>
@@ -381,7 +466,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[New text]]></output>
+    <output><![CDATA[New text]]></output>
     <techterm>Text generation, generative adversarial network (GAN), NLP</techterm>
     <examples>
       <ex value='1'>
@@ -390,8 +475,12 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/plotgenerator.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.plot-generator.org.uk/">"</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/the-making-of-an-ai-storyteller-c3b8d5a983f5"></diylink>
-      <source>via: https://www.plot-generator.org.uk/</source></ex>
+        <source>via: https://www.plot-generator.org.uk/</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka has limited functionality for handling text data</reason>
+    </weka>
   </combi>
 
   <combi>
@@ -411,7 +500,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
+    <output><![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
     <techterm>Anomaly detection, NLP</techterm>
     <examples>
       <ex value='1'>
@@ -420,8 +509,12 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/uniquemovies.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://smartclick.ai/articles/how-artificial-intelligence-is-used-in-the-film-industry/">"</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.datadriveninvestor.com/unsupervised-outlier-detection-in-text-corpus-using-deep-learning-41d4284a04c8"></diylink>
-      <source>by: Avishek Nag </source></ex>
+        <source>by: Avishek Nag </source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka has limited functionality for handling text data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Text communication</name>
@@ -440,7 +533,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[Text]]></output>
+    <output><![CDATA[Text]]></output>
     <techterm>NLP</techterm>
     <examples>
       <ex value='1'>
@@ -449,8 +542,12 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/duolingo.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.tristatetechnology.com/blog/best-language-learning-chatbot-apps/">"</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/how-to-create-a-chatbot-with-python-deep-learning-in-less-than-an-hour-56a063bdfc44"></diylink>
-      <source>by: https://www.iculture.nl/nieuws/duolingo-chatbots-ios/ (via Duolingo)</source></ex>
+        <source>by: https://www.iculture.nl/nieuws/duolingo-chatbots-ios/ (via Duolingo)</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka has limited functionality for handling text data</reason>
+    </weka>
   </combi>
 
   <combi>
@@ -470,7 +567,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[Text]]></output>
+    <output><![CDATA[Text]]></output>
     <techterm>NLP, text classification</techterm>
     <examples>
       <ex value='1'>
@@ -479,8 +576,12 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/codexplainer.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://gpt3demo.com/apps/repl-it">"</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/analytics-vidhya/ai-generates-code-using-python-and-openais-gpt-3-2ddc95047cba"></diylink>
-      <source>by: Amjad Masad</source></ex>
+        <source>by: Amjad Masad</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka has limited functionality for handling text data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Text translation</name>
@@ -499,7 +600,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[Translated text]]></output>
+    <output><![CDATA[Translated text]]></output>
     <techterm>NLP, machine translation</techterm>
     <examples>
       <ex value='1'>
@@ -508,8 +609,12 @@ For both concepts, the text will need to be preprocessed to make it understandab
         <eximage>assets/photos/googletranslate_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://translate.google.com/">"</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/@ageitgey/build-your-own-google-translate-quality-machine-translation-system-d7dc274bd476"></diylink>
-      <source>by: Rubaitul Azad on Unsplash</source></ex>
+        <source>by: Rubaitul Azad on Unsplash</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka has limited functionality for handling text data</reason>
+    </weka>
   </combi>
 
   <combi>
@@ -530,7 +635,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Possible next value 1 (88 %) <br> Possible next value 2 (12%) <br> OR a predicted value (e.g. 23)]]></output>
+    <output><![CDATA[ Possible next value 1 (88 %) <br> Possible next value 2 (12%) <br> OR a predicted value (e.g. 23)]]></output>
     <techterm>Forecasting, time series regression</techterm>
     <examples>
       <ex value='1'>
@@ -539,8 +644,19 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/stockmarket.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.wallstreetzen.com/stock-screener/stock-forecast"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://data-flair.training/blogs/stock-price-prediction-machine-learning-project-in-python/"></diylink>
-      <source>via: wallstreetzen stock forecasts </source></ex>
+        <source>via: wallstreetzen stock forecasts </source>
+      </ex>
     </examples>
+    <weka exist='yes'>
+      <instructions>
+        <i1 value="Install package timeseriesForecasting (Weka GUI chooser - tools - package manager)"/>
+        <i2 value="Load the data (open file)"/>
+        <i3 value="Go to the Forecast tab"/>
+        <i4 value="Select target attribute"/>
+        <i5 value="Press start"/>
+        <i6 value= "Evaluate and compare"/>
+      </instructions>
+    </weka>
   </combi>
   <combi>
     <name>Time series categorization</name>
@@ -559,7 +675,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
+    <output><![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Time series classification</techterm>
     <examples>
       <ex value='1'>
@@ -568,8 +684,19 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/activityrecognition_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://tinyurl.com/ytms74s9"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://machinelearningmastery.com/how-to-load-and-explore-a-standard-human-activity-recognition-problem/"></diylink>
-      <source>by: Charlotte Karlsen on Unsplash</source></ex>
+        <source>by: Charlotte Karlsen on Unsplash</source>
+      </ex>
     </examples>
+    <weka exist='yes'>
+      <instructions>
+        <i1 value="Load the data (open file)"/>
+        <i2 value="Optional: select filter"/>
+        <i3 value="Go to the classify tab"/>
+        <i4 value="Choose the classifier of your choice"/>
+        <i5 value="Press start"/>
+        <i6 value= "Evaluate and compare"/>
+      </instructions>
+    </weka>
   </combi>
   <combi >
     <name>Time series identification</name>
@@ -588,7 +715,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
+    <output><![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Time series classification</techterm>
     <examples exist='no'>
       <ex value='1'>
@@ -597,8 +724,19 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <source></source></ex>
+        <source></source>
+      </ex>
     </examples>
+    <weka exist='yes'>
+      <instructions>
+        <i1 value="Load the data (open file)"/>
+        <i2 value="Optional: select filter"/>
+        <i3 value="Go to the classify tab"/>
+        <i4 value="Choose the classifier of your choice"/>
+        <i5 value="Press start"/>
+        <i6 value= "Evaluate and compare"/>
+      </instructions>
+    </weka>
   </combi>
   <combi>
     <name>Time series clustering</name>
@@ -617,7 +755,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[ Coordinates of the centroids <br> Which points belong to which cluster]]></output>
+    <output><![CDATA[ Coordinates of the centroids <br> Which points belong to which cluster]]></output>
     <techterm>Time series clustering</techterm>
     <examples>
       <ex value='1'>
@@ -626,10 +764,22 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/earthquake.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.nature.com/articles/s41467-020-17841-x"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/izzettunc/introduction-to-time-series-clustering"></diylink>
-      <source>by: Seydoux, L., Balestriero, R., Poli, P. et al. Clustering earthquake signals and background noises in continuous seismic data with unsupervised deep learning. Nat Commun 11, 3972 (2020). https://doi.org/10.1038/s41467-020-17841-x </source></ex>
+        <source>by: Seydoux, L., Balestriero, R., Poli, P. et al. Clustering earthquake signals and background noises in continuous seismic data with unsupervised deep learning. Nat Commun 11, 3972 (2020). https://doi.org/10.1038/s41467-020-17841-x </source>
+      </ex>
     </examples>
+    <weka exist='yes'>
+      <instructions>
+        <i1 value="Load the data (open file)"/>
+        <i2 value="Optional: select filter"/>
+        <i4 value="Go to the cluster tab"/>
+        <i5 value="Choose the cluster algorithm of your choice"/>
+        <i6 value="If labels are available in the dataset: select Ignore attributes and select the labels"/>
+        <i7 value="Press start"/>
+        <i8 value= "Evaluate and compare"/>
+      </instructions>
+    </weka>
   </combi>
-    <combi>
+  <combi>
     <name>Time series recommendation</name>
     <datatype>Time series</datatype>
     <ability>Recommend</ability>
@@ -646,7 +796,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Recommendation 1 <br> Recommendation 2 <br> Recommendation 3 ]]></output>
+    <output><![CDATA[ Recommendation 1 <br> Recommendation 2 <br> Recommendation 3 ]]></output>
     <techterm>Time series recommender systems, latent dirichlet allocation time series</techterm>
     <examples>
       <ex value='1'>
@@ -655,8 +805,12 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/netflix_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://help.netflix.com/en/node/100639"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/create-a-recommendation-system-based-on-time-series-data-using-latent-dirichlet-allocation-2aa141b99e19"></diylink>
-      <source>by: Thibault Penin on Unsplash</source></ex>
+        <source>by: Thibault Penin on Unsplash</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support recommender systems</reason>
+    </weka>
   </combi>
   <combi>
     <name>Synthetic time series</name>
@@ -675,7 +829,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[New time series]]></output>
+    <output><![CDATA[New time series]]></output>
     <techterm>Generative adversarial networks (GAN), synthetic time series</techterm>
     <examples>
       <ex value='1'>
@@ -684,9 +838,13 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/synthetictimeseries.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.osti.gov/servlets/purl/1607585"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/creating-synthetic-time-series-data-67223ff08e34"></diylink>
-      <source>by: Zhang, Chi, Kuppannagari, Sanmukh, Kannan, Rajgopal, and Prasanna, Viktor K. Generative Adversarial Network for Synthetic Time Series Data Generation in Smart Grids. United States. https://doi.org/10.1109/SmartGridComm.2018.8587464
-</source></ex>
+        <source>by: Zhang, Chi, Kuppannagari, Sanmukh, Kannan, Rajgopal, and Prasanna, Viktor K. Generative Adversarial Network for Synthetic Time Series Data Generation in Smart Grids. United States. https://doi.org/10.1109/SmartGridComm.2018.8587464
+        </source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support generative algorithms</reason>
+    </weka>
   </combi>
   <combi>
     <name>Distinguishing time series</name>
@@ -705,7 +863,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
+    <output><![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
     <techterm>Anomaly detection</techterm>
     <examples>
       <ex value='1'>
@@ -714,7 +872,8 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/heartanomaly.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://ieeexplore.ieee.org/document/7344872"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/devavratatripathy/ecg-anomaly-detection-using-autoencoders"></diylink>
-      <source>by: S. Chauhan and L. Vig, "Anomaly detection in ECG time signals via deep long short-term memory networks," 2015 IEEE International Conference on Data Science and Advanced Analytics (DSAA), 2015, pp. 1-7, doi: 10.1109/DSAA.2015.7344872.</source></ex>
+        <source>by: S. Chauhan and L. Vig, "Anomaly detection in ECG time signals via deep long short-term memory networks," 2015 IEEE International Conference on Data Science and Advanced Analytics (DSAA), 2015, pp. 1-7, doi: 10.1109/DSAA.2015.7344872.</source>
+      </ex>
     </examples>
   </combi>
   <combi exist='no' NLP='yes'>
@@ -734,7 +893,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
+    <output><![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
     <techterm>Anomaly detection</techterm>
     <examples>
       <ex value='1'>
@@ -743,8 +902,12 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <source></source></ex>
+        <source></source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support NLP algorithms</reason>
+    </weka>
   </combi>
 
   <combi>
@@ -764,7 +927,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[Labels or text]]></output>
+    <output><![CDATA[Labels or text]]></output>
     <techterm>Time series classification</techterm>
     <examples>
       <ex value='1'>
@@ -773,8 +936,12 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/signlanguage.jfif</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://iopscience.iop.org/article/10.1088/1742-6596/1019/1/012017/pdf"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://cainvas.ai-tech.systems/use-cases/sign-language-sensor-app/"></diylink>
-      <source>by: Radzi Ambar et al 2018 J. Phys.: Conf. Ser. 1019 012017</source></ex>
+        <source>by: Radzi Ambar et al 2018 J. Phys.: Conf. Ser. 1019 012017</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support NLP algorithms</reason>
+    </weka>
   </combi>
   <combi exist='no' NLP='yes'>
     <name></name>
@@ -793,7 +960,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Label 5 (86%), Label 3 (14%) <br/> OR a predicted value (e.g. 453)]]></output>
+    <output><![CDATA[ Label 5 (86%), Label 3 (14%) <br/> OR a predicted value (e.g. 453)]]></output>
     <techterm></techterm>
     <examples>
       <ex value='1'>
@@ -802,7 +969,8 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <source></source></ex>
+        <source></source>
+      </ex>
     </examples>
   </combi>
   <combi exist='no' NLP='yes'>
@@ -822,7 +990,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Label 5 (86%), Label 3 (14%) <br/> OR a predicted value (e.g. 453)]]></output>
+    <output><![CDATA[ Label 5 (86%), Label 3 (14%) <br/> OR a predicted value (e.g. 453)]]></output>
     <techterm></techterm>
     <examples>
       <ex value='1'>
@@ -831,8 +999,12 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <source></source></ex>
+        <source></source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support audio data</reason>
+    </weka>
   </combi>
 
   <combi>
@@ -852,7 +1024,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
+    <output><![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Audio classification</techterm>
     <examples>
       <ex value='1'>
@@ -861,8 +1033,12 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/legoduplostories_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.amazon.com/LEGO-System-A-S-Stories/dp/B07C225J2T"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/tutorials/audio/simple_audio"></diylink>
-      <source>by: Sven Brandsma on Unsplash</source></ex>
+        <source>by: Sven Brandsma on Unsplash</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support audio data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Audio identification</name>
@@ -881,7 +1057,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Label 5 (86%), Label 3 (14%) <br/> OR a predicted value (e.g. 453)]]></output>
+    <output><![CDATA[ Label 5 (86%), Label 3 (14%) <br/> OR a predicted value (e.g. 453)]]></output>
     <techterm>Audio classification, NLP</techterm>
     <examples>
       <ex value='1'>
@@ -890,8 +1066,12 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/voicematch.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://support.google.com/chromecast/answer/9071681"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/jurgenarias/Portfolio/tree/master/Voice%20Classification"></diylink>
-      <source>by: Ryne Hager (via Google)</source></ex>
+        <source>by: Ryne Hager (via Google)</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support audio data</reason>
+    </weka>
   </combi>
 
   <combi>
@@ -911,7 +1091,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[ Coordinates of the centroids <br> Which audio samples belong to which cluster]]></output>
+    <output><![CDATA[ Coordinates of the centroids <br> Which audio samples belong to which cluster]]></output>
     <techterm>Audio clustering</techterm>
     <examples>
       <ex value='1'>
@@ -920,8 +1100,12 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/birdsounds.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://experiments.withgoogle.com/ai/bird-sounds/view/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/clustering-music-to-create-your-personal-playlists-on-spotify-using-python-and-k-means-a39c4158589a"></diylink>
-      <source>via: https://experiments.withgoogle.com/ai/bird-sounds/view/</source></ex>
+        <source>via: https://experiments.withgoogle.com/ai/bird-sounds/view/</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support audio data</reason>
+    </weka>
   </combi>
 
   <combi>
@@ -941,7 +1125,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[ recommendation 1 <br> recommendation 2 <br> recommendation 3 ]]></output>
+    <output><![CDATA[ recommendation 1 <br> recommendation 2 <br> recommendation 3 ]]></output>
     <techterm>Recommender system audio, collaborative filtering audio, content based filtering audio</techterm>
     <examples>
       <ex value='1'>
@@ -950,8 +1134,12 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/spotify_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.spotify.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/making-your-own-discover-weekly-f1ac7546fedb"></diylink>
-      <source>by: Thibault Penin on Unsplash</source></ex>
+        <source>by: Thibault Penin on Unsplash</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support audio data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Audio generation</name>
@@ -970,7 +1158,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[New audio]]></output>
+    <output><![CDATA[New audio]]></output>
     <techterm>Audio synthesis, generative adversarial networks (GAN)</techterm>
     <examples>
       <ex value='1'>
@@ -979,8 +1167,12 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/aiva.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.aiva.ai/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/neuronio/audio-generation-with-gans-428bc2de5a89"></diylink>
-      <source>by: AIVA</source></ex>
+        <source>by: AIVA</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support audio data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Distinguish audio</name>
@@ -999,7 +1191,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
+    <output><![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
     <techterm>Audio anomaly detection</techterm>
     <examples exist='no'>
       <ex value='1'>
@@ -1008,8 +1200,12 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <source></source></ex>
+        <source></source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support audio data</reason>
+    </weka>
   </combi>
 
   <combi>
@@ -1029,7 +1225,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[Speech]]></output>
+    <output><![CDATA[Speech]]></output>
     <techterm>NLP, text to speech</techterm>
     <examples>
       <ex value='1'>
@@ -1038,8 +1234,12 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/digitalhuman.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://digitalhumans.com/what-are-digital-humans/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/human2b"></diylink>
-      <source>by: Uneeq</source></ex>
+        <source>by: Uneeq</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support audio data</reason>
+    </weka>
   </combi>
 
   <combi>
@@ -1059,7 +1259,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[Text or actions]]></output>
+    <output><![CDATA[Text or actions]]></output>
     <techterm>Classification, NLP, Automatic Speech Recognition (ASR)</techterm>
     <examples>
       <ex value='1'>
@@ -1068,8 +1268,12 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/smartassistants_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://en.wikipedia.org/wiki/Amazon_Alexa"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/how-to-build-your-own-ai-personal-assistant-using-python-f57247b4494b"></diylink>
-      <source>by: Thomas Kolnowski on Unsplash</source></ex>
+        <source>by: Thomas Kolnowski on Unsplash</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support audio data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Audio translation</name>
@@ -1088,7 +1292,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[Translated text or speech]]></output>
+    <output><![CDATA[Translated text or speech]]></output>
     <techterm>NLP, Speech to text, machine translation</techterm>
     <examples>
       <ex value='1'>
@@ -1097,8 +1301,12 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/livetranslate.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://translator.microsoft.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.geeksforgeeks.org/create-a-real-time-voice-translator-using-python/"></diylink>
-      <source>by: Microsoft</source></ex>
+        <source>by: Microsoft</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support audio data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Predictions based on tabular data</name>
@@ -1117,7 +1325,8 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Label 5 (82%), Label 3 (18%) <br/> OR a predicted value (e.g. 23)]]></output>    <techterm>Regression, classification</techterm>
+    <output><![CDATA[ Label 5 (82%), Label 3 (18%) <br/> OR a predicted value (e.g. 23)]]></output>
+    <techterm>Regression, classification</techterm>
     <examples>
       <ex value='1'>
         <exname>Credit card fraud detection</exname>
@@ -1126,8 +1335,12 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/creditcardfraud_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.mastercard.us/en-us/business/issuers/business-payments/fraud-prevention.html"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/credit-card-fraud-detection-using-machine-learning-python-5b098d4a8edc"></diylink>
-      <source>by: Mark OFlynn on Unsplash</source></ex>
+        <source>by: Mark OFlynn on Unsplash</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka has limited functionality for handling tabular data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Categorize tabular data</name>
@@ -1146,7 +1359,7 @@ Based on all columns, except the one with the labels, the model will try to pred
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
+    <output><![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Classification</techterm>
     <examples>
       <ex value='1'>
@@ -1155,8 +1368,19 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/penguins.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://allisonhorst.github.io/palmerpenguins/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/mcnakhaee/palmerpenguins"></diylink>
-      <source>by: @allison_horst</source></ex>
+        <source>by: @allison_horst</source>
+      </ex>
     </examples>
+    <weka exist='yes'>
+      <instructions>
+        <i1 value="Load the data (open file)"/>
+        <i2 value="Optional: select filter"/>
+        <i3 value="Go to the classify tab"/>
+        <i4 value="Choose the classifier of your choice"/>
+        <i5 value="Press start"/>
+        <i6 value= "Evaluate and compare"/>
+      </instructions>
+    </weka>
   </combi>
   <combi>
     <name>Tabular data identification</name>
@@ -1175,17 +1399,28 @@ Based on all columns, except the one with the labels, the model will try to pred
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
+    <output><![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Classification tabular data</techterm>
-    <examples  exist='no'>
+    <examples exist='no'>
       <ex value='1'>
         <exname></exname>
         <exdescription></exdescription>
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <source></source></ex>
+        <source></source>
+      </ex>
     </examples>
+    <weka exist='yes'>
+      <instructions>
+        <i1 value="Load the data (open file)"/>
+        <i2 value="Optional: select filter"/>
+        <i3 value="Go to the classify tab"/>
+        <i4 value="Choose the classifier of your choice"/>
+        <i5 value="Press start"/>
+        <i6 value= "Evaluate and compare"/>
+      </instructions>
+    </weka>
   </combi>
   <combi>
     <name>Clustering tabular data</name>
@@ -1204,7 +1439,7 @@ Based on all columns, except the one with the labels, the model will try to pred
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[ Coordinates of the centroids <br> Which instances belong to which cluster]]></output>
+    <output><![CDATA[ Coordinates of the centroids <br> Which instances belong to which cluster]]></output>
     <techterm>Clustering</techterm>
     <examples>
       <ex value='1'>
@@ -1213,8 +1448,21 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/mlabilities_icon_cluster.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.segmentify.com/blog/customer-consumer-user-segmentation-examples"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/codex/customer-segmentation-with-k-means-in-python-18336fb915be"></diylink>
-      <source>by: original image</source></ex>
+        <source>by: original image</source>
+      </ex>
     </examples>
+    <weka exist='yes'>
+      <instructions>
+        <i1 value="Load the data (open file)"/>
+        <i2 value="Optional: select filter"/>
+        <i4 value="Go to the cluster tab"/>
+        <i5 value="Choose the cluster algorithm of your choice"/>
+        <i6 value="If labels are available in the dataset: select Ignore attributes and select the labels"/>
+        <i7 value="Press start"/>
+        <i8 value= "Evaluate and compare"/>
+      </instructions>
+    </weka>
+
   </combi>
 
   <combi>
@@ -1234,7 +1482,7 @@ Based on all columns, except the one with the labels, the model will try to pred
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[ Recommendation 1 <br> Recommendation 2 <br> Recommendation 3 ]]></output>
+    <output><![CDATA[ Recommendation 1 <br> Recommendation 2 <br> Recommendation 3 ]]></output>
     <techterm>Recommender system, collaborative filtering, content based filtering</techterm>
     <examples>
       <ex value='1'>
@@ -1243,8 +1491,12 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/amazon_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.amazon.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/saurav9786/recommender-system-using-amazon-reviews"></diylink>
-      <source>by: Christian Wiediger on Unsplash</source></ex>
+        <source>by: Christian Wiediger on Unsplash</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support recommender systems</reason>
+    </weka>
   </combi>
   <combi>
     <name>Synthetic tabular data</name>
@@ -1263,7 +1515,7 @@ Based on all columns, except the one with the labels, the model will try to pred
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[New table]]></output>
+    <output><![CDATA[New table]]></output>
     <techterm>Generative adversarial networks (GAN), synthetic tabular data</techterm>
     <examples>
       <ex value='1'>
@@ -1272,8 +1524,12 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/tonic.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.tonic.ai/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/analytics-vidhya/a-step-by-step-guide-to-generate-tabular-synthetic-dataset-with-gans-d55fc373c8db"></diylink>
-      <source>by: TONIC.ai</source></ex>
+        <source>by: TONIC.ai</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support generative algorithms</reason>
+    </weka>
   </combi>
   <combi>
     <name>Distinguish tabular data</name>
@@ -1292,7 +1548,7 @@ Based on all columns, except the one with the labels, the model will try to pred
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
+    <output><![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
     <techterm>Anomaly detection</techterm>
     <examples>
       <ex value='1'>
@@ -1301,8 +1557,12 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/amazonmonitron.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://aws.amazon.com/monitron/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/anomaly-detection-in-manufacturing-part-1-an-introduction-8c29f70fc68b"></diylink>
-      <source>by: Amazon Monitron</source></ex>
+        <source>by: Amazon Monitron</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka has limited functionality for handling tabular data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Table communication</name>
@@ -1311,7 +1571,7 @@ Based on all columns, except the one with the labels, the model will try to pred
     <datatoken>99</datatoken>
     <abilitytoken>113</abilitytoken>
     <description>In tabular data, instances are stored as rows and features as columns. In each cell, numerical or textual data (or a different type of data) can be stored. Using the information in the cells, ML models can communicate in human language what is being presented in the table.
-</description>
+    </description>
     <capabilities>
       <c1 value=""></c1>
       <c2 value=""></c2>
@@ -1322,7 +1582,7 @@ Based on all columns, except the one with the labels, the model will try to pred
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[Written text or speech]]></output>
+    <output><![CDATA[Written text or speech]]></output>
     <techterm>Table to text</techterm>
     <examples>
       <ex value='1'>
@@ -1331,8 +1591,12 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/totto.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://ai.googleblog.com/2021/01/totto-controlled-table-to-text.html"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/google-research-datasets/totto"></diylink>
-      <source>by: Google Research</source></ex>
+        <source>by: Google Research</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support NLP algorithms</reason>
+    </weka>
   </combi>
   <combi>
     <name>Understanding tabular data</name>
@@ -1341,7 +1605,7 @@ Based on all columns, except the one with the labels, the model will try to pred
     <datatoken>99</datatoken>
     <abilitytoken>122</abilitytoken>
     <description>Tabular data is structured data, this makes it for ML models in general easier to use for learning as it doesn't need preprocessing. However, for understanding tabular data, it should have labels that describe the meaning of the information in the table and this can be challenging to collect. If the information in the table is textual data, it could be treated as text + understand.
-</description>
+    </description>
     <capabilities>
       <c1 value=""></c1>
       <c2 value=""></c2>
@@ -1352,18 +1616,22 @@ Based on all columns, except the one with the labels, the model will try to pred
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[Written text or speech]]></output>
+    <output><![CDATA[Written text or speech]]></output>
     <techterm>NLP, tabular data</techterm>
     <examples>
       <ex value='1'>
         <exname>Ask Questions to Tabular Data using Voice</exname>
         <exdescription>This example shows how you can use multiple ML models together to first ask your question using your voice, next transform your speech to text, and finally find the answer to the question in the table.
-</exdescription>
+        </exdescription>
         <eximage>assets/photos/tableunderstand.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/bhattbhavesh91/table-question-answering-with-automatic-speech-recognition"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/bhattbhavesh91/table-question-answering-with-automatic-speech-recognition"></diylink>
-      <source>by: Bhavesh Bhatt</source></ex>
+        <source>by: Bhavesh Bhatt</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support NLP algorithms</reason>
+    </weka>
   </combi>
   <combi>
     <name>Translating text in tables</name>
@@ -1372,7 +1640,7 @@ Based on all columns, except the one with the labels, the model will try to pred
     <datatoken>99</datatoken>
     <abilitytoken>117</abilitytoken>
     <description>If your tabular data consists of natural language (i.e. words and sentences), then ML models normally used for translating text from one language to another could also be applied to the text in each cell.
-</description>
+    </description>
     <capabilities>
       <c1 value=""></c1>
       <c2 value=""></c2>
@@ -1383,7 +1651,7 @@ Based on all columns, except the one with the labels, the model will try to pred
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[Written text or speech]]></output>
+    <output><![CDATA[Written text or speech]]></output>
     <techterm>NLP, machine translation</techterm>
     <examples>
       <ex value='1'>
@@ -1392,8 +1660,12 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/excel_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://support.microsoft.com/en-us/office/translate-text-into-a-different-language-287380e4-a56c-48a1-9977-f2dca89ce93f"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/@ageitgey/build-your-own-google-translate-quality-machine-translation-system-d7dc274bd476"></diylink>
-      <source>by: Rubaitul Azad on Unsplash</source></ex>
+        <source>by: Rubaitul Azad on Unsplash</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support NLP algorithms</reason>
+    </weka>
   </combi>
   <combi>
     <name>Video prediction</name>
@@ -1412,7 +1684,7 @@ Based on all columns, except the one with the labels, the model will try to pred
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Possible next frame 1 (92%) <br> Possible next frame 2 (8%) <br> OR a predicted value (e.g. 67)]]></output>
+    <output><![CDATA[ Possible next frame 1 (92%) <br> Possible next frame 2 (8%) <br> OR a predicted value (e.g. 67)]]></output>
     <techterm>Video prediction</techterm>
     <examples>
       <ex value='1'>
@@ -1421,8 +1693,12 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/selfdrivingcars.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.youtube.com/watch?v=yEtH23rKY8Q"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/deeppicar-part-1-102e03c83f2c"></diylink>
-      <source>by: NVIDIA (https://blogs.nvidia.com/blog/2020/07/22/drive-labs-predictionnet-self-driving-cars-future/)</source></ex>
+        <source>by: NVIDIA (https://blogs.nvidia.com/blog/2020/07/22/drive-labs-predictionnet-self-driving-cars-future/)</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support video data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Video classification</name>
@@ -1442,7 +1718,7 @@ Another option is to see each frame of the video as an image and have labels for
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
+    <output><![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Video classification</techterm>
     <examples>
       <ex value='1'>
@@ -1451,8 +1727,12 @@ Another option is to see each frame of the video as an image and have labels for
         <eximage>assets/photos/zenia.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://zenia.app/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://thecodingtrain.com/learning/ml5/7.1-posenet.html"></diylink>
-      <source>by: Zenia</source></ex>
+        <source>by: Zenia</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support video data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Video clustering</name>
@@ -1471,7 +1751,7 @@ Another option is to see each frame of the video as an image and have labels for
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[ Coordinates of the centroids <br> Which videos belong to which cluster]]></output>
+    <output><![CDATA[ Coordinates of the centroids <br> Which videos belong to which cluster]]></output>
     <techterm>Video clustering</techterm>
     <examples>
       <ex value='1'>
@@ -1480,8 +1760,12 @@ Another option is to see each frame of the video as an image and have labels for
         <eximage>assets/photos/videocluster.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.researchgate.net/publication/266032463_Video_Summarization_Using_Clustering"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <source>by: Chheng, Tommy. (2011). Video Summarization Using Clustering. </source></ex>
+        <source>by: Chheng, Tommy. (2011). Video Summarization Using Clustering. </source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support video data</reason>
+    </weka>
   </combi>
 
   <combi>
@@ -1501,7 +1785,7 @@ Another option is to see each frame of the video as an image and have labels for
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[ recommendation 1 <br> recommendation 2 <br> recommendation 3]]></output>
+    <output><![CDATA[ recommendation 1 <br> recommendation 2 <br> recommendation 3]]></output>
     <techterm>Recommender system video, collaborative filtering video, content based filtering video</techterm>
     <examples>
       <ex value='1'>
@@ -1510,9 +1794,12 @@ Another option is to see each frame of the video as an image and have labels for
         <eximage>assets/photos/youtube_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.youtube.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.datacamp.com/community/tutorials/recommender-systems-python"></diylink>
-      <source>by: Christian Wiediger on Unsplash</source>
-    </ex>
+        <source>by: Christian Wiediger on Unsplash</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support video data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Video generation</name>
@@ -1531,7 +1818,7 @@ Another option is to see each frame of the video as an image and have labels for
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[New video]]></output>
+    <output><![CDATA[New video]]></output>
     <techterm>Video generative adversarial network (GAN)</techterm>
     <examples>
       <ex value='1'>
@@ -1540,7 +1827,8 @@ Another option is to see each frame of the video as an image and have labels for
         <eximage>assets/photos/deepfake.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://edition.cnn.com/interactive/2019/01/business/pentagons-race-against-deepfakes/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/xaliceli/video-GAN"></diylink>
-      <source>by: Justin Weiss, Shane Csontos-Popko, Padraic Driscoll (CNN business)</source></ex>
+        <source>by: Justin Weiss, Shane Csontos-Popko, Padraic Driscoll (CNN business)</source>
+      </ex>
     </examples>
   </combi>
   <combi>
@@ -1561,7 +1849,7 @@ Next to that, videos can also contain audio and for this you can audio identific
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-  <output> <![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
+    <output><![CDATA[ Label 5 (60%) <br/> Label 3 (23%) <br/> Label 2 (17%)]]></output>
     <techterm>Facial recognition</techterm>
     <examples>
       <ex value='1'>
@@ -1570,8 +1858,12 @@ Next to that, videos can also contain audio and for this you can audio identific
         <eximage>assets/photos/faceid.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://support.apple.com/en-us/HT208108"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/ageitgey/face_recognition"></diylink>
-      <source>by: Apple </source></ex>
+        <source>by: Apple </source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support video data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Distinguish video data</name>
@@ -1590,7 +1882,7 @@ Next to that, videos can also contain audio and for this you can audio identific
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
+    <output><![CDATA[ Possible outlier 1 <br> Possible outlier 2]]></output>
     <techterm>Anomaly detection</techterm>
     <examples exist='no'>
       <ex value='1'>
@@ -1599,8 +1891,12 @@ Next to that, videos can also contain audio and for this you can audio identific
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <source></source></ex>
+        <source></source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support video data</reason>
+    </weka>
   </combi>
   <combi exist='no' NLP='yes'>
     <name></name>
@@ -1619,7 +1915,7 @@ Next to that, videos can also contain audio and for this you can audio identific
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[Written text or speech]]></output>
+    <output><![CDATA[Written text or speech]]></output>
     <techterm></techterm>
     <examples>
       <ex value='1'>
@@ -1628,8 +1924,12 @@ Next to that, videos can also contain audio and for this you can audio identific
         <eximage>assets/photos/</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href=""></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href=""></diylink>
-      <source></source></ex>
+        <source></source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support video data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Video understanding</name>
@@ -1648,7 +1948,7 @@ Next to that, videos can also contain audio and for this you can audio identific
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-        <output> <![CDATA[Written text]]></output>
+    <output><![CDATA[Written text]]></output>
     <techterm>NLP, speech to text, image to text</techterm>
     <examples>
       <ex value='1'>
@@ -1657,8 +1957,12 @@ Next to that, videos can also contain audio and for this you can audio identific
         <eximage>assets/photos/youtube_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://support.google.com/youtube/answer/6373554"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://pypi.org/project/autosub/"></diylink>
-      <source>by: Christian Wiediger on Unsplash</source></ex>
+        <source>by: Christian Wiediger on Unsplash</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support video data</reason>
+    </weka>
   </combi>
   <combi>
     <name>Video translation</name>
@@ -1677,7 +1981,7 @@ Next to that, videos can also contain audio and for this you can audio identific
       <l2 value=""></l2>
       <l3 value=""></l3>
     </limitations>
-    <output> <![CDATA[Video in a different style]]></output>
+    <output><![CDATA[Video in a different style]]></output>
     <techterm>Neural style transfer</techterm>
     <examples>
       <ex value='1'>
@@ -1686,7 +1990,11 @@ Next to that, videos can also contain audio and for this you can audio identific
         <eximage>assets/photos/videostyletransfer.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://rcorin.medium.com/video-style-transfer-with-art-app-d0d73abe7963"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/neural-style-transfer-on-real-time-video-with-full-implementable-code-ac2dbc0e9822"></diylink>
-      <source>by: Ricardo Corin (via art.app)</source></ex>
+        <source>by: Ricardo Corin (via art.app)</source>
+      </ex>
     </examples>
+    <weka exist='no'>
+      <reason>Weka does not support video data</reason>
+    </weka>
   </combi>
 </combinations>
