@@ -506,10 +506,10 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <ex value='1'>
         <exname>Google Translate</exname>
         <exdescription>Google Translate recognizes the input text and predicts which language it is, or you can select the input language manually. Next it will translate the whole text to the output language and also give some possible alternatives, e.g. synonyms.</exdescription>
-        <eximage>assets/photos/googletranslate_nc.jpg</eximage>
+        <eximage>assets/photos/googletranslate.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://translate.google.com/">"</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/@ageitgey/build-your-own-google-translate-quality-machine-translation-system-d7dc274bd476"></diylink>
-      <source>by: Rubaitul Azad on Unsplash</source></ex>
+      <source>via: Google</source></ex>
     </examples>
   </combi>
 
@@ -537,7 +537,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>Stock market</exname>
         <exdescription>While perfect stock market predictions are not (yet) possible, it is possible to recognize some general trends based on time series data. For the stock market, it is important to take the time component into account, which is why time series data is used. So based on the historic data, the model will try to find patterns and use these to predict the future.</exdescription>
-        <eximage>assets/photos/stockmarket_unsplash.JPG</eximage>
+        <eximage>assets/photos/stockmarket_unsplash.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.wallstreetzen.com/stock-screener/stock-forecast"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://data-flair.training/blogs/stock-price-prediction-machine-learning-project-in-python/"></diylink>
       <source>by: Nick Chong on Unsplash </source></ex>
@@ -1332,7 +1332,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/totto.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://ai.googleblog.com/2021/01/totto-controlled-table-to-text.html"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/google-research-datasets/totto"></diylink>
-      <source>by: Google Research</source></ex>
+      <source>by: Ankur Parikh and Xuezhi Wang, Research Scientists, Google Research</source></ex>
     </examples>
   </combi>
   <combi>
@@ -1360,10 +1360,10 @@ Based on all columns, except the one with the labels, the model will try to pred
         <exname>Ask Questions to Tabular Data using Voice</exname>
         <exdescription>This example shows how you can use multiple ML models together to first ask your question using your voice, next transform your speech to text, and finally find the answer to the question in the table.
 </exdescription>
-        <eximage>assets/photos/tableunderstand.jpg</eximage>
+        <eximage>assets/photos/questionmark.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/bhattbhavesh91/table-question-answering-with-automatic-speech-recognition"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/bhattbhavesh91/table-question-answering-with-automatic-speech-recognition"></diylink>
-      <source>by: Bhavesh Bhatt</source></ex>
+      <source>by: Towfiqu barbhuiya on Unsplash</source></ex>
     </examples>
   </combi>
   <combi>
