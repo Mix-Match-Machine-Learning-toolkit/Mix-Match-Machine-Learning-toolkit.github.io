@@ -1680,7 +1680,7 @@ Next to that, videos can also contain audio and for this you can audio identific
     </limitations>
     <output> <![CDATA[Video in a different style]]></output>
     <techterm>Neural style transfer</techterm>
-    <examples>
+    <examples exist='no'>
       <ex value='1'>
         <exname>EbSynth - Video style transfer</exname>
         <exdescription>With video style transfer you can give your video for example an animated look. You select a reference style and next this style will be transferred to your video frame for frame. To make sure that the frames still match, this is done sequentially so that the new frame can be connected to the previous frame,</exdescription>
