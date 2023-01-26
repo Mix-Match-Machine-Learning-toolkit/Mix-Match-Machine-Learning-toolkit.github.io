@@ -1,0 +1,41 @@
+<div id="Classifier">
+    <div class="input">
+        <h3 class="exampleHeader">Landmark identifier</h3>
+        <p style="width:80%;">This model can identify landmarks in <b>Europe</b> based on images</p>
+        <p><span class='bold'>Model: </span> <a
+                href="https://tfhub.dev/google/on_device_vision/classifier/landmarks_classifier_europe_V1/1" target="_blank"
+                rel="noreferrer noopener">TensorFlow Hub </a>
+            <br>
+            <span class='bold'>Data: </span><a href="https://ai.googleblog.com/2019/05/announcing-google-landmarks-v2-improved.html" target="_blank"
+                rel="noreferrer noopener">Google-Landmarks-v2</a>
+        </p>
+        <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile2(event)" style="display: none;">
+        </p>
+      
+        <img id="landmarkImage" src="/assets/photos/eiffeltower.jpg"></img>
+        <p><label for="file" style="cursor: pointer;" class="uploadButton"><i class="fa fa-upload"></i> Upload image</label></p>
+        <div class="buttondiv">
+            
+            <a href="#" id='buttonClassify' class="buttonFancy" onclick="identifyImage(); return false;">Identify</a>
+        </div>
+
+    </div>
+
+    <div id="predictions">
+        <p class="bold">Prediction:</p>
+        <div class="labels_prob">
+            <div class="labels">
+
+                <p>
+                    <span id="label1"></span>
+                    
+                </p>
+            </div>
+            <div class="probablities">
+                <p>
+                    <span id="prob1"></span>
+                                  </p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,25 +1,13 @@
 let textClassModel;
 
 async function chooseMLmodel(token1, token2) {
-    //text classification (100, 109)
-    if (token1 == 100 & token2 == 109) {
-        loadInteractiveExample("textClassification.html");
-        loadTextClassification();
-    }
-    //image classification (98, 109)
-    if (token1 == 98 & token2 == 109) {
-        loadInteractiveExample("imageClassification.html");
-        // loadImageClassification();
-    }
-    //image classification (97, 109)
+    //audio  classification (97, 109)
     if (token1 == 97 & token2 == 109) {
         loadInteractiveExample("audioClassification.html");
 
     }
-    //table classification (99, 109)
-    if (token1 == 99 & token2 == 109) {
-        loadInteractiveExample("tableClassification.html");
-    }
+
+
     // audio understand (97, 122)
     if (token1 == 97 & token2 == 122) {
         loadInteractiveExample("audioUnderstand.html");
@@ -31,6 +19,94 @@ async function chooseMLmodel(token1, token2) {
         loadInteractiveExample("audioCommunicate.html");
 
     }
+
+
+    //image classification (98, 109)
+    if (token1 == 98 & token2 == 109) {
+        loadInteractiveExample("imageClassification.html");
+        // loadImageClassification();
+    }
+    // image identification (98, 111)
+    if (token1 == 98 & token2 == 111) {
+        loadInteractiveExample("imageIdentify.html");
+
+    }
+
+    // image communicate(98, 113)
+    if (token1 == 98 & token2 == 113) {
+        loadInteractiveExample("imageCommunicate.html");
+
+    }
+
+    // image understand(98, 122)
+    if (token1 == 98 & token2 == 122) {
+        loadInteractiveExample("imageUnderstand.html");
+
+    }
+
+    // image translate(98, 117)
+    if (token1 == 98 & token2 == 117) {
+        loadInteractiveExample("imageTranslate.html");
+
+    }
+
+    // // image generate(104, 115)
+    // if (token1 == 104 & token2 == 115) {
+    //     loadInteractiveExample("imageGenerate.html");
+
+    // }
+
+
+    //table classification (99, 109)
+    if (token1 == 99 & token2 == 109) {
+        loadInteractiveExample("tableClassification.html");
+    }
+
+    //table understand (99, 122)
+    if (token1 == 99 & token2 == 122) {
+        loadInteractiveExample("tableUnderstand.html");
+    }
+
+    //table recommendation (105, 116)
+    if (token1 == 105 & token2 == 116) {
+        loadInteractiveExample("tableRecommend.html");
+    }
+
+    //text classification (100, 109)
+    if (token1 == 100 & token2 == 109) {
+        loadInteractiveExample("textClassification.html");
+        loadTextClassification();
+    }
+    //text translation (100, 117)
+    if (token1 == 100 & token2 == 117) {
+        loadInteractiveExample("textTranslate.html");
+    }
+    //text understand (100, 122)
+    if (token1 == 100 & token2 == 122) {
+        loadInteractiveExample("textUnderstand.html");
+    }
+
+    //text communicate (100, 113)
+    if (token1 == 100 & token2 == 113) {
+        loadInteractiveExample("textCommunicate.html");
+    }
+
+    //text generate (106, 115)
+    if (token1 == 106 & token2 == 115) {
+        loadInteractiveExample("textGenerate.html");
+    }
+
+    //timeseries foresee (101, 110)
+    if (token1 == 101 & token2 == 110) {
+        loadInteractiveExample("timeseriesForecast.html");
+    }
+
+    //video classification (102, 109)
+    if (token1 == 102 & token2 == 109) {
+        loadInteractiveExample("videoClassification.html");
+        loadTextClassification();
+    }
+
 
 }
 
@@ -49,7 +125,7 @@ function loadInteractiveExample(path) {
             if (path == 'audioUnderstand.html') {
                 recognizeSpeech();
             }
-            if (path=='audioCommunicate.html'){
+            if (path == 'audioCommunicate.html') {
                 textToSpeech();
                 // document.getElementById("rate").addEventListener("input", function () { showSliderValue("rate", "rate-bullet"); }, false);
                 // document.getElementById("pitch").addEventListener("input", function () { showSliderValue("pitch", "pitch-bullet"); }, false);
@@ -124,6 +200,51 @@ async function classifyImage() {
     console.log(document.getElementById('label2').offsetHeight, document.getElementById('prob2').offsetHeight);
 
 }
+
+//-------------- Image Identification - Google Landmarks ----------------------------------------------
+var loadFile2 = function (event) {
+    var image = document.getElementById('landmarkImage');
+    image.src = URL.createObjectURL(event.target.files[0]);
+};
+async function identifyImage() {
+    document.getElementById('buttonClassify').innerHTML = 'Identifying';
+    const modelPath = '/assets/MLmodels//landmarksEurope_compressed/model.json'
+    landmarkModel = await tf.loadGraphModel(modelPath);
+    console.log(landmarkModel);
+    const landmark = document.getElementById("landmarkImage");
+    const myTensor = tf.browser.fromPixels(landmark);
+    //Inputs are expected to be 3-channel RGB color images of size 321 x 321, scaled to [0, 1].
+    const readyfied = tf.image
+        .resizeBilinear(myTensor, [321, 321], true)
+        .div(255)
+        .reshape([1, 321, 321, 3]);
+    const result = await landmarkModel.predict(readyfied);
+
+    // let arrayResult = result.arraySync()
+    // console.log(arrayResult[0].length);
+    // console.log(labelmap.length);
+
+    // labelProbArray = convertToObj(labelmap, arrayResult[0])
+    // console.log(labelProbArray[0]);
+
+    const { values, indices } = tf.topk(result, 30);
+    const winners = indices.dataSync();
+    const prob = values.dataSync();
+
+    fetch('/assets/MLmodels/landmarksEurope_compressed/labelmap.json')
+        .then((response) => response.json())
+        .then((labelmapJSON) => {
+            console.log(labelmapJSON[winners[0]].name, prob[0]);
+            document.getElementById('predictions').style.visibility = 'visible';
+            document.getElementById('label1').innerHTML = labelmapJSON[winners[0]].name;
+            document.getElementById('prob1').innerHTML = (prob[0] * 100).toFixed(2) + '%';
+        })
+    document.getElementById('buttonClassify').innerHTML = 'Identify';
+}
+
+
+
+
 
 //--------------Audio classification------------------------------------------------------------------
 
@@ -338,7 +459,7 @@ function textToSpeech() {
     // const rate = document.querySelector("#rate");
     // const rateValue = document.querySelector(".rate-value");
     const rateValue = 1;
-    const pitchValue =1;
+    const pitchValue = 1;
     let voices = [];
 
     function populateVoiceList() {
@@ -431,4 +552,87 @@ function textToSpeech() {
     // voiceSelect.onchange = function () {
     //     //   speak();
     // };
+}
+
+//------------- Text translate ---------------------------------------
+
+// https://codepen.io/junior-abd-almaged/pen/gQEbRv
+//https://www.loc.gov/standards/iso639-2/php/code_list.php 
+function translateText() {
+    var sourceText = $('textarea#sourceText').val();
+    var sourceLang = 'en';
+    var targetLang = 'nl';
+    console.log(sourceText);
+
+    var url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=" + sourceLang + "&tl=" + targetLang + "&dt=t&q=" + encodeURI(sourceText);
+    //console.log(url);
+
+    $.getJSON(url, function (data) {
+        $('#resultText').val(data[0][0][0]);
+        document.getElementById('resultText').innerHTML = data[0][0][0];
+        console.log(data[0][0][0])
+    });
+
+    document.getElementById('predictions').style.visibility = 'visible';
+}
+
+//--------------Movie recommender (table recommend) --------------
+var recTheDarkKnightRises = ["The Dark Knight", "Batman Begins", "Shiner", "Amongst Friends", "Mithcell",
+    "Romeo Is Bleeding", "The Prestige", "Quicksand", "DeadFall", "Sara"]
+
+var recTheIntouchables = ["Samba", "The Matriarch", "White Men can't Jump", "Chocolat", "The Trouble with Dee Dee",
+    "Elizabeth Ekadashi", "Yedyanchi Jatra", " Dumpling Brothers", "The House of Fools", "Young Thugs: Nostalgia"]
+
+var recTheLionKing = ["Cheburashka", "VeggieTales: Josh and the Big Wall", "VeggieTales: Minnesota Cuke and the Search for Samson's Hairbrush",
+    "The Little Matchgirl", "Spiderman: The Ultimate Villain Showdown", "Cirque du Soleil: Varekai", "The Seventh Brother",
+    "Superstar Goofy", "My Love", "Pokémon: Arceus and the Jewel of Life"]
+
+var recSchindlersList = ["Saving Private Ryan", "Empire of the Sun", "The Truce", "Embajadores en el infierno",
+    "Tubelight", "Tut", "Henry V", "The Lost Battalion", "The War on Democracy", "Testament of Youth"]
+
+
+function recommendMovie() {
+    movie = document.getElementById('movies').value;
+    document.getElementById('predictions').style.visibility = 'visible';
+    console.log(movie);
+    switch (movie) {
+        case "The Dark Knigh Rises":
+            console.log(recTheDarkKnightRises);
+            document.getElementById('movieRecommendations').appendChild(printMovies(recTheDarkKnightRises));
+            break;
+        case "The Intouchables":
+            console.log(recTheIntouchables);
+            document.getElementById('movieRecommendations').appendChild(printMovies(recTheIntouchables));
+            break;
+        case "The Lion King":
+            console.log(recTheLionKing);
+            document.getElementById('movieRecommendations').appendChild(printMovies(recTheLionKing));
+            break;
+        case "Schindler's List":
+            console.log(recSchindlersList);
+            document.getElementById('movieRecommendations').appendChild(printMovies(recSchindlersList));
+            break;
+    }
+}
+
+function printMovies(recommendedMovies) {
+    document.getElementById('movieRecommendations').innerHTML = "";
+    // Create the list element:
+    document.getElementById
+    var list = document.createElement('ol');
+
+    for (var i = 0; i < recommendedMovies.length; i++) {
+        // Create the list item:
+        var item = document.createElement('li');
+
+        // Set its contents:
+        item.appendChild(document.createTextNode(recommendedMovies[i]));
+
+        // Add it to the list:
+        list.appendChild(item);
+    }
+
+    // Finally, return the constructed list:
+    return list;
+
 }

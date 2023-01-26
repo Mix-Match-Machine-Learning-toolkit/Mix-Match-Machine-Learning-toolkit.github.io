@@ -84,7 +84,7 @@
 
 
 
-#img {
+#img, #landmarkImage {
     max-width: 70%;
 }
 
@@ -128,4 +128,17 @@
     line-height: 20px;
     color: #3a3b3c;
 
+}
+
+textarea{
+    width:80%;
+    height:90px;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color:#3A3B3C;
+    resize: none;
 }

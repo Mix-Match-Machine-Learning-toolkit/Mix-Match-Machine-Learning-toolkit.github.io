@@ -241,10 +241,10 @@
               </xsl:when>
               <xsl:otherwise>
                 <h3 class='exampleHeader' >Instructions for Weka:</h3>
-                <ol>
-                  <li>Open the explorer</li>
+                <ol class="checkList">
+                  <li class='check-off'>Open the explorer</li>
                   <xsl:for-each select="combinations/combi[datatoken=$tokenselected1 and abilitytoken=$tokenselected2]/weka/instructions/*">
-                    <li>
+                    <li class='check-off'>
                       <xsl:value-of select="@value"/>
                     </li>
                   </xsl:for-each>

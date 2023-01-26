@@ -1,0 +1,24 @@
+<div id="Classifier">
+    <div class="input">
+        <h3 class="exampleHeader">Translating text</h3>
+        <p>Translating English text to Dutch.</p>
+        <p><span class='bold'>Model: </span> <a href="https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html"
+                target="_blank" rel="noreferrer noopener">Google translate </a>
+            <br>
+            <span class='bold'>Data: </span>not published
+        </p>
+
+        <p class="bold">Enter English text:</p>
+        <textarea id="sourceText"></textarea>
+
+        <div class="buttondiv">
+            <a href="#" id='buttonClassify'  class="buttonFancy" onclick="translateText(); return false;">Translate</a>
+        </div>
+    </div>
+
+    <div id="predictions">
+        <p class="bold">Dutch translation:</p>
+        <p id="resultText"></p>
+        <!-- <textarea id="resultText"></textarea> -->
+    </div>
+</div>
