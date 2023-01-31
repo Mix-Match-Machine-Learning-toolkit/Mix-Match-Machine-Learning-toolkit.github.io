@@ -1536,12 +1536,12 @@ Another option is to see each frame of the video as an image and have labels for
     <techterm>Video generative adversarial network (GAN)</techterm>
     <examples>
       <ex value='1'>
-        <exname>Deep fakes</exname>
+        <exname>Deepfakes</exname>
         <exdescription>Videos that are adapted from an original video where for example faces are swapped or where the person is saying something else compared to the original video.</exdescription>
-        <eximage>assets/photos/</eximage>
+        <eximage>assets/photos/deepfake.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://edition.cnn.com/interactive/2019/01/business/pentagons-race-against-deepfakes/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/xaliceli/video-GAN"></diylink>
-      <source>by: </source></ex>
+      <source> (icons) by: Freepik </source></ex>
     </examples>
   </combi>
   <combi>
