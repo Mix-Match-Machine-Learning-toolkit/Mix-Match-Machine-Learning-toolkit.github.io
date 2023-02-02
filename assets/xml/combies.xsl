@@ -164,7 +164,7 @@
               <xsl:choose>
                 <xsl:when test="combinations/combi[datatoken=$tokenselected1 and abilitytoken=$tokenselected2]/examples/@exist = 'no'">
                   <div class='example'>
-                     <p>There is no example (yet) for this combination but you could try making it yourself!</p>
+                    <p>There is no example (yet) for this combination but you could try making it yourself!</p>
                   </div>
                 </xsl:when>
                 <xsl:otherwise>
@@ -240,7 +240,44 @@
                 </p>
               </xsl:when>
               <xsl:otherwise>
-                <h3 class='exampleHeader' >Instructions for Weka:</h3>
+                <div class='splitHeader'>
+                  <h3 class='exampleHeader' >Instructions for Weka:</h3>
+
+                  <a href='#' onclick="openOverlayWeka();return false;" class="" id='overlayButton'>
+                    <!-- <i class="fa fa-question-circle fa-lg" style="color: #1E475E;">&#160;
+                    </i>  -->
+                    Why Weka?</a>
+
+                </div>
+                <div id='overlayWeka'>
+                <a href="#" onclick="closeOverlayWeka();return false;" id='closeOverlay'>X</a>
+                  <div id='overlayText'>
+                  
+                    <h2 class='overlay exampleheader'>Weka</h2>
+
+                    <p class='overlay'>
+                      <span class='overlay'>What is Weka?</span>
+                     Weka is a program you download and run on your computer to perform data mining/machine learning tasks. It is developed by the University of Waikato and it is mainly suited 
+                     for tabular data. 
+                    </p>
+
+                    <p class='overlay'>
+                      <span class='overlay'>Why Weka?</span>                  
+                    Weka uses a graphical user interface and you don't need any experience with programming to start training your own Machine Learning models.
+                    It is therefore easy to get started with, but still allows you a lot of options to tweak models and to train more complex models. 
+                    </p>
+                    <p class='overlay'>
+                      <span class='overlay'>First time use?</span>
+                        To start using Weka, you first need to download and install the software. Instructions can be found 
+                      <a class='overlay' href="https://waikato.github.io/weka-wiki/downloading_weka/" target="_blank" rel="noopener noreferrer">here</a>.
+                    </p>
+                    <p class='overlay'>
+                     Next, you can <a class='overlay' href="https://www.cs.waikato.ac.nz/ml/weka/courses.html" target="_blank" rel="noopener noreferrer">watch</a> 
+                     the first few online video lectures developed by The University of Waikato in which they explain how to use Weka. These will help you to understand the interface.
+                     Afterwards, you can use the instructions shown in the "Weka" tabs in the combination pages to create a model with similar functionalities as the examples.
+                    </p>
+                  </div>
+                </div>
                 <ol class="checkList">
                   <li class='check-off'>Open the explorer</li>
                   <xsl:for-each select="combinations/combi[datatoken=$tokenselected1 and abilitytoken=$tokenselected2]/weka/instructions/*">

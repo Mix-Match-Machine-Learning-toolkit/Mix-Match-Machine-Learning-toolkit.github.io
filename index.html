@@ -607,10 +607,28 @@
 				}
 			}, false);
 		}
-		catch(err) {
+		catch (err) {
 			// console.error(err.message);
 		}
 	}
+
+
+	function openOverlayWeka() {
+		console.log("Open overlay");
+		document.getElementById("overlayWeka").style.display = "block";
+	}
+
+	function closeOverlayWeka() {
+		document.getElementById("overlayWeka").style.display = "none";
+	}
+
+	$(document).click(function (event) {
+		var $target = $(event.target);
+		if (!$target.closest('#overlayWeka').length &&
+			$('#overlayWeka').is(":visible")) {
+			$('#overlayWeka').hide();
+		}
+	});
 </script>
 
 </html>
