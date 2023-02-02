@@ -1,18 +1,27 @@
+<div class="interactiveExampleIntro">
+
+    <h3 class="exampleHeader">Audio classifier</h3>
+
+    <p>This model can recognize the words: the ten digits from "zero" to "nine", "up", "down", "left", "right",
+        "go", "stop", "yes", "no", and the categories "unknown word" and "background noise".<br>
+        The output are the top three predictions and their confidence scores.</p>
+
+
+</div>
+
 <div id="Classifier">
     <div class="input">
-        <h3 class="exampleHeader">Audio classifier</h3>
-
-        <p style="width:80%;">This model can recognize the words: the ten digits from "zero" to "nine", "up", "down", "left", "right",
-            "go", "stop", "yes", "no", and the categories "unknown word" and "background noise"</p>
         <p><span class='bold'>Model: </span> <a href="https://tfhub.dev/tensorflow/tfjs-model/speech-commands/18w/4"
-                target="_blank" rel="noreferrer noopener">TensorFlow Hub </a>
+                target="_blank" rel="noreferrer noopener">Speech commands</a>
             <br>
             <span class='bold'>Data: </span><a href="https://www.tensorflow.org/datasets/catalog/speech_commands"
                 target="_blank" rel="noreferrer noopener"> speech commands dataset</a>
         </p>
         <div class="buttondiv">
-            <a href="#" onclick="startListening();return false;" class="buttonFancy" id="startListening">Start listening</a>
-            <a href="#" onclick="stopListening(); return false;" class="buttonFancy" id="stopListening" style="display:none;">Stop
+            <a href="#" onclick="startListening();return false;" class="buttonFancy" id="startListening">Start
+                listening</a>
+            <a href="#" onclick="stopListening(); return false;" class="buttonFancy" id="stopListening"
+                style="display:none;">Stop
                 listening</a>
         </div>
     </div>

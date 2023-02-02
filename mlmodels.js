@@ -450,8 +450,8 @@ function showSliderValue(rS, rB) {
 function textToSpeech() {
     const synth = window.speechSynthesis;
 
-    const inputForm = document.querySelector("form");
-    const inputTxt = document.querySelector(".txt");
+    const inputForm = document.querySelector("#frm");
+    const inputTxt = document.querySelector("#inputTxt");
     const voiceSelect = document.querySelector("select");
 
     // const pitch = document.querySelector("#pitch");

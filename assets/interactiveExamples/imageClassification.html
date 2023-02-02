@@ -1,20 +1,26 @@
+<div class="interactiveExampleIntro">
+    <h3 class="exampleHeader">Image classifier</h3>
+    <p>This model can categorize what is visible in an image. It outputs the top three classes together with there
+        confidence scores, i.e. how certain the model is.
+        Other models can also detect the location of the object and/or multiple objects in an image.
+    </p>
+    <p><span class='bold'>Model: </span> <a
+            href="https://tfhub.dev/google/imagenet/mobilenet_v1_100_128/classification/5" target="_blank"
+            rel="noreferrer noopener">MobileNet V1</a>
+        <br>
+        <span class='bold'>Data: </span><a href="https://image-net.org/challenges/LSVRC/2012/" target="_blank"
+            rel="noreferrer noopener">ImageNet (ILSVRC2012) </a>
+    </p>
+    <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
+    </p>
+</div>
 <div id="Classifier">
     <div class="input">
-        <h3 class="exampleHeader">Image classifier</h3>
-        <p><span class='bold'>Model: </span> <a
-                href="https://tfhub.dev/google/imagenet/mobilenet_v1_100_128/classification/5" target="_blank"
-                rel="noreferrer noopener">TensorFlow Hub </a>
-            <br>
-            <span class='bold'>Data: </span><a href="https://image-net.org/challenges/LSVRC/2012/" target="_blank"
-                rel="noreferrer noopener">ImageNet (ILSVRC2012) </a>
-        </p>
-        <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
-        </p>
-      
         <img id="img" src="/assets/photos/dog.jpg"></img>
-        <p><label for="file" style="cursor: pointer;" class="uploadButton"><i class="fa fa-upload"></i> Upload image</label></p>
+        <p><label for="file" style="cursor: pointer;" class="uploadButton"><i class="fa fa-upload"></i> Upload
+                image</label></p>
         <div class="buttondiv">
-            
+
             <a href="#" id='buttonClassify' class="buttonFancy" onclick="classifyImage(); return false;">Classify</a>
         </div>
 

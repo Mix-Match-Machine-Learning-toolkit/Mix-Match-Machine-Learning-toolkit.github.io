@@ -1,23 +1,30 @@
+<div class="interactiveExampleIntro">
+    <h3 class="exampleHeader">Toxicity classifier</h3>
+    <p>This model will output the confidence scores that it belongs to one of the toxicity categories, in this example
+        'insult' and 'toxicity'.
+        A higher percentage means it is more likely to be a toxic comment.
+    </p>
+    <p><span class='bold'>Model: </span> <a href="https://tfhub.dev/tensorflow/tfjs-model/toxicity/1/default/1"
+            target="_blank" rel="noreferrer noopener">Toxicity</a>
+        <br>
+        <span class='bold'>Data: </span><a href="https://www.tensorflow.org/datasets/catalog/civil_comments"
+            target="_blank" rel="noreferrer noopener"> civil comments dataset</a>
+    </p>
+</div>
 <div id="Classifier">
     <div class="input">
-        <h3 class="exampleHeader">Toxicity classifier</h3>
-        <p><span class='bold'>Model: </span> <a href="https://tfhub.dev/tensorflow/tfjs-model/toxicity/1/default/1"
-                target="_blank" rel="noreferrer noopener">TensorFlow Hub </a>
-            <br>
-            <span class='bold'>Data: </span><a href="https://www.tensorflow.org/datasets/catalog/civil_comments"
-                target="_blank" rel="noreferrer noopener"> civil comments dataset</a>
-        </p>
 
         <!-- <p><span class='bold'>Try the model: </span></p> -->
         <form onsubmit="return false">
             <p>Input text to classify: &nbsp;
-                <textarea  id="textToClassify" ></textarea>
+                <textarea id="textToClassify" >Bad classifier!</textarea>
                 <!-- <input type="text" id="textToClassify" autocomplete="off" value=""> -->
                 <br>
             </p>
             <div class="buttondiv">
-            <a href="#" id='buttonClassify'  class="buttonFancy" onclick="textClassification(); return false;">Classify</a>
-        </div>
+                <a href="#" id='buttonClassify' class="buttonFancy"
+                    onclick="textClassification(); return false;">Classify</a>
+            </div>
         </form>
     </div>
 

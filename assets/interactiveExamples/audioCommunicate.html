@@ -1,6 +1,8 @@
 <div id="Classifier">
-    <div>
+    <div class="interactiveExampleIntro">
         <h3 class="exampleHeader">Text to speech</h3>
+        <p>This model converts text to speech, during speeking you will see the intermediate words that are being recognized but they might change
+            when you speak more and another combination of words is more likely.  </p>
         <p><span class='bold'>Model: </span> <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API"
                 target="_blank" rel="noreferrer noopener">Web speech API </a>
             <br>
@@ -10,15 +12,15 @@
                 target="_blank" rel="noreferrer noopener"> unkown?</a> -->
         </p>
 
-        <form>
+        <form id="frm">
             <p class="bold">Enter text:</p>
-            <textarea id="txt"></textarea>
+            <textarea id="inputTxt" form="frm" >What text do you want to convert to speech?</textarea>
             <!-- <input id="txt" type="text" class="txt" autocomplete="off" /> -->
             <br>
             <br>
             <select></select>
             <div class="buttondiv">
-                <button href="#" id="play" class='buttonFancy' type="submit" style="border:none;">Play</button>
+                <button href="#" id="play" class='buttonFancy' type="submit" style="border:none; cursor: pointer;">Play</button>
             </div>
         </form>
 

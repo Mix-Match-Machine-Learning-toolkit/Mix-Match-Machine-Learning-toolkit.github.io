@@ -1,17 +1,22 @@
+<div class="interactiveExampleIntro">
+    <h3 class="exampleHeader">Movie recommendation</h3>
+    <p>This model will recommend the top 10 movies that are similair to the selected movie in terms of content, a.o. the
+        plot.
+    </p>
+   
+</div>
 <div id="Classifier">
     <div input="input">
-        <h3 class="exampleHeader">Movie recommendation</h3>
         <p><span class='bold'>Model: </span> <a href="https://www.datacamp.com/tutorial/recommender-systems-python"
-                target="_blank" rel="noreferrer noopener">Content based recommender system </a>
-            <br>
-            <span class='bold'>Data: </span><a
-                href="https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?resource=download" target="_blank"
-                rel="noreferrer noopener">The movies dataset</a>
+            target="_blank" rel="noreferrer noopener">Content based recommender system </a>
+        <br>
+        <span class='bold'>Data: </span><a
+            href="https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?resource=download" target="_blank"
+            rel="noreferrer noopener">The movies dataset</a>
 
-            <!-- </span><a href=""
+        <!-- </span><a href=""
                 target="_blank" rel="noreferrer noopener"> unkown?</a> -->
-        </p>
-
+    </p>
         <form>
             <label for="movies">Select a movie and get similar movies recommended:</label>
             <br>
@@ -31,7 +36,7 @@
     </div>
     <div id="predictions">
         <p><span class="bold">Recommendations: </span>
-        <!-- <br>
+            <!-- <br>
         (Similar movies based on content)</p> -->
         <div class="labels_prob" id="movieRecommendations">
 
