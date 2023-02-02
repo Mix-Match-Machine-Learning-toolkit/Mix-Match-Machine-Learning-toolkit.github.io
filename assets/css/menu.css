@@ -1,0 +1,146 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3A3B3C;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a,
+.dropdown-btn {
+    position: static;
+    padding: 8px 8px 8px 32px;
+    width: 95%;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+    /* transition: 0.3s; */
+}
+
+.sidebar a:hover,
+.dropdown-btn:hover {
+    color: #c4e0e7;
+    
+}
+
+.dropdown-btn.firstdropdown:hover {
+    border-left: 5px solid #7bb5c4;
+}
+
+.firstdropdown{
+    border-left: 5px transparent solid;
+    font-weight: bolder;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    left: 55%;
+
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    /* font-size: 25px; */
+    cursor: pointer;
+    background: none;
+    color: #3A3B3C;
+    padding: 0px 5px;
+    border: none;
+}
+
+.openbtn:hover {
+    color: #337183;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 10px;
+}
+
+#replace {
+    transition: margin-left .5s;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    /* font-weight: bold; */
+    color: #7bb5c4;
+
+    /* background-color: #7bb5c4;
+    color: white; */
+    /* width: inherit; */
+}
+
+.firstdropdown.active {
+    border-left: 5px solid #7bb5c4;
+}
+
+
+.middropdown.active {
+    /* border-left: 2px solid #c4e0e7; */
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    /* background-color: #2B5F6E; */
+    padding-left: 16px;
+
+}
+
+.subdropdown a {
+    font-size: 15px;
+}
+
+.middropdown {
+    font-size: 16px;
+}
+
+/* .dropdown-btn i {
+    padding-left: 5px;
+
+} */
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    position: absolute;
+    right: 20px;
+    /* padding-right: 8px; */
+    float: right;
+
+}
+
+.fa-caret-down.rotate {
+    transform-origin: center;
+    transform:  rotate(-180deg);
+
+}
+
+.nocombi{
+    color:rgb(209, 120, 120) !important;
+  }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}

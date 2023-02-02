@@ -22,13 +22,16 @@
 	<link href="/assets/css/combipage.css" type="text/css" rel="stylesheet">
 	<link href="/assets/css/compare.css" type="text/css" rel="stylesheet">
 	<link href="/assets/css/data_ability_pages.css" type="text/css" rel="stylesheet">
+	<link href="/assets/css/menu.css" type="text/css" rel="stylesheet">
 
 	<script src="https://kit.fontawesome.com/778f64f404.js" crossorigin="anonymous"></script>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
 	<!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
@@ -49,7 +52,7 @@
 				and connect your laptop to the sensor board. Follow the next steps to get ready. </p> -->
 			<!-- <p class='bold'>Enter your group/ participant number: </p>
 			<input type="number" name="IDnumber" id='ID'><br> -->
-			<img class="instructiongif" src="assets/photos/instruction.gif" / style=" ">
+			<img class="instructiongif" src="assets/photos/instruction.gif" />
 			<div>
 				<!-- <br> -->
 				<br>
@@ -120,6 +123,71 @@
 	// 	document.getElementsByClassName('dropdown').style.visibility='visible';
 	// }
 
+	function openNav() {
+		document.getElementById("mySidebar").style.width = "290px";
+		document.getElementById("main").style.visibility = 'hidden';
+		document.getElementById("replace").style.marginLeft = "290px";
+
+		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function () {
+				console.log(this.childNodes[1]);
+				this.classList.toggle("active");
+				this.childNodes[1].classList.toggle("rotate");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
+
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+	}
+
+	function closeNav() {
+		document.getElementById("mySidebar").style.width = "0";
+		document.getElementById("main").style.visibility = 'visible';
+		document.getElementById("replace").style.marginLeft = "0";
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].removeAttribute('onclick');
+			dropdown[i].classList.remove("active");
+			dropdown[i].childNodes[1].classList.remove("rotate");
+			var dropdownContent = dropdown[i].nextElementSibling;
+			if (dropdownContent.style.display === "block") {
+				dropdownContent.style.display = "none";
+			} else {
+				dropdownContent.style.display = "none";
+			}
+		}
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function () {
+				console.log(this);
+				this.classList.toggle("active");
+				this.childNodes[1].classList.toggle("rotate");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
+
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+
+		}
+
+
+	}
+
+
+
 	var IDnumber; //for logging each session to oocsi so it can be identified for analyses
 	let ready = false; //use to not skip the setup page by pressing key or placing tokens
 	var deviceName;
@@ -137,7 +205,7 @@
 			console.log("Device name:" + deviceName);
 		}
 		var xhttp = new XMLHttpRequest();
-		xhttp.onreadystatechange = function() {
+		xhttp.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
 				document.getElementById("replace").innerHTML = this.responseText;
 			}
@@ -155,7 +223,7 @@
 			console.log("Device name:" + deviceName);
 		}
 		var xhttp = new XMLHttpRequest();
-		xhttp.onreadystatechange = function() {
+		xhttp.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
 				document.getElementById("replace").innerHTML = this.responseText;
 				typePage = 'info';
@@ -178,7 +246,7 @@
 			console.log("Device name:" + deviceName);
 		}
 		var xhttp = new XMLHttpRequest();
-		xhttp.onreadystatechange = function() {
+		xhttp.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
 				document.getElementById("replace").innerHTML = this.responseText;
 				typePage = 'noCombi';
@@ -249,7 +317,7 @@
 	function openDataPage() {
 		console.log("open data page");
 		var xhttpData = new XMLHttpRequest();
-		xhttpData.onreadystatechange = function() {
+		xhttpData.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
 				document.getElementById("replace").innerHTML = this.responseText;
 				if (educationMode) {
@@ -270,7 +338,7 @@
 	function openAbilityPage() {
 		console.log("open ability page");
 		var xhttpAbility = new XMLHttpRequest();
-		xhttpAbility.onreadystatechange = function() {
+		xhttpAbility.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
 				document.getElementById("replace").innerHTML = this.responseText;
 				if (educationMode) {
@@ -289,7 +357,7 @@
 	function openCombinationPage() {
 		console.log("open combination page");
 		var xhttpCombi = new XMLHttpRequest();
-		xhttpCombi.onreadystatechange = function() {
+		xhttpCombi.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
 				document.getElementById("replace").innerHTML = this.responseText;
 				if (educationMode) {
@@ -307,7 +375,7 @@
 	function openComparePage() {
 		console.log("open compare page");
 		var xhttpCombi = new XMLHttpRequest();
-		xhttpCombi.onreadystatechange = function() {
+		xhttpCombi.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
 				document.getElementById("replace").innerHTML = this.responseText;
 				if (educationMode) {
@@ -339,8 +407,8 @@
 		// to allow us doing XSLT in IE
 		try {
 			req.responseType = "msxml-document"
-		} catch (ex) {}
-		req.onload = function() {
+		} catch (ex) { }
+		req.onload = function () {
 			callback(req.responseXML);
 		};
 		req.send();
@@ -350,10 +418,10 @@
 	function transform(xml, xsl, type) {
 		load(
 			xml,
-			function(inputXml) {
+			function (inputXml) {
 				load(
 					xsl,
-					function(xsltSheet) {
+					function (xsltSheet) {
 						displayResult(inputXml, xsltSheet, type);
 					}
 				);
@@ -379,10 +447,10 @@
 	function transform2(xml, xsl, type1, type2) {
 		load(
 			xml,
-			function(inputXml) {
+			function (inputXml) {
 				load(
 					xsl,
-					function(xsltSheet) {
+					function (xsltSheet) {
 						display2Results(inputXml, xsltSheet, type1, type2);
 					}
 				);
@@ -394,10 +462,10 @@
 	function transformCompare(xml, xsl, type1, type2) {
 		load(
 			xml,
-			function(inputXml) {
+			function (inputXml) {
 				load(
 					xsl,
-					function(xsltSheet) {
+					function (xsltSheet) {
 						displayResultsCompare(inputXml, xsltSheet, type1, type2);
 					}
 				);
@@ -512,10 +580,10 @@
 		document.getElementById("infobox").style.visibility = "visible";
 	}
 
-	var curExampleNO=1;
+	var curExampleNO = 1;
 
-//go the next or previous example
-	function plusExample(n){
+	//go the next or previous example
+	function plusExample(n) {
 		curExampleNO += n;
 		console.log(curExampleNO);
 		// proc2.setParameter(null, "exampleNO", curExampleNO);
