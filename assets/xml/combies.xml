@@ -146,7 +146,7 @@ However, it can only recognize objects on which it has been trained, so it might
       <ex value='1'>
         <exname>Dall-e</exname>
         <exdescription>DALL-E uses the text captions that users can input to generate new images that visualize what was written in the text. It will generate different images for the same input so it can help for example with ideating or when you want to visualize something of which you do not have a photo.</exdescription>
-        <eximage>assets/photos/dall-e.JPG</eximage>
+        <eximage>assets/photos/image_generate_dalle.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://openai.com/blog/dall-e/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/image-generation-in-10-minutes-with-generative-adversarial-networks-c2afc56bfa3b"></diylink>
       <source>via: Dall-e (https://openai.com/blog/dall-e/)</source></ex>
@@ -281,7 +281,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <ex value='1'>
         <exname>Sentiment analysis</exname>
         <exdescription>This tool allows you to analyse the sentiment of a fragment of text and will predict if it is positive or negative, and also shows how confident is that it has predicted it correctly. You could use this information to monitor reviews about your product on for example social media.</exdescription>
-        <eximage>assets/photos/sentimentanalysis.JPG</eximage>
+        <eximage>assets/photos/visuals_sentimentanalyzer.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://monkeylearn.com/sentiment-analysis-online/">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/text/tutorials/text_classification_rnn">Link to DIY</diylink>
       <source>via: MonkeyLearn sentiment analyzer</source></ex>
@@ -477,7 +477,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <ex value='1'>
         <exname>Code oracle</exname>
         <exdescription>Code is one very specific form of text and can be quite hard to understand, especially when using an unfamiliar language. Code Oracle allows you to highlight a snippet of your code to see in "normal" language what it is doing.</exdescription>
-        <eximage>assets/photos/codexplainer.JPG</eximage>
+        <eximage>assets/photos/visuals_codeoracle.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://gpt3demo.com/apps/repl-it">"</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/analytics-vidhya/ai-generates-code-using-python-and-openais-gpt-3-2ddc95047cba"></diylink>
       <source>by: Amjad Masad</source></ex>
@@ -977,10 +977,10 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>AIVA</exname>
         <exdescription>AIVA is a service that creates new music for different kind of purposes. You can select a genre for the new music piece or upload a track of music to with which it should match.</exdescription>
-        <eximage>assets/photos/aiva.png</eximage>
+        <eximage>assets/photos/musicsliders.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.aiva.ai/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/neuronio/audio-generation-with-gans-428bc2de5a89"></diylink>
-      <source>by: AIVA</source></ex>
+      <source>by: Alexey Ruban on Unsplash</source></ex>
     </examples>
   </combi>
   <combi>
@@ -1095,10 +1095,10 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>Live translate</exname>
         <exdescription>The live translate function from Microsoft makes it possible to speak in your own language and have it directly translated into different languages. This is done by first capturing what you are saying, converting that to words, translating those words and displaying this text to the other participants.</exdescription>
-        <eximage>assets/photos/livetranslate.jpg</eximage>
+        <eximage>assets/photos/visuals_livetranslate.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://translator.microsoft.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.geeksforgeeks.org/create-a-real-time-voice-translator-using-python/"></diylink>
-      <source>by: Microsoft</source></ex>
+      <source>by:  Austin Distel on Unsplash (with added text)</source></ex>
     </examples>
   </combi>
   <combi>
@@ -1449,10 +1449,10 @@ Another option is to see each frame of the video as an image and have labels for
       <ex value='1'>
         <exname>Zenia</exname>
         <exdescription>Zenia is an app which provide yoga classes and uses pose recognition to give personalized feedback. For this it will analyse each frame of the image, recognize the locations of the joints and next use this to see if you are doing the right pose and if you do the pose right.</exdescription>
-        <eximage>assets/photos/zenia.png</eximage>
+        <eximage>assets/photos/yoga.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://zenia.app/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://thecodingtrain.com/learning/ml5/7.1-posenet.html"></diylink>
-      <source>by: Zenia</source></ex>
+      <source>by:  Yannic Läderach on Unsplash (with added points and lines)</source></ex>
     </examples>
   </combi>
   <combi>
