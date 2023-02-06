@@ -1036,10 +1036,10 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>Digital humans</exname>
         <exdescription>A digital human can be seen as the upgraded function of a chatbot. Instead of communicating only via text, you will talk to a human face which shows expressions and which will talk back to you. For this it will of course need to understand what you are saying (audio understanding), decide how to respond, and respond in understandable spoken human language. The digital humanare used, for example, for customer support.</exdescription>
-        <eximage>assets/photos/digitalhuman.png</eximage>
+        <eximage>assets/photos/digitalassistant_dalle.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://digitalhumans.com/what-are-digital-humans/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/human2b"></diylink>
-      <source>by: Uneeq</source></ex>
+      <source>generated using DALL·E 2</source></ex>
     </examples>
   </combi>
 
