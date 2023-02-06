@@ -81,7 +81,7 @@
 .exText {
   width: 450px;
   /* display: block; */
-  flex:50%
+  flex:50%;
   float: right;
 }
 
