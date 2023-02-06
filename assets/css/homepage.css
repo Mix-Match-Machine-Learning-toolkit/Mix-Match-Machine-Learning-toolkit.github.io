@@ -223,7 +223,11 @@ width:800px;
 
 .buttona{
   text-decoration: none;
+  color: #3A3B3C;
+}
 
+.buttona:visited{
+  color:#3A3B3C;
 }
 
 .buttonTextBig{

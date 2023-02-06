@@ -35,9 +35,74 @@
     
 }
 
+/*Different colors for each type of token*/
+.dropdown-btn.datablue:hover{
+    color:#26C6DA;
+}
+
+.dropdown-btn.datablue.active{
+    color:#26C6DA ;
+}
+.datablue.active{
+    color: #26C6DA;
+}
+
+.dropdown-btn.firstdropdown.datablue:hover{
+    border-left: 5px solid #26C6DA;
+}
+
+.dropdown-btn.firstdropdown.datablue.active{
+    border-left: 5px solid #26C6DA;
+}
+
+.dropdown-container.datablue a:hover, .dropdown-container.datablue.active{
+    color: #26C6DA;
+}
+
+/* .dropdown-container.datablue button:hover, .dropdown-container.middropdown.active{
+    color: #26C6DA;
+} */
+
+/* Colors for the capabilities 82BE14*/
+
+
+.dropdown-btn.mlcapgreen:hover{
+    color:#82BE14 ;
+}
+.mlcapgreen.active{
+    color: #82BE14 ;
+}
+
+.dropdown-btn.firstdropdown.mlcapgreen:hover{
+    border-left: 5px solid #82BE14 ;
+}
+
+.dropdown-btn.firstdropdown.mlcapgreen.active{
+    border-left: 5px solid #82BE14 ;
+}
+
+.dropdown-container.mlcapgreen a:hover, .dropdown-container.mlcapgreen.active{
+    color: #82BE14 ;
+}
+
+
+
+
+
+
 .dropdown-btn.firstdropdown:hover {
     border-left: 5px solid #7bb5c4;
 }
+
+/* Add an active class to the active dropdown button */
+.active {
+    color: #7bb5c4;
+}
+
+.firstdropdown.active {
+    border-left: 5px solid #7bb5c4;
+}
+
 
 .firstdropdown{
     border-left: 5px transparent solid;
@@ -75,24 +140,8 @@
     transition: margin-left .5s;
 }
 
-/* Add an active class to the active dropdown button */
-.active {
-    /* font-weight: bold; */
-    color: #7bb5c4;
-
-    /* background-color: #7bb5c4;
-    color: white; */
-    /* width: inherit; */
-}
-
-.firstdropdown.active {
-    border-left: 5px solid #7bb5c4;
-}
 
 
-.middropdown.active {
-    /* border-left: 2px solid #c4e0e7; */
-}
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
@@ -144,3 +193,4 @@
         font-size: 18px;
     }
 }
+
