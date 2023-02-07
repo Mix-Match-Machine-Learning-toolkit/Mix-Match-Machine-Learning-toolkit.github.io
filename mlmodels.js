@@ -20,6 +20,12 @@ async function chooseMLmodel(token1, token2) {
 
     }
 
+        // audio recommend (103, 116)
+        if (token1 == 103 & token2 == 116) {
+            loadInteractiveExample("audioRecommend.html");
+    
+        }
+
 
     //image classification (98, 109)
     if (token1 == 98 & token2 == 109) {
@@ -72,6 +78,16 @@ async function chooseMLmodel(token1, token2) {
         loadInteractiveExample("tableRecommend.html");
     }
 
+    //table cluster (105, 112)
+    if (token1 == 105 & token2 == 112) {
+        loadInteractiveExample("tableCluster.html");
+    }
+
+    //table distinguish (105, 114)
+    if (token1 == 105 & token2 == 114) {
+        loadInteractiveExample("tableDistinguish.html");
+    }
+
     //text classification (100, 109)
     if (token1 == 100 & token2 == 109) {
         loadInteractiveExample("textClassification.html");
@@ -99,6 +115,11 @@ async function chooseMLmodel(token1, token2) {
     //timeseries foresee (101, 110)
     if (token1 == 101 & token2 == 110) {
         loadInteractiveExample("timeseriesForecast.html");
+    }
+
+    //timeseries distinguish (107, 114)
+    if (token1 == 107 & token2 == 114) {
+        loadInteractiveExample("timeseriesDistinguish.html");
     }
 
     //video classification (102, 109)
