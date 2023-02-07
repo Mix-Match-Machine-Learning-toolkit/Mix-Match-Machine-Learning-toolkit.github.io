@@ -297,7 +297,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
     </examples>
     <weka exist='yes'>
       <instructions>
-        <i1 value="Load the data (open file)"/>
+        <i1 value="Load your data (open file)"/>
 
       </instructions>
     </weka>
@@ -332,7 +332,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
     </examples>
     <weka exist='yes'>
       <instructions>
-        <i1 value="Load the data (open file)"/>
+        <i1 value="Load your data (open file)"/>
         <i2 value="Apply the filter: StringToWordVector"/>
         <i3 value="Optional: change the settings of this filter (e.g. choose a stopwordsHandler)"/>
         <i4 value="Go to the classifier tab"/>
@@ -363,7 +363,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
     </examples>
     <weka exist='yes'>
       <instructions>
-        <i1 value="Load the data (open file)"/>
+        <i1 value="Load your data (open file)"/>
         <i2 value="Apply the filter: StringToWordVector"/>
         <i3 value="Optional: change the settings of this filter (e.g. choose a stopwordsHandler)"/>
         <i4 value="Go to the classifier tab"/>
@@ -404,7 +404,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
     </examples>
     <weka exist='yes'>
       <instructions>
-        <i1 value="Load the data (open file)"/>
+        <i1 value="Load your data (open file)"/>
         <i2 value="Apply the filter: StringToWordVector"/>
         <i3 value="Optional: change the settings of this filter (e.g. choose a stopwordsHandler)"/>
         <i4 value="Go to the cluster tab"/>
@@ -650,7 +650,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     <weka exist='yes'>
       <instructions>
         <i1 value="Install package timeseriesForecasting (Weka GUI chooser - tools - package manager)"/>
-        <i2 value="Load the data (open file)"/>
+        <i2 value="Load your data (open file)"/>
         <i3 value="Go to the Forecast tab"/>
         <i4 value="Select target attribute"/>
         <i5 value="Press start"/>
@@ -689,7 +689,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     </examples>
     <weka exist='yes'>
       <instructions>
-        <i1 value="Load the data (open file)"/>
+        <i1 value="Load your data (open file)"/>
         <i2 value="Optional: select filter"/>
         <i3 value="Go to the classify tab"/>
         <i4 value="Choose the classifier of your choice"/>
@@ -729,7 +729,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     </examples>
     <weka exist='yes'>
       <instructions>
-        <i1 value="Load the data (open file)"/>
+        <i1 value="Load your data (open file)"/>
         <i2 value="Optional: select filter"/>
         <i3 value="Go to the classify tab"/>
         <i4 value="Choose the classifier of your choice"/>
@@ -769,7 +769,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     </examples>
     <weka exist='yes'>
       <instructions>
-        <i1 value="Load the data (open file)"/>
+        <i1 value="Load your data (open file)"/>
         <i2 value="Optional: select filter"/>
         <i4 value="Go to the cluster tab"/>
         <i5 value="Choose the cluster algorithm of your choice"/>
@@ -1373,7 +1373,7 @@ Based on all columns, except the one with the labels, the model will try to pred
     </examples>
     <weka exist='yes'>
       <instructions>
-        <i1 value="Load the data (open file)"/>
+        <i1 value="Load your data (open file)"/>
         <i2 value="Optional: select filter"/>
         <i3 value="Go to the classify tab"/>
         <i4 value="Choose the classifier of your choice"/>
@@ -1413,7 +1413,7 @@ Based on all columns, except the one with the labels, the model will try to pred
     </examples>
     <weka exist='yes'>
       <instructions>
-        <i1 value="Load the data (open file)"/>
+        <i1 value="Load your data (open file)"/>
         <i2 value="Optional: select filter"/>
         <i3 value="Go to the classify tab"/>
         <i4 value="Choose the classifier of your choice"/>
@@ -1453,7 +1453,7 @@ Based on all columns, except the one with the labels, the model will try to pred
     </examples>
     <weka exist='yes'>
       <instructions>
-        <i1 value="Load the data (open file)"/>
+        <i1 value="Load your data (open file)"/>
         <i2 value="Optional: select filter"/>
         <i4 value="Go to the cluster tab"/>
         <i5 value="Choose the cluster algorithm of your choice"/>

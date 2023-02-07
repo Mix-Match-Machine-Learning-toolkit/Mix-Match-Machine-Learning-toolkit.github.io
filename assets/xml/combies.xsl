@@ -198,11 +198,10 @@
                         </span>
                         <xsl:value-of select="exdescription"/>
                       </p>
-                      <p>
-                        <i class="fa-solid fa-triangle-exclamation fa-lg" style="color: #1E475E;">&#160;
-                        </i>
-                        <i> Please be aware that these are applicatons from the public domain, they might contain biases. </i>
-                      </p>
+                    <p>  <i class="fa-solid fa-triangle-exclamation fa-lg" style="color: #1E475E;">&#160;
+
+                          </i> <i> Please be aware that these applications have not been checked for compliance to ethical guidelines on the use of AI </i>
+          </p>
                       <p>
                         <a href="{exlink/@xlink:href}" target="_blank">
 
@@ -246,7 +245,7 @@
                   <a href='#' onclick="openOverlayWeka();return false;" class="" id='overlayButton'>
                     <!-- <i class="fa fa-question-circle fa-lg" style="color: #1E475E;">&#160;
                     </i>  -->
-                    Why Weka?</a>
+                    What is Weka?</a>
 
                 </div>
                 <div id='overlayWeka'>
