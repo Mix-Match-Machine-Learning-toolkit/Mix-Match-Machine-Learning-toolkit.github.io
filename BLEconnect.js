@@ -41,7 +41,7 @@ function setup() {
 function connectToBle() {
   // Connect to a device by passing the service UUID
   myBLE.connect(serviceUuid, gotCharacteristics);
-  document.getElementById("connecting").style.visibility = "visible";
+  document.getElementById("connecting").style.display = "block";
 }
 
 function disconnectToBle() {

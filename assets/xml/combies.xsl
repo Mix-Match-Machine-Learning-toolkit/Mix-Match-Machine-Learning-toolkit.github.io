@@ -172,6 +172,7 @@
                     <xsl:for-each select="combinations/combi[datatoken=$tokenselected1 and abilitytoken=$tokenselected2]/examples/ex">
                       <!-- <div class='img_caption'> -->
                       <div class='exImg'>
+                       <h3 class='exampleHeaderMobile'><xsl:value-of select="exname"/></h3>
                         <img>
 
                           <xsl:attribute name="src">
