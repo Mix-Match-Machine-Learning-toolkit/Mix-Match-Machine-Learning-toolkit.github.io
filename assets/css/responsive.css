@@ -55,8 +55,10 @@
     }
     .illustrationAbilityMobile{
         display: block;
-        width: 60%;
+        max-width: 100%;
         min-width: 200px;
+        height: auto;
+        max-height: 180px;
         margin-left: auto;
         margin-right: auto;
     }
