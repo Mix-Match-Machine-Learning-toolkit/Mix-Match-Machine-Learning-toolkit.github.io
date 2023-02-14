@@ -23,6 +23,7 @@
 	<link href="/assets/css/compare.css" type="text/css" rel="stylesheet">
 	<link href="/assets/css/data_ability_pages.css" type="text/css" rel="stylesheet">
 	<link href="/assets/css/menu.css" type="text/css" rel="stylesheet">
+	<link href="/assets/css/responsive.css" type="text/css" rel="stylesheet">
 
 	<script src="https://kit.fontawesome.com/778f64f404.js" crossorigin="anonymous"></script>
 
@@ -53,13 +54,16 @@
 			<!-- <p class='bold'>Enter your group/ participant number: </p>
 			<input type="number" name="IDnumber" id='ID'><br> -->
 			<img class="instructiongif" src="assets/photos/instruction.gif" />
-			<div>
-				<!-- <br> -->
-				<br>
+			<div class="connectOrSkip">
+				<div class="connectDiv">
 				<a id=connectBLE href="#">Connect to sensor board</a>
 				<span id='connected'>Succesfully connected to board</span>
-				<a href="#" id='continue' onClick="openModeSelect()">Skip connection</a>
+				<br>
 				<p id='connecting'>Connecting to sensorboard</p>
+				</div>
+				<div class="connectDiv">
+				<a href="#" id='continue' onClick="openModeSelect()">Skip connection</a>
+			</div>
 				<!-- </div> -->
 			</div>
 			<div>
@@ -126,10 +130,15 @@
 	
 
 	function openNav() {
-		
+		if (window.width >800){
 		document.getElementById("mySidebar").style.width = "290px";
 		document.getElementById("main").style.visibility = 'hidden';
 		document.getElementById("replace").style.marginLeft = "290px";
+		} else {
+			document.getElementById("mySidebar").style.width = "290px";
+		document.getElementById("main").style.visibility = 'hidden';
+		document.getElementById("replace").style.marginLeft = "290px";
+		}
 
 		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 		var dropdown = document.getElementsByClassName("dropdown-btn");

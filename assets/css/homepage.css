@@ -50,7 +50,8 @@ text-align: center;
 }
 
 .centerBlock {
-  width: 700px;
+  max-width: 700px;
+  width: 80%;
   margin: auto;
   padding-top: 10px;
   z-index: 1;
@@ -58,7 +59,7 @@ text-align: center;
 
 
 .instructiongif{
-  width:700px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -74,7 +75,7 @@ text-align: center;
   text-decoration: none;
   color: white;
   border-radius: 10px;
-
+  display: block;
 }
 
 #connected {
@@ -82,7 +83,7 @@ text-align: center;
 }
 
 #connecting {
-  visibility: hidden;
+  display: none;
 }
 
 #connectBLE {
@@ -92,7 +93,9 @@ text-align: center;
   font-family: Lato;
   text-decoration: none;
   color: white;
+  display: block;
   border-radius: 10px;
+  margin-right: 20px;
 }
 
 #connectBLE:hover {
@@ -104,6 +107,14 @@ text-align: center;
   margin: auto;
   height: 300px;
   ;
+}
+
+.connectOrSkip{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin: 0px;
 }
 
 footer {
@@ -201,8 +212,9 @@ width:800px;
   width: 40%;
   margin:auto;
   flex-direction: row;
-    justify-content: center;
+  justify-content: center;
 }
+
 
 .button{
   padding: 20px;
@@ -224,6 +236,7 @@ width:800px;
 .buttona{
   text-decoration: none;
   color: #3A3B3C;
+
 }
 
 .buttona:visited{
