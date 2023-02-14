@@ -152,7 +152,7 @@
               </xsl:for-each>
             </div>
           </header>
-          <div class="headerData">
+          <div class="tabDiv">
 
             <div class="tab">
               <button class="tablinks" onclick="openTab(event, 'application')" id="defaultOpen">Application</button>
@@ -191,7 +191,7 @@
 
                     <!-- </div> -->
                     <div class='exText'>
-                      <h3 class='exampleHeader'>
+                      <h3 class='exampleHeaderApplication'>
                         <xsl:value-of select="exname"/>
                       </h3>
                       <p>
