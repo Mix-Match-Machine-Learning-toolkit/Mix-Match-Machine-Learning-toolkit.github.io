@@ -157,7 +157,7 @@
             <div class="tab">
               <button class="tablinks" onclick="openTab(event, 'application')" id="defaultOpen">Application</button>
               <button class="tablinks" onclick="openTab(event, 'interactive')">Interactive example</button>
-              <button class="tablinks" onclick="openTab(event, 'weka')">Weka</button>
+              <!-- <button class="tablinks" onclick="openTab(event, 'weka')">Weka</button> -->
             </div>
 
             <div id='application' class='tabcontent'>
