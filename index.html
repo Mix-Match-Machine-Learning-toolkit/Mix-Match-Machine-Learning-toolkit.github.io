@@ -14,7 +14,12 @@
 	<!--<script src="sketch.js"></script>-->
 	<script type="text/javascript" src="libraries/jquery.min.js"></script>
 	<script type="text/javascript" src="libraries/oocsi-web.js"></script>
-	<script type="text/javascript" scr="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.0.0/dist/tf.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity@1.2.2"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands"></script>
+
+	<script src="mlmodels.js"></script>
 	<script src="BLEconnect.js"></script>
 	<link href="/assets/css/fonts.css" type="text/css" rel="stylesheet">
 	<link href="/assets/css/homepage.css" type="text/css" rel="stylesheet">
@@ -22,6 +27,8 @@
 	<link href="/assets/css/combipage.css" type="text/css" rel="stylesheet">
 	<link href="/assets/css/compare.css" type="text/css" rel="stylesheet">
 	<link href="/assets/css/data_ability_pages.css" type="text/css" rel="stylesheet">
+	<link href="/assets/css/interactiveExamples.css" type="text/css" rel="stylesheet">
+	<link href="/assets/css/sliders.css" type="text/css" rel="stylesheet">
 	<link href="/assets/css/menu.css" type="text/css" rel="stylesheet">
 	<link href="/assets/css/responsive.css" type="text/css" rel="stylesheet">
 
@@ -43,6 +50,7 @@
 <body id='replace'>
 	<div class='container'>
 		<header>
+
 
 			<h1 id='welcome'>Get started!</h1>
 
@@ -80,6 +88,7 @@
 
 </body>
 <script>
+	// console.log('ml5 version:', ml5.version);
 	var labeledDataTokens = [97, 98, 99, 100, 101, 102]; //[236, 138, 224, 96, 59, 98]; //images, video, text, audio(96), time series, tabular
 	var unlabeledDataTokens = [103, 104, 105, 106, 107, 108]; //[227, 12, 242, 20, 10, 67]; //images, video, text, audio, time series, tabular
 	var abilityTokens = [109, 110, 111, 112, 113, 114, 115, 116, 117, 122, 66, 120]; //[22, 140, 124, 24, 60, 17];
@@ -293,8 +302,11 @@
 		}
 	}
 
-	function openCombibyClick(tag1, tag2) {
+	function openCombibyClick(temp_tag1, temp_tag2) {
+		tag1 = temp_tag1;
+		tag2 = temp_tag2;
 		openCombinationPage(transform2('combies.xml', 'combies.xsl', tag1, tag2));
+		// console.log(tag1, tag2);
 		sendOOCSI('combination', tag1, tag2);
 	}
 
@@ -368,6 +380,7 @@
 
 	function openCombinationPage() {
 		console.log("open combination page");
+		console.log(tag1, tag2);
 		var xhttpCombi = new XMLHttpRequest();
 		xhttpCombi.onreadystatechange = function () {
 			if (this.readyState == 4 && this.status == 200) {
@@ -380,6 +393,9 @@
 				// console.log(this.responseText);
 			}
 		};
+		console.log("Call function to load model here?");
+		// chooseMLmodel(tag1, tag2);
+
 		xhttpCombi.open("GET", "page.html", true);
 		xhttpCombi.send();
 	};
@@ -514,6 +530,7 @@
 			document.getElementById("replace").innerHTML = xmlInput.transformNode(xsltSheet);
 		}
 		//	changeDisplay();
+		document.getElementById("defaultOpen").click();
 	}
 
 	function displayResultsCompare(xmlInput, xsltSheet, tag1, tag2) {
@@ -599,8 +616,97 @@
 		curExampleNO += n;
 		console.log(curExampleNO);
 		// proc2.setParameter(null, "exampleNO", curExampleNO);
+	}
+
+	function openTab(evt, tabName) {
+		// Declare all variables
+		var i, tabcontent, tablinks;
+		if (tabName == 'weka') {
+			checkoffList();
+			console.log("Weka tab opened");
+		}
+		if (tabName == 'interactive') {
+			// loadInteractiveExample("textClassification.html");
+			chooseMLmodel(tag1, tag2);
+			console.log("interactive tab opened");
+		}
+
+		// Get all elements with class="tabcontent" and hide them
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+
+		// Get all elements with class="tablinks" and remove the class "active"
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+
+		// Show the current tab, and add an "active" class to the button that opened the tab
+		document.getElementById(tabName).style.display = "block";
+		evt.currentTarget.className += " active";
+
 
 	}
+
+	document.getElementById("defaultOpen").click();
+
+
+	//-------------------
+	function checkoffList() {
+		var myNodelist = document.getElementsByTagName("li");
+		var i;
+		// for (i = 0; i < myNodelist.length; i++) {
+		// 	var span = document.createElement("SPAN");
+		// 	var txt = document.createTextNode("\u00D7");
+		// 	span.className = "close";
+		// 	span.appendChild(txt);
+		// 	myNodelist[i].appendChild(span);
+		// }
+
+		// // Click on a close button to hide the current list item
+		// var close = document.getElementsByClassName("close");
+		// var i;
+		// for (i = 0; i < close.length; i++) {
+		// 	close[i].onclick = function () {
+		// 		var div = this.parentElement;
+		// 		div.style.display = "none";
+		// 	}
+		// }
+
+		// Add a "checked" symbol when clicking on a list item
+		var list = document.querySelector('ol');
+		try {
+			list.addEventListener('click', function (ev) {
+
+				if (ev.target.tagName === 'LI') {
+					ev.target.classList.toggle('checked');
+				}
+			}, false);
+		}
+		catch (err) {
+			// console.error(err.message);
+		}
+	}
+
+
+	function openOverlayWeka() {
+		console.log("Open overlay");
+		document.getElementById("overlayWeka").style.display = "block";
+	}
+
+	function closeOverlayWeka() {
+		document.getElementById("overlayWeka").style.display = "none";
+	}
+
+	$(document).click(function (event) {
+		var $target = $(event.target);
+		if (!$target.closest('#overlayWeka').length &&
+			$('#overlayWeka').is(":visible")) {
+			$('#overlayWeka').hide();
+		}
+	});
 </script>
 
 </html>

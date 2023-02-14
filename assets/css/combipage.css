@@ -1,4 +1,3 @@
-
 /* .infobox {
   background-color: #e3ddcc;
   padding: 10px 30px;
@@ -25,27 +24,28 @@
   overflow: auto;
 } */
 .example {
-  min-height: 70px;
+  /* min-height: 70px;
   background-color: #e3ddcc;
-  padding: 10px 20px;
-  border-radius: 10px;
-  width: 920px;
+  padding: 0px 20px 20px 20px;
+  border-radius: 0px 0px 10px 10px; */
+  /* width: 920px;
   margin: auto;
   height: inherit;
-  overflow: auto;
+  overflow: auto; */
   display: flex;
 }
 
-.img_caption{
+.img_caption {
   display: block;
   float: left;
-  flex:40%;
+  flex: 40%;
   justify-content: center;
   align-items: center;
   padding-right: 20px;
 
 }
-.caption{
+
+.caption {
   /* display: flex; */
   text-align: center;
   max-width: 350px;
@@ -65,7 +65,7 @@
   min-height: 300px;
   display: flex;
   flex-direction: column;
-  flex:40%;
+  flex: 40%;
   justify-content: center;
   align-items: center;
   padding-right: 20px;
@@ -83,6 +83,16 @@
   font-weight: bold;
   color: #1E475E;
   font-size: 18px;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+
+.exampleHeaderMobile{
+  display: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #1E475E;
+  font-size: 18px;
   text-transform: uppercase;
 }
 
@@ -96,7 +106,8 @@
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: relative;
   top: 45%;
@@ -107,26 +118,31 @@
   padding-right: 10px;
   color: white;
   font-weight: bold;
-  font-size:24px;
+  font-size: 24px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  flex:1%;
+  flex: 1%;
 }
-.prev{
-  float:left;
+
+.prev {
+  float: left;
 }
+
 /* Position the "next button" to the right */
 .next {
-  float:right;
+  float: right;
   /* right: 0;
   border-radius: 3px 0 0 3px; */
 }
 
-.prev:active, .next:active{
+.prev:active,
+.next:active {
   color: white !important;
 }
-.prev:hover, .next:hover{
+
+.prev:hover,
+.next:hover {
   color: #3A3B3C !important;
 }
 
@@ -169,7 +185,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 19px;
-    /* font-size: 16px; */
+  /* font-size: 16px; */
   text-transform: uppercase;
 }
 
@@ -265,7 +281,7 @@
   padding-left: 10px; */
 }
 
-.smalloutputimage{
+.smalloutputimage {
   height: 80px;
   vertical-align: text-top;
   /* padding-top: 10px; */
@@ -289,4 +305,227 @@
   /* width: 300px;
   height: 100px;
   padding: 5px; */
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  /* border: 1px solid #cccccc; */
+  background-color: #e3ddcc;
+  border-radius: 10px 10px 0px 0px;
+  width: 920px;
+  margin: auto;
+  padding-bottom: 25px;
+}
+
+.tablinks{
+  color:#3A3B3C;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 18px 5px 18px;
+  /* transition: 0.3s; */
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  /* background-color: #3b8295; */
+  color: #2B5F6E;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #e3ddcc;
+  color: #2B5F6E;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #2B5F6E;
+
+  /* font-weight: bold;   */
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  min-height: 70px;
+  background-color: #e3ddcc;
+  padding: 0px 20px 20px 20px;
+  border-radius: 0px 0px 10px 10px;
+  width: 920px;
+  margin: auto;
+  height: inherit;
+  overflow: auto;
+
+  /* padding: 6px 12px; */
+  /* border: 1px solid #ccc; */
+  /* border-top: none; */
+}
+
+
+
+/* Remove margins and padding from the list */
+ol.checkList {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+/* Style the list items */
+ol.checkList li {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 5px 10px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 16px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ol.checkList li:nth-child(odd) {
+  background: #ece8dd;
+}
+
+/* Darker background-color on hover */
+ol.checkList li:hover {
+  background: #aec8cf;
+}
+
+/* When clicked on, add a background color and strike out text */
+ol.checkList li.checked {
+  background: #2B5F6E;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ol.checkList li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+#overlayWeka {
+  position: fixed;
+  display: none;
+  width: 60%;
+  min-height: 450px;
+  height: 55%;
+  top: 25%;
+  left: 20%;
+  right: 0;
+  bottom: 0;
+  background-color: #aec8cff9;
+  z-index: 5;
+  /* cursor: pointer; */
+  border-radius: 10px;
+}
+
+#overlayText {
+  width: 80%;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  /* font-size: 50px; */
+  color: #3A3B3C;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 6;
+}
+
+.overlay {
+  color: #3A3B3C !important;
+}
+
+a.overlay:hover{
+  color: #FFAE00 !important;
+}
+h2.overlay{
+  padding-bottom: 10px;
+}
+
+
+span.overlay{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+span.overlay::after{
+  content: "\a";
+  white-space: pre;
+}
+
+
+
+#overlayButton {
+  /* display:grid; */
+  /* flex: 20%; */
+  float: right;
+  margin-bottom: 10px;
+  z-index: 4;
+  top: -10px;
+  width: 130px;
+  text-decoration: none;
+  font-family: "Lato";
+  color: #1E475E;
+  font-weight: bold;
+}
+
+#overlayButton:hover {
+  color: #FFAE00 !important;
+}
+
+/* .fa-question-circle:hover{
+  color: #FFAE00 !important;
+} */
+
+.splitHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+#closeOverlay{
+  position: absolute;
+  display: block;
+  float: right;
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  color: white;
+  text-decoration: none;
+  left:93%;
+  top: 5%;
+
+  /* transform: translate(100%, 40%); */
+  border: 2px white solid;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#closeOverlay:hover{
+  color: #FFAE00;
+  border: 2px #FFAE00 solid;
 }

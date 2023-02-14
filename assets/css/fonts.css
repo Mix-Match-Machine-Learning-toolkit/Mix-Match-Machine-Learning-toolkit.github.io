@@ -51,7 +51,7 @@ h5{
 }
 
 
-p,li {
+p,li, label{
   font-family: Lato;
   font-size: 16px;
   font-style: normal;
