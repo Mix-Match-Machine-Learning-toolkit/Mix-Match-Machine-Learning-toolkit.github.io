@@ -20,6 +20,7 @@ visibility: visible;
   position: relative;
   width:auto;
   height: 200px;
+  margin-bottom: 25px;
   /* height: inherit;
   min-height: 200px; */
   /* text-align: center; */

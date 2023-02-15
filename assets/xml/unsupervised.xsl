@@ -14,19 +14,23 @@
 
           <div class="headerData">
             <div class='leftheader'>
-              <img>
+              <div class='divToken'>
+                <img>
 
-                <xsl:attribute name="class">labelimage
-                </xsl:attribute>
+                  <xsl:attribute name="class">labelimage
+                  </xsl:attribute>
 
-                <xsl:attribute name="src">
-                  <xsl:value-of select="abilities/unsupervised"/>
-                </xsl:attribute>
-              </img>
-              <p class='overlaptextBig' style="transform: translate(-15%);">
-                <xsl:value-of select="abilities/abilitytoken[token=$tokenselected]/ability"/>
-              </p>
-              <p class='overlaptextability' style="transform: translate(-15%);">Unsupervised learning</p>
+                  <xsl:attribute name="src">
+                    <xsl:value-of select="abilities/unsupervised"/>
+                  </xsl:attribute>
+                </img>
+                <div class="imageTextCenterSmall">
+                  <p class='overlaptextBig' style='transform: translate(-15%);'>
+                    <xsl:value-of select="abilities/abilitytoken[token=$tokenselected]/ability"/>
+                  </p>
+                  <p class='overlaptextability' style='transform: translate(-15%);'>Unsupervised learning</p>
+                </div>
+              </div>
               <img>
 
                 <xsl:attribute name="class">illustrationAbility
