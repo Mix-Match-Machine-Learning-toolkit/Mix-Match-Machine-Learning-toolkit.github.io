@@ -179,7 +179,7 @@
 
                     <!-- </div> -->
                       <div class='exText'>
-                        <h3 class='exampleHeader'><xsl:value-of select="exname"/></h3>
+                        <h3 class='exampleHeaderApplication'><xsl:value-of select="exname"/></h3>
                         <p>
                           <span class='bold'>Description:
                           </span><xsl:value-of select="exdescription"/></p>
