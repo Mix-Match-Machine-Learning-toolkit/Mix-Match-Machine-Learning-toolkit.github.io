@@ -9,6 +9,7 @@
   <im value='output_l'>assets/photos/output_l.png</im>
   <im value='combi'>assets/photos/icons_combi.svg</im>
   <im value='humanintheloop'>assets/photos/hitl.png</im>
+  <im value='connectoricon'>assets/photos/icon_connectortoken.svg</im>
 </images>
   <combi>
     <name>Predictions based on images</name>

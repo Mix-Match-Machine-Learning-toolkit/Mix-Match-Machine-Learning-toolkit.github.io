@@ -125,19 +125,26 @@
                       <span><xsl:value-of select="techterm"/></span>
                     </p>
 
-                    <div class='techterms'>
-
-                      <i class="fa-solid fa-print fa-lg" style="color: #1E475E;">&#160;</i>
-                      <span class='bold'>Output:&#160;
-                      </span>
+                    <div class='outputdiv'>
                       <img>
+
+                        <xsl:attribute name="class">connectortoken_icon
+                        </xsl:attribute>
+
+                        <xsl:attribute name="src"><xsl:value-of select="../images/im[@value='connectoricon']"/>
+                        </xsl:attribute>
+                      </img>
+                      <!-- <i class="fa-solid fa-print fa-lg" style="color: #1E475E;">&#160;</i> -->
+                      <span class='bold'>&#160;Output:&#160;&#160;
+                     </span>
+                      <!-- <img>
 
                         <xsl:attribute name="class">smalloutputimage
                         </xsl:attribute>
 
                         <xsl:attribute name="src"><xsl:value-of select="../images/im[@value='output']"/>
                         </xsl:attribute>
-                      </img>
+                      </img> -->
                       <span class="output"><xsl:value-of select="output" disable-output-escaping="yes"/></span>
 
                     </div>
