@@ -35,25 +35,28 @@
         height: inherit;
         margin: auto;
     }
-    .descriptionData{
+
+    .descriptionData {
         width: 100%;
- 
+
     }
-    .description{
+
+    .description {
         width: 100%;
         padding: 0px;
         text-align: justify;
     }
 
-    h3{
-        line-height:80% !important;
+    h3 {
+        line-height: 80% !important;
     }
 
-    .illustration{
+    .illustration {
         width: 100%;
         height: inherit;
     }
-    .illustrationAbilityMobile{
+
+    .illustrationAbilityMobile {
         display: block;
         max-width: 100%;
         min-width: 200px;
@@ -67,6 +70,8 @@
 
 }
 
+
+
 @media screen and (max-width: 1000px) {
     .modeBox {
         flex-direction: column;
@@ -75,18 +80,20 @@
         align-content: center;
     }
 
-    .leftheadercombi{
+    .leftheadercombi {
         display: none;
     }
 
-    .rightheadercombi{
+    .rightheadercombi {
         width: 100%;
     }
-    .descriptioncombi{
+
+    .descriptioncombi {
         width: 100%;
         text-align: justify;
     }
-    .example{
+
+    .example {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
@@ -98,25 +105,33 @@
         width: 100%;
         min-height: 10px;
     }
-    .exampleImage{
+
+    .exampleImage {
         max-width: 100%;
     }
 
-    .exText{
+    .exText {
         width: 100%;
     }
 
-    .exampleHeaderMobile{
+    .exampleHeaderMobile {
         display: inline;
     }
 
-    .exampleHeaderApplication{
+    .exampleHeaderApplication {
         display: none;
     }
 }
 
+@media screen and (max-width: 800px) {
+    .sidebar .closebtn {
+        margin-left: 5px;
+        left: 80%;
+    }
+}
 
-    /* .labelimage {
+
+/* .labelimage {
         width: auto;
         height: 100%;
     }
