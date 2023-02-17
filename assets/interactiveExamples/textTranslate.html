@@ -1,0 +1,27 @@
+<div class="interactiveExampleIntro">
+    <h3 class="exampleHeader">Translating text</h3>
+    <p>This model can translate English text to Dutch text while taking the grammar and context of the words into
+        account to find
+        the best translations. </p>
+    <p><span class='bold'>Model: </span> <a href="https://ai.googleblog.com/2016/09/a-neural-network-for-machine.html"
+            target="_blank" rel="noreferrer noopener">Google translate </a>
+        <br>
+        <span class='bold'>Data: </span>not published
+    </p>
+</div>
+<div id="Classifier">
+    <div class="input">
+        <p class="bold">Enter English text:</p>
+        <textarea id="sourceText">This is a sample text, replace me with your own English text</textarea>
+
+        <div class="buttondiv">
+            <a href="#" id='buttonClassify' class="buttonFancy" onclick="translateText(); return false;">Translate</a>
+        </div>
+    </div>
+
+    <div id="predictions">
+        <p class="bold">Dutch translation:</p>
+        <p id="resultText"></p>
+        <!-- <textarea id="resultText"></textarea> -->
+    </div>
+</div>
