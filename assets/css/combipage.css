@@ -96,6 +96,14 @@
   text-transform: uppercase;
 }
 
+.exampleHeaderApplication{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #1E475E;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
 .exampleHeaderMobile{
   display: none;
   font-family: 'Roboto', sans-serif;
@@ -266,6 +274,13 @@
   width: 90%;
 }
 
+.outputdiv{
+  width: 90%;
+  overflow: auto;
+  min-height: 20px;
+  margin-bottom: 50px;
+}
+
 .leftheadercombi {
   width: 38%;
   float: left;
@@ -290,16 +305,24 @@
   position: relative;
 }
 
+.connectortoken_icon{
+  height: 20px;
+  display: inline;
+
+vertical-align: text-top;
+}
+
 .output {
   position: absolute;
-  z-index: 4;
   font-family: 'Courier New', serif;
   font-weight: normal;
   color: #3A3B3C;
   font-size: 14px;
   display: inline-block;
-  vertical-align: text-center;
+  vertical-align: text-top;
   margin-bottom: 10px;
+  margin-top: 3px;
+  height: fit-content;
   /* padding-top: 30px;
   transform: translate(-50%) !important; */
   /* width: 300px;
