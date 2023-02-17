@@ -1,0 +1,95 @@
+
+    <div class="interactiveExampleIntro">
+        <h3 class="exampleHeader">Penguin classifier</h3>
+        <p>This model can determine the type of penguin based on some measurements.
+            Slide the sliders to select different values and see what type of penguin matches with these measurements.
+        </p>
+        <p><span class='bold'>Model: </span> Neural network trained on the data
+            <br>
+            <span class='bold'>Data: </span><a href="https://allisonhorst.github.io/palmerpenguins/" target="_blank"
+                rel="noreferrer noopener">Palmer penguins</a>
+        </p>
+    </div>
+    <div id="Classifier">
+    <div class="input">
+  
+        <div class="inputSplit">
+            <div class="inputLeft">
+                <div class="box-minmax">
+                    <span>Bill length:</span>
+                </div>
+                <div class="range-slider">
+                    <span id="rs-bullet1" class="rs-label">32</span>
+                    <input id="rs-range-line1" class="rs-range" type="range" value="32" min="32" max="60">
+
+                </div>
+
+
+                <div class="box-minmax">
+                    <span>Bill depth:</span>
+                </div>
+                <div class="range-slider">
+                    <span id="rs-bullet2" class="rs-label">13</span>
+                    <input id="rs-range-line2" class="rs-range" type="range" value="13" min="13" max="22">
+                </div>
+            </div>
+
+            <div class="inputRight">
+                <div class="box-minmax">
+                    <span>Flipper length:</span>
+                </div>
+                <div class="range-slider">
+                    <span id="rs-bullet3" class="rs-label">172</span>
+                    <input id="rs-range-line3" class="rs-range" type="range" value="172" min="172" max="231">
+                </div>
+
+                <div class="box-minmax">
+                    <span>Body mass:</span>
+                </div>
+                <div class="range-slider">
+                    <span id="rs-bullet4" class="rs-label">2.7</span>
+                    <input id="rs-range-line4" class="rs-range" type="range" value="2.700" min="2.700" max="6.300"
+                        step="0.1">
+                </div>
+            </div>
+        </div>
+        <div class="buttondiv">
+            <a href="#" id='buttonClassify' class="buttonFancy" onclick="classifyPenguins(); return false;">Classify</a>
+        </div>
+    </div>
+
+
+    <div id="predictions">
+        <p class="bold">Predictions:</p>
+        <div class="labels_prob">
+            <div class="labelImage">
+                <img src="assets/photos/Adelie.png" id="penguinImage">
+                <p class="caption">&copy; Image by: @allison_horst</p>
+            </div>
+            <div class="labels">
+
+                <p>
+                    <span id="label1"></span>
+                    <br><br>
+                    <span id="label2"></span>
+                    <br><br>
+                    <span id="label3"></span>
+                </p>
+            </div>
+            <div class="probablities">
+
+                <p>
+                    <span id="prob1"></span>
+                    <br><br>
+                    <span id="prob2"></span>
+                    <br><br>
+                    <span id="prob3"></span>
+                    <br><br>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

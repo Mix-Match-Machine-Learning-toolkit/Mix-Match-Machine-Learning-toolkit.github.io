@@ -8,6 +8,32 @@
         padding-top: 10px;
         max-width: 700px;
     }
+    .tabDiv{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 80%;
+        margin: auto;
+        padding-top: 10px;
+        max-width: 700px;
+    }
+
+    .tab{
+        width: 100%;
+    }
+    .tab button{
+        font-size: 11px;
+    }
+    .application, .interactive{
+        width: 100%;
+    }
+
+    .tabcontent{
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
 
     .body {
         width: 100%;
@@ -118,8 +144,34 @@
         display: inline;
     }
 
-    .exampleHeaderApplication {
+
+    .exampleHeaderApplication{
         display: none;
+    }
+
+    #interactiveExample{
+        width: 100%;
+    }
+
+    #predictions, .input{
+        width: 100%;
+        padding: 0px;
+    }
+
+    #Classifier{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .labels_prob{
+        flex-wrap: wrap;
+    }
+
+    .inputSplit{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
     }
 }
 
