@@ -110,42 +110,49 @@
                   </div>
                 </div>
 
+                <div class='rightheadercombi'>
+                  <h3 class='type combi'>
+                    <xsl:value-of select="name"/>
+                  </h3>
+                  <p class='descriptioncombi'>
+                    <xsl:value-of select="description"/>
+                  </p>
+                  <p class='techterms'>
+                    <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #1E475E;">&#160;
+                    </i>
+                    <span class='bold'>Technical term(s):
+                    </span>
 
-                  <div class='rightheadercombi'>
-                    <h3 class='type combi'><xsl:value-of select="name"/></h3>
-                    <p class='descriptioncombi'>
-                      <xsl:value-of select="description"/></p>
-                    <p class='techterms'>
-                      <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #1E475E;">&#160;
-                      </i>
-                      <span class='bold'>Technical term(s):
-                      </span>
+                    <span>
+                      <xsl:value-of select="techterm"/>
+                    </span>
+                  </p>
 
-                      <span><xsl:value-of select="techterm"/></span>
-                    </p>
+                  <div class='techterms'>
 
-                    <div class='outputdiv'>
-                      <img>
+                    <i class="fa-solid fa-print fa-lg" style="color: #1E475E;">&#160;</i>
+                    <span class='bold'>Output:&#160;
+                    </span>
+                    <img>
 
-                        <xsl:attribute name="class">connectortoken_icon
-                        </xsl:attribute>
+                      <xsl:attribute name="class">smalloutputimage
+                      </xsl:attribute>
 
-                        <xsl:attribute name="src"><xsl:value-of select="../images/im[@value='connectoricon']"/>
-                        </xsl:attribute>
-                      </img>
-                      <!-- <i class="fa-solid fa-print fa-lg" style="color: #1E475E;">&#160;</i> -->
-                      <span class='bold'>&#160;Output:&#160;&#160;
-                     </span>
-                      <!-- <img>
+                      <xsl:attribute name="src">
+                        <xsl:value-of select="../images/im[@value='output']"/>
+                      </xsl:attribute>
+                    </img>
+                    <span class="output">
+                      <xsl:value-of select="output" disable-output-escaping="yes"/>
+                    </span>
 
-                        <xsl:attribute name="class">smalloutputimage
-                        </xsl:attribute>
+                  </div>
 
-                        <xsl:attribute name="src"><xsl:value-of select="../images/im[@value='output']"/>
-                        </xsl:attribute>
-                      </img> -->
-                      <span class="output"><xsl:value-of select="output" disable-output-escaping="yes"/></span>
-
+                </div>
+              </xsl:for-each>
+            </div>
+          </header>
+          <div class="tabDiv">
 
             <div class="tab">
               <button class="tablinks" onclick="openTab(event, 'application')" id="defaultOpen">Application</button>
@@ -164,8 +171,10 @@
                   <div class='example'>
                     <xsl:for-each select="combinations/combi[datatoken=$tokenselected1 and abilitytoken=$tokenselected2]/examples/ex">
                       <!-- <div class='img_caption'> -->
+                        <h3 class='exampleHeaderMobile'>
+                        <xsl:value-of select="exname"/>
+                      </h3>
                       <div class='exImg'>
-                       <h3 class='exampleHeaderMobile'><xsl:value-of select="exname"/></h3>
                         <img>
 
                           <xsl:attribute name="src">
@@ -183,16 +192,21 @@
                     </div>
 
                     <!-- </div> -->
+                    <div class='exText'>
+                      <h3 class='exampleHeaderApplication'>
+                        <xsl:value-of select="exname"/>
+                      </h3>
+                      <p>
+                        <span class='bold'>Description:
+                        </span>
+                        <xsl:value-of select="exdescription"/>
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-triangle-exclamation fa-lg" style="color: #1E475E;">&#160;
 
-                      <div class='exText'>
-                        <h3 class='exampleHeaderApplication'><xsl:value-of select="exname"/></h3>
-                        <p>
-                          <span class='bold'>Description:
-                          </span><xsl:value-of select="exdescription"/></p>
-                          <p>  <i class="fa-solid fa-triangle-exclamation fa-lg" style="color: #1E475E;">&#160;
-
-                          </i> <i> Please be aware that these applications have not been checked for compliance to ethical guidelines on the use of AI </i>
-          </p>
+                        </i>
+                        <i> Please be aware that these applications have not been checked for compliance to ethical guidelines on the use of AI </i>
+                      </p>
                       <p>
                         <a href="{exlink/@xlink:href}" target="_blank">
 
@@ -240,9 +254,9 @@
 
                 </div>
                 <div id='overlayWeka'>
-                <a href="#" onclick="closeOverlayWeka();return false;" id='closeOverlay'>X</a>
+                  <a href="#" onclick="closeOverlayWeka();return false;" id='closeOverlay'>X</a>
                   <div id='overlayText'>
-                  
+
                     <h2 class='overlay exampleheader'>Weka</h2>
 
                     <p class='overlay'>

@@ -148,6 +148,16 @@ visibility: visible;
 }
 
 
+.tabDiv {
+  margin: auto;
+  /* margin-top: 30px; */
+  max-width: 1200px;
+  height: inherit;
+  padding-bottom: 30px;
+  /* overflow: auto; */
+
+}
+
 
 
 .leftheader {
