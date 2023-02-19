@@ -185,17 +185,25 @@
                       </div>
 
                     <!-- </div> -->
-                      <div class='exText'>
-                        <h3 class='exampleHeaderApplication'><xsl:value-of select="exname"/></h3>
-                        <p>
-                          <span class='bold'>Description:
-                          </span><xsl:value-of select="exdescription"/></p>
-                          <p>  <i class="fa-solid fa-triangle-exclamation fa-lg" style="color: #1E475E;">&#160;
 
-                          </i> <i> Please be aware that these applications have not been checked for compliance to ethical guidelines on the use of AI </i>
-          </p>
-                        <p>
-                          <a href="{exlink/@xlink:href}" target="_blank">
+                    <div class='exText'>
+                      <h3 class='exampleHeader'>
+                        <xsl:value-of select="exname"/>
+                      </h3>
+                      <p>
+                        <span class='bold'>Description:
+                        </span>
+                        <xsl:value-of select="exdescription"/>
+                      </p>
+                      <p>
+                        <i class="fa-solid fa-triangle-exclamation fa-lg" style="color: #1E475E;">&#160;
+
+                        </i>
+                        <i> Please be aware that these applications have not been checked for compliance to ethical guidelines on the use of AI </i>
+                      </p>
+                      <p>
+                        <a href="{exlink/@xlink:href}" target="_blank">
+
 
                             <xsl:attribute name="onclick">sendlinkOOCSI("examplelink","<xsl:value-of select="exlink/@xlink:href"/>")
                             </xsl:attribute>
@@ -217,9 +225,24 @@
           </xsl:otherwise>
         </xsl:choose>
 
+
+                </div>
+                <div id='overlayWeka'>
+                  <a href="#" onclick="closeOverlayWeka();return false;" id='closeOverlay'>X</a>
+                  <div id='overlayText'>
+
+                    <h2 class='overlay exampleheader'>Weka</h2>
+
+                    <p class='overlay'>
+                      <span class='overlay'>What is Weka?</span>
+                     Weka is a program you download and run on your computer to perform data mining/machine learning tasks. It is developed by the University of Waikato and it is mainly suited 
+                     for tabular data. 
+                    </p>
+
       </body>
       <footer></footer>
     </html>
   </xsl:template>
+
 
 </xsl:stylesheet>
