@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <combinations xmlns:xlink="http://www.w3.org/1999/xlink">
   <images>
-  <im value='labeled'>assets/photos/ld.png</im>
-  <im value='unlabeled'>assets/photos/ud.png</im>
-  <im value='supervised'>assets/photos/sl.png</im>
-  <im value='unsupervised'>assets/photos/us.png</im>
-  <im value='output'>assets/photos/icons_v2-11.png</im>
-  <im value='output_l'>assets/photos/output_l.png</im>
-  <im value='combi'>assets/photos/icons_combi.svg</im>
-  <im value='humanintheloop'>assets/photos/hitl.png</im>
-  <im value='connectoricon'>assets/photos/icon_connectortoken.svg</im>
-</images>
+    <im value='labeled'>assets/photos/ld.png</im>
+    <im value='unlabeled'>assets/photos/ud.png</im>
+    <im value='supervised'>assets/photos/sl.png</im>
+    <im value='unsupervised'>assets/photos/us.png</im>
+    <im value='output'>assets/photos/icons_v2-11.png</im>
+    <im value='output_l'>assets/photos/output_l.png</im>
+    <im value='combi'>assets/photos/icons_combi.svg</im>
+    <im value='humanintheloop'>assets/photos/hitl.png</im>
+  </images>
   <combi>
     <name>Predictions based on images</name>
     <datatype>Image</datatype>

@@ -14,23 +14,19 @@
 
           <div class="headerData">
             <div class='leftheader'>
-              <div class='divToken'>
-                <img>
+              <img>
 
-                  <xsl:attribute name="class">reinforcementimage
-                  </xsl:attribute>
+                <xsl:attribute name="class">reinforcementimage
+                </xsl:attribute>
 
-                  <xsl:attribute name="src">
-                    <xsl:value-of select="abilities/reinforcement"/>
-                  </xsl:attribute>
-                </img>
-                <div class="imageTextCenterSmall">
-                  <p class='overlaptextBig' style="transform: translate(-15%, -40%);">
-                    <xsl:value-of select="abilities/abilitytoken[token=$tokenselected]/ability"/>
-                  </p>
-                  <p class='overlaptextability' style="transform: translate(-15%, -100%);">Reinforcement learning</p>
-                </div>
-              </div>
+                <xsl:attribute name="src">
+                  <xsl:value-of select="abilities/reinforcement"/>
+                </xsl:attribute>
+              </img>
+              <p class='overlaptextBig' style="top: 50px;   transform: translate(-30%);">
+                <xsl:value-of select="abilities/abilitytoken[token=$tokenselected]/ability"/>
+              </p>
+              <p class='overlaptextability' style="top: 130px;   transform: translate(-45%);">Reinforcement learning</p>
               <img>
 
                 <xsl:attribute name="class">illustrationAbility

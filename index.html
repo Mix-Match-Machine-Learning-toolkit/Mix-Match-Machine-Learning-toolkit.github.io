@@ -29,8 +29,6 @@
 	<link href="/assets/css/data_ability_pages.css" type="text/css" rel="stylesheet">
 	<link href="/assets/css/interactiveExamples.css" type="text/css" rel="stylesheet">
 	<link href="/assets/css/sliders.css" type="text/css" rel="stylesheet">
-	<link href="/assets/css/menu.css" type="text/css" rel="stylesheet">
-	<link href="/assets/css/responsive.css" type="text/css" rel="stylesheet">
 
 	<script src="https://kit.fontawesome.com/778f64f404.js" crossorigin="anonymous"></script>
 
@@ -62,16 +60,13 @@
 			<!-- <p class='bold'>Enter your group/ participant number: </p>
 			<input type="number" name="IDnumber" id='ID'><br> -->
 			<img class="instructiongif" src="assets/photos/instruction.gif" />
-			<div class="connectOrSkip">
-				<div class="connectDiv">
-					<a id=connectBLE href="#">Connect to sensor board</a>
-					<span id='connected'>Succesfully connected to board</span>
-					<br>
-					<p id='connecting'>Connecting to sensorboard</p>
-				</div>
-				<div class="connectDiv">
-					<a href="#" id='continue' onClick="openModeSelect()">Skip connection</a>
-				</div>
+			<div>
+				<!-- <br> -->
+				<br>
+				<a id=connectBLE href="#">Connect to sensor board</a>
+				<span id='connected'>Succesfully connected to board</span>
+				<a href="#" id='continue' onClick="openModeSelect()">Skip connection</a>
+				<p id='connecting'>Connecting to sensorboard</p>
 				<!-- </div> -->
 			</div>
 			<div>
@@ -136,81 +131,6 @@
 	// 	document.getElementsByClassName('dropdown').style.visibility='visible';
 	// }
 
-
-
-	function openNav() {
-		console.log(window.innerWidth);
-		if (window.innerWidth < 800) {
-			console.log("mobile menu");
-			document.getElementById("mySidebar").style.width = window.innerWidth+"px";
-			document.getElementById("main").style.visibility = 'hidden';
-			// document.getElementById("replace").style.marginLeft = "290px";
-		} else {
-			document.getElementById("mySidebar").style.width = "290px";
-			document.getElementById("main").style.visibility = 'hidden';
-			document.getElementById("replace").style.marginLeft = "290px";
-		}
-
-		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-		var dropdown = document.getElementsByClassName("dropdown-btn");
-
-		var i;
-
-		for (i = 0; i < dropdown.length; i++) {
-			dropdown[i].addEventListener("click", function () {
-				// console.log(this.childNodes[1]);
-				this.classList.toggle("active");
-				this.childNodes[1].classList.toggle("rotate");
-				var dropdownContent = this.nextElementSibling;
-				if (dropdownContent.style.display === "block") {
-					dropdownContent.style.display = "none";
-
-				} else {
-					dropdownContent.style.display = "block";
-				}
-			});
-		}
-	}
-
-	function closeNav() {
-		document.getElementById("mySidebar").style.width = "0";
-		document.getElementById("main").style.visibility = 'visible';
-		document.getElementById("replace").style.marginLeft = "0";
-		var dropdown = document.getElementsByClassName("dropdown-btn");
-		var i;
-		for (i = 0; i < dropdown.length; i++) {
-			dropdown[i].removeAttribute('onclick');
-			dropdown[i].classList.remove("active");
-			dropdown[i].childNodes[1].classList.remove("rotate");
-			var dropdownContent = dropdown[i].nextElementSibling;
-			if (dropdownContent.style.display === "block") {
-				dropdownContent.style.display = "none";
-			} else {
-				dropdownContent.style.display = "none";
-			}
-		}
-
-		for (i = 0; i < dropdown.length; i++) {
-			dropdown[i].addEventListener("click", function () {
-				console.log(this);
-				this.classList.toggle("active");
-				this.childNodes[1].classList.toggle("rotate");
-				var dropdownContent = this.nextElementSibling;
-				if (dropdownContent.style.display === "block") {
-					dropdownContent.style.display = "none";
-
-				} else {
-					dropdownContent.style.display = "block";
-				}
-			});
-
-		}
-
-
-	}
-
-
-
 	var IDnumber; //for logging each session to oocsi so it can be identified for analyses
 	let ready = false; //use to not skip the setup page by pressing key or placing tokens
 	var deviceName;
@@ -235,11 +155,10 @@
 		};
 		xhttp.open("GET", "modeselect.html", true);
 		xhttp.send();
-
 	};
 
 	//When you click continue, the body will be replaced with the page from infopage.html, but you stay at the same page so the BLE connection does not get broken
-	async function openInfo() {
+	function openInfo() {
 		if (!ready) {
 			ready = true;
 			//	IDnumber = document.getElementById('ID').value;
@@ -256,16 +175,10 @@
 				} else {
 					document.getElementById("switchMode").checked = false;
 				}
-				if (deviceName == null) {
-					document.getElementById('awaitingTokens').innerHTML = 'Use the menu to navigate';
-					document.getElementById('awaitingTokens').style.fontWeight= '400';
-
-				}
 			}
 		};
 		xhttp.open("GET", "infopage.html", true);
 		xhttp.send();
-
 	};
 
 	function openNoCombi() {
@@ -653,7 +566,7 @@
 		}
 
 		// Show the current tab, and add an "active" class to the button that opened the tab
-		document.getElementById(tabName).style.display = "flex";
+		document.getElementById(tabName).style.display = "block";
 		evt.currentTarget.className += " active";
 
 

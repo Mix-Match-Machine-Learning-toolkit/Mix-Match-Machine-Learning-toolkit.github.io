@@ -173,7 +173,7 @@ async function textClassification() {
     console.log(textData);
     var predictions = await textClassModel.classify(textData);
     document.getElementById('buttonClassify').innerHTML = 'Classify'
-    document.getElementById('predictions').style.display='block';
+    document.getElementById('predictions').style.visibility = 'visible';
     console.log(predictions);
     jsonPredictions = JSON.stringify(predictions, null, 2);
 
@@ -205,7 +205,7 @@ async function classifyImage() {
     const imageData = document.getElementById('img');
     var predictions = await imageClassModel.classify(imageData);
     document.getElementById('buttonClassify').innerHTML = 'Classify'
-    document.getElementById('predictions').style.display='block';
+    document.getElementById('predictions').style.visibility = 'visible';
     console.log(predictions);
     document.getElementById('label1').innerHTML = predictions[0].className;
     document.getElementById('prob1').innerHTML = (predictions[0].probability * 100).toFixed(2) + '%';
@@ -256,7 +256,7 @@ async function identifyImage() {
         .then((response) => response.json())
         .then((labelmapJSON) => {
             console.log(labelmapJSON[winners[0]].name, prob[0]);
-            document.getElementById('predictions').style.display='block';
+            document.getElementById('predictions').style.visibility = 'visible';
             document.getElementById('label1').innerHTML = labelmapJSON[winners[0]].name;
             document.getElementById('prob1').innerHTML = (prob[0] * 100).toFixed(2) + '%';
         })
@@ -274,7 +274,7 @@ let recognizer;
 function predictWord() {
     // Array of words that the recognizer is trained to recognize.
     const words = recognizer.wordLabels();
-    document.getElementById('predictions').style.display='inline-block';
+    document.getElementById('predictions').style.visibility = 'visible';
     recognizer.listen(({ scores }) => {
         // Turn scores into a list of (score,word) pairs.
         scores = Array.from(scores).map((s, i) => ({ score: s, word: words[i] }));
@@ -303,7 +303,7 @@ function stopListening() {
 
         document.getElementById("startListening").style.display = 'inline-block';
         document.getElementById("stopListening").style.display = 'none';
-        document.getElementById("predictions").style.display='none';
+        document.getElementById("predictions").style.visibility = 'hidden';
         return recognizer.stopListening();
 
     }
@@ -354,7 +354,7 @@ async function classifyPenguins() {
             // const label3 = penguinClasses[winners[2]];
             // const prob3 = prob[2];
             document.getElementById('penguinImage').src = "assets/photos/" + penguinClasses[winners[0]] + '.png'
-            document.getElementById('predictions').style.display='block';
+            document.getElementById('predictions').style.visibility = 'visible';
             document.getElementById('label1').innerHTML = penguinClasses[winners[0]];
             document.getElementById('prob1').innerHTML = (prob[0] * 100).toFixed(2) + '%';
             document.getElementById('label2').innerHTML = penguinClasses[winners[1]];
@@ -594,7 +594,7 @@ function translateText() {
         console.log(data[0][0][0])
     });
 
-    document.getElementById('predictions').style.display='block';
+    document.getElementById('predictions').style.visibility = 'visible';
 }
 
 //--------------Movie recommender (table recommend) --------------
@@ -614,7 +614,7 @@ var recSchindlersList = ["Saving Private Ryan", "Empire of the Sun", "The Truce"
 
 function recommendMovie() {
     movie = document.getElementById('movies').value;
-    document.getElementById('predictions').style.display='block';
+    document.getElementById('predictions').style.visibility = 'visible';
     console.log(movie);
     switch (movie) {
         case "The Dark Knigh Rises":
