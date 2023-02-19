@@ -198,10 +198,12 @@
                         </span>
                         <xsl:value-of select="exdescription"/>
                       </p>
-                    <p>  <i class="fa-solid fa-triangle-exclamation fa-lg" style="color: #1E475E;">&#160;
+                      <p>
+                        <i class="fa-solid fa-triangle-exclamation fa-lg" style="color: #1E475E;">&#160;
 
-                          </i> <i> Please be aware that these applications have not been checked for compliance to ethical guidelines on the use of AI </i>
-          </p>
+                        </i>
+                        <i> Please be aware that these applications have not been checked for compliance to ethical guidelines on the use of AI </i>
+                      </p>
                       <p>
                         <a href="{exlink/@xlink:href}" target="_blank">
 
@@ -249,9 +251,9 @@
 
                 </div>
                 <div id='overlayWeka'>
-                <a href="#" onclick="closeOverlayWeka();return false;" id='closeOverlay'>X</a>
+                  <a href="#" onclick="closeOverlayWeka();return false;" id='closeOverlay'>X</a>
                   <div id='overlayText'>
-                  
+
                     <h2 class='overlay exampleheader'>Weka</h2>
 
                     <p class='overlay'>
