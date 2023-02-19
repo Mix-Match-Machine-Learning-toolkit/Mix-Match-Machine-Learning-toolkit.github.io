@@ -85,7 +85,7 @@ However, it can only recognize objects on which it has been trained, so it might
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://techengage.com/google-lens-now-detects-billion-items/">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/tutorials/images/classification">Link to DIY</diylink>
 
-      <source>by: Author (via: Google Lens)</source></ex>
+      <source>by: Anniek Jansen (via: Google Lens)</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support image data</reason>
@@ -210,7 +210,7 @@ However, it can only recognize objects on which it has been trained, so it might
         <eximage>assets/photos/alttext.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://blogs.microsoft.com/ai/azure-image-captioning/ "></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/swlh/automatic-image-captioning-using-deep-learning-5e899c127387"></diylink>
-      <source>by: Author (generated using automatic captioning in Word)</source></ex>
+      <source>by: Anniek Jansen (generated using automatic captioning in Word)</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support image data</reason>
@@ -229,10 +229,11 @@ However, it can only recognize objects on which it has been trained, so it might
       <ex value='1'>
         <exname>Innereye</exname>
         <exdescription> InnerEye is a research project from Microsoft Research Cambridge with the aim to create automatic, quantitative analysis of three-dimensional medical images possible. For this, it uses techniques such as image categorization to recognize what is shown in the image.</exdescription>
-        <eximage>assets/photos/imageunderstand_nc.jpg</eximage>
+        <eximage>assets/photos/innereye.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.microsoft.com/en-us/research/project/medical-image-analysis/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://cainvas.ai-tech.systems/use-cases/breast-cancer-detection-app/"></diylink>
-      <source>by: by National Cancer Institute on Unsplash</source></ex>
+        <source>by: InnerEye research project - Microsoft Research</source>
+      </ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support image data</reason>
@@ -830,7 +831,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/data_timeseriesUL.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.osti.gov/servlets/purl/1607585"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/creating-synthetic-time-series-data-67223ff08e34"></diylink>
-      <source>by: Author
+      <source>by: Anniek Jansen
 </source></ex>
     </examples>
     <weka exist='no'>
@@ -1433,7 +1434,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/mlabilities_icon_cluster.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.segmentify.com/blog/customer-consumer-user-segmentation-examples"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/codex/customer-segmentation-with-k-means-in-python-18336fb915be"></diylink>
-      <source>by: Author</source></ex>
+      <source>by: Anniek Jansen</source></ex>
     </examples>
     <weka exist='yes'>
       <instructions>
@@ -1570,10 +1571,10 @@ Based on all columns, except the one with the labels, the model will try to pred
       <ex value='1'>
         <exname>ToTTO</exname>
         <exdescription>This ML model can generate one sentence descriptions about the content in selected cells. These sentences are human understandable sentences. A challenge for these kinds of tasks is getting the labels, in this case the one sentence descriptions. </exdescription>
-        <eximage>assets/photos/table qa.png</eximage>
+        <eximage>assets/photos/totto.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://ai.googleblog.com/2021/01/totto-controlled-table-to-text.html"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/google-research-datasets/totto"></diylink>
-      <source>by: Author</source></ex>
+      <source>by: Ankur Parikh and Xuezhi Wang, Research Scientists, Google Research</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support NLP algorithms</reason>
@@ -1832,10 +1833,11 @@ Next to that, videos can also contain audio and for this you can audio identific
       <ex value='1'>
         <exname>Face ID</exname>
         <exdescription>After an initial training phase where the ML model is learned to recognize your face specifically, it is possible to use this as a unique identifier to for example unlock your phone or verify your online payment.</exdescription>
-        <eximage>assets/photos/selfie.jpg</eximage>
+        <eximage>assets/photos/faceid2.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://support.apple.com/en-us/HT208108"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/ageitgey/face_recognition"></diylink>
-      <source>by: S O C I A L . C U T on Unsplash </source></ex>
+        <source>by: Apple </source>
+      </ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support video data</reason>
