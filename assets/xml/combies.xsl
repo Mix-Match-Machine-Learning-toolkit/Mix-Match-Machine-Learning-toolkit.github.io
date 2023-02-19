@@ -128,20 +128,27 @@
                     </span>
                   </p>
 
-                  <div class='techterms'>
-
-                    <i class="fa-solid fa-print fa-lg" style="color: #1E475E;">&#160;</i>
-                    <span class='bold'>Output:&#160;
-                    </span>
+                  <div class='outputdiv'>
                     <img>
 
-                      <xsl:attribute name="class">smalloutputimage
+                      <xsl:attribute name="class">connectortoken_icon
                       </xsl:attribute>
 
                       <xsl:attribute name="src">
-                        <xsl:value-of select="../images/im[@value='output']"/>
+                        <xsl:value-of select="../images/im[@value='connectoricon']"/>
                       </xsl:attribute>
                     </img>
+                    <!-- <i class="fa-solid fa-print fa-lg" style="color: #1E475E;">&#160;</i> -->
+                    <span class='bold'>&#160;Output:&#160;&#160;
+                    </span>
+                    <!-- <img>
+
+                        <xsl:attribute name="class">smalloutputimage
+                        </xsl:attribute>
+
+                        <xsl:attribute name="src"><xsl:value-of select="../images/im[@value='output']"/>
+                        </xsl:attribute>
+                      </img> -->
                     <span class="output">
                       <xsl:value-of select="output" disable-output-escaping="yes"/>
                     </span>
@@ -171,7 +178,7 @@
                   <div class='example'>
                     <xsl:for-each select="combinations/combi[datatoken=$tokenselected1 and abilitytoken=$tokenselected2]/examples/ex">
                       <!-- <div class='img_caption'> -->
-                        <h3 class='exampleHeaderMobile'>
+                      <h3 class='exampleHeaderMobile'>
                         <xsl:value-of select="exname"/>
                       </h3>
                       <div class='exImg'>
