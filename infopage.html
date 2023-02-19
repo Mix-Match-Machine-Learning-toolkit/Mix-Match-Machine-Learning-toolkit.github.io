@@ -41,160 +41,181 @@
 	</label>
 	<p class='mode'>Education mode</p>
 
+	<div id="mySidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		<button class="dropdown-btn firstdropdown">Data types
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-container">
+			<button class="dropdown-btn middropdown">Labeled data
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container subdropdown">
+				<a href=# value=99 onclick="openDatabyClick(99); closeNav()">Table</a>
+				<a href=# value=101 onclick="openDatabyClick(101); closeNav()">Time series</a>
+				<a href=# onclick="openDatabyClick(98); closeNav()">Image</a>
+				<a href=# value=100 onClick="openDatabyClick(100); closeNav()">Text</a>
+				<a href=# value=97 onclick="openDatabyClick(97); closeNav()">Audio</a>
+				<a href=# value=102 onclick="openDatabyClick(102); closeNav()">Video</a>
+			</div>
 
-	<ul class="dropdown">
-		<li><i class="fas fa-bars fa-2x" href="#" style="color: #2B5F6E;"></i>
-			<ul>
-				<li><a href="#">Data</a>
-					<ul>
-						<li><a href="#">Labeled data</a>
-							<ul>
-								<li><a href=# value=99 onclick="openDatabyClick(99)">Table</a></li>
-								<li><a href=# value=101 onclick="openDatabyClick(101)">Time series</a></li>
-								<li><a href=# onclick="openDatabyClick(98)">Image</a></li>
-								<li><a href=# value='100' onClick="openDatabyClick(100)">Text</a></li>
-								<li><a href=# value=97 onclick="openDatabyClick(97)">Audio</a></li>
-								<li><a href=# value=102 onclick="openDatabyClick(102)">Video</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Unlabeled data</a>
-							<ul>
-								<li><a href=# value=105 onclick="openDatabyClick(105)">Table</a></li>
-								<li><a href=# value=10 onclick="openDatabyClick(107)">Time series</a></li>
-								<li><a href=# onclick="openDatabyClick(104)">Image</a></li>
-								<li><a href=# value='106' onClick="openDatabyClick(106)">Text</a></li>
-								<li><a href=# value=103 onclick="openDatabyClick(103)">Audio</a></li>
-								<li><a href=# value=108 onclick="openDatabyClick(108)">Video</a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li><a href="#">Capabilities</a>
-					<ul>
-						<li><a href="#">Supervised learning</a>
-							<ul>
-								<li><a href=# onclick="openAbilitybyClick(109)">Categorize</a></li>
-								<li><a href=# onclick="openAbilitybyClick(110)">Foresee</a></li>
-								<li><a href=# onclick="openAbilitybyClick(111)">Identify</a></li>
-								<li><a href=# onclick="openAbilitybyClick(113)">Communicate</a></li>
-								<li><a href=# onclick="openAbilitybyClick(117)">Translate</a></li>
-								<li><a href=# onclick="openAbilitybyClick(122)">Understand</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Unsupervised learning</a>
-							<ul>
-								<li><a href=# onclick="openAbilitybyClick(112)">Cluster</a></li>
-								<li><a href=# onclick="openAbilitybyClick(114)">Distinguish</a></li>
-								<li><a href=# onclick="openAbilitybyClick(116)">Recommend</a></li>
-								<li><a href=# onclick="openAbilitybyClick(115)">Generate</a></li>
+			<button class="dropdown-btn middropdown">Unlabeled data
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container subdropdown">
+				<a href=# value=105 onclick="openDatabyClick(105); closeNav()">Table</a>
+				<a href=# value=10 onclick="openDatabyClick(107); closeNav()">Time series</a>
+				<a href=# onclick="openDatabyClick(104); closeNav()">Image</a>
+				<a href=# value=106 onClick="openDatabyClick(106); closeNav()">Text</a>
+				<a href=# value=103 onclick="openDatabyClick(103); closeNav()">Audio</a>
+				<a href=# value=108 onclick="openDatabyClick(108); closeNav()">Video</a>
+			</div>
+		</div>
+		<button class="dropdown-btn firstdropdown">ML capabilities
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-container">
+			<button class="dropdown-btn middropdown">Supervised learning
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container subdropdown">
+				<a href=# onclick="openAbilitybyClick(109); closeNav()">Categorize</a>
+				<a href=# onclick="openAbilitybyClick(110); closeNav()">Foresee</a>
+				<a href=# onclick="openAbilitybyClick(111); closeNav()">Identify</a>
+				<a href=# onclick="openAbilitybyClick(113); closeNav()">Communicate</a>
+				<a href=# onclick="openAbilitybyClick(117); closeNav()">Translate</a>
+				<a href=# onclick="openAbilitybyClick(122); closeNav()">Understand</a>
+			</div>
 
-							</ul>
-						</li>
-						<li><a href="#">Reinforcement learning</a>
-							<ul>
-								<li><a href=# onclick="openAbilitybyClick(120)">Optimize</a></li>
-								<li><a href=# onclick="openAbilitybyClick(66)">Navigate</a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li><a href="#">Combinations</a>
-					<ul>
-						<li><a href=# value=99 onclick="openDatabyClick(99)">Table</a>
-							<ul>
-								<li><a href=# onclick="openCombibyClick(99, 109)">Categorize</a></li>
-								<li><a href=# onclick="openCombibyClick(99, 110)">Foresee</a></li>
-								<li><a href=# onclick="openCombibyClick(99, 111)">Identify</a></li>
-								<li><a href=# onclick="openCombibyClick(99, 113)">Communicate</a></li>
-								<li><a href=# onclick="openCombibyClick(99, 117)" >Translate</a></li>
-								<li><a href=# onclick="openCombibyClick(99, 122)" >Understand</a></li>
-								<li><a href=# onclick="openCombibyClick(105, 112)">Cluster</a></li>
-								<li><a href=# onclick="openCombibyClick(105, 114)">Distinguish</a></li>
-								<li><a href=# onclick="openCombibyClick(105, 116)">Recommend</a></li>
-								<li><a href=# onclick="openCombibyClick(105, 115)">Generate</a></li>
 
-							</ul>
-						</li>
-						<li><a href=# value=101 onclick="openDatabyClick(101)">Time series</a>
-							<ul>
-								<li><a href=# onclick="openCombibyClick(101, 109)">Categorize</a></li>
-								<li><a href=# onclick="openCombibyClick(101, 110)">Foresee</a></li>
-								<li><a href=# onclick="openCombibyClick(101, 111)">Identify</a></li>
-								<li><a href=# onclick="openCombibyClick(101, 113)" class='nocombi'>Communicate</a></li>
-								<li><a href=# onclick="openCombibyClick(101, 117)" class='nocombi'>Translate</a></li>
-								<li><a href=# onclick="openCombibyClick(101, 122)">Understand</a></li>
-								<li><a href=# onclick="openCombibyClick(107, 112)">Cluster</a></li>
-								<li><a href=# onclick="openCombibyClick(107, 114)">Distinguish</a></li>
-								<li><a href=# onclick="openCombibyClick(107, 116)">Recommend</a></li>
-								<li><a href=# onclick="openCombibyClick(107, 115)">Generate</a></li>
-							</ul>
-						</li>
-						<li><a href=#>Image</a>
-							<ul>
-								<li><a href=# onclick="openCombibyClick(98, 109)">Categorize</a></li>
-								<li><a href=# onclick="openCombibyClick(98, 110)">Foresee</a></li>
-								<li><a href=# onclick="openCombibyClick(98, 111)">Identify</a></li>
-								<li><a href=# onclick="openCombibyClick(98, 113)">Communicate</a></li>
-								<li><a href=# onclick="openCombibyClick(98, 117)">Translate</a></li>
-								<li><a href=# onclick="openCombibyClick(98, 122)">Understand</a></li>
-								<li><a href=# onclick="openCombibyClick(104, 112)">Cluster</a></li>
-								<li><a href=# onclick="openCombibyClick(104, 114)">Distinguish</a></li>
-								<li><a href=# onclick="openCombibyClick(104, 116)">Recommend</a></li>
-								<li><a href=# onclick="openCombibyClick(104, 115)">Generate</a></li>
-							</ul>
-						</li>
-						<li><a href=# value='100' onClick="openDatabyClick(100)">Text</a>
-							<ul>
-								<li><a href=# onclick="openCombibyClick(100, 109)">Categorize</a></li>
-								<li><a href=# onclick="openCombibyClick(100, 110)">Foresee</a></li>
-								<li><a href=# onclick="openCombibyClick(100, 111)" >Identify</a></li>
-								<li><a href=# onclick="openCombibyClick(100, 113)">Communicate</a></li>
-								<li><a href=# onclick="openCombibyClick(100, 117)">Translate</a></li>
-								<li><a href=# onclick="openCombibyClick(100, 122)">Understand</a></li>
-								<li><a href=# onclick="openCombibyClick(106, 112)">Cluster</a></li>
-								<li><a href=# onclick="openCombibyClick(106, 114)">Distinguish</a></li>
-								<li><a href=# onclick="openCombibyClick(106, 116)">Recommend</a></li>
-								<li><a href=# onclick="openCombibyClick(106, 115)">Generate</a></li>
-							</ul>
-						</li>
-						<li><a href=# value=97 onclick="openDatabyClick(97)">Audio</a>
-							<ul>
-								<li><a href=# onclick="openCombibyClick(97, 109)">Categorize</a></li>
-								<li><a href=# onclick="openCombibyClick(97, 110)" class='nocombi'>Foresee</a></li>
-								<li><a href=# onclick="openCombibyClick(97, 111)">Identify</a></li>
-								<li><a href=# onclick="openCombibyClick(97, 113)">Communicate</a></li>
-								<li><a href=# onclick="openCombibyClick(97, 117)">Translate</a></li>
-								<li><a href=# onclick="openCombibyClick(97, 122)">Understand</a></li>
-								<li><a href=# onclick="openCombibyClick(103, 112)">Cluster</a></li>
-								<li><a href=# onclick="openCombibyClick(103, 114)">Distinguish</a></li>
-								<li><a href=# onclick="openCombibyClick(103, 116)">Recommend</a></li>
-								<li><a href=# onclick="openCombibyClick(103, 115)">Generate</a></li>
-							</ul>
-						</li>
-						<li><a href=# value=102 onclick="openDatabyClick(102)">Video</a>
-							<ul>
-								<li><a href=# onclick="openCombibyClick(102, 109)">Categorize</a></li>
-								<li><a href=# onclick="openCombibyClick(102, 110)">Foresee</a></li>
-								<li><a href=# onclick="openCombibyClick(102, 111)">Identify</a></li>
-								<li><a href=# onclick="openCombibyClick(102, 113)" class='nocombi'>Communicate</a></li>
-								<li><a href=# onclick="openCombibyClick(102, 117)">Translate</a></li>
-								<li><a href=# onclick="openCombibyClick(102, 122)">Understand</a></li>
-								<li><a href=# onclick="openCombibyClick(108, 112)">Cluster</a></li>
-								<li><a href=# onclick="openCombibyClick(108, 114)">Distinguish</a></li>
-								<li><a href=# onclick="openCombibyClick(108, 116)">Recommend</a></li>
-								<li><a href=# onclick="openCombibyClick(108, 115)">Generate</a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
+			<button class="dropdown-btn middropdown">Unsupervised learning
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container subdropdown">
+				<a href=# onclick="openAbilitybyClick(112); closeNav()">Cluster</a>
+				<a href=# onclick="openAbilitybyClick(114); closeNav()">Distinguish</a>
+				<a href=# onclick="openAbilitybyClick(116); closeNav()">Recommend</a>
+				<a href=# onclick="openAbilitybyClick(115); closeNav()">Generate</a>
+			</div>
 
-			</ul>
-		</li>
-	</ul>
+			<button class="dropdown-btn middropdown">Reinforcement learning
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container subdropdown">
+				<a href=# onclick="openAbilitybyClick(120); closeNav()">Optimize</a>
+				<a href=# onclick="openAbilitybyClick(66); closeNav()">Navigate</a>
+			</div>
+		</div>
+
+
+		<button class="dropdown-btn firstdropdown">Combinations
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="dropdown-container">
+			<button class="dropdown-btn middropdown">Tabular data + 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container subdropdown">
+				<a href=# onclick="openCombibyClick(99, 109); closeNav()">Categorize</a>
+				<a href=# onclick="openCombibyClick(99, 110); closeNav()">Foresee</a>
+				<a href=# onclick="openCombibyClick(99, 111); closeNav()">Identify</a>
+				<a href=# onclick="openCombibyClick(99, 113); closeNav()">Communicate</a>
+				<a href=# onclick="openCombibyClick(99, 117); closeNav()">Translate</a>
+				<a href=# onclick="openCombibyClick(99, 122); closeNav()">Understand</a>
+				<a href=# onclick="openCombibyClick(105, 112); closeNav()">Cluster</a>
+				<a href=# onclick="openCombibyClick(105, 114); closeNav()">Distinguish</a>
+				<a href=# onclick="openCombibyClick(105, 116); closeNav()">Recommend</a>
+				<a href=# onclick="openCombibyClick(105, 115); closeNav()">Generate</a>
+			</div>
+
+
+			<button class="dropdown-btn middropdown">Time series data + 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container subdropdown">
+				<a href=# onclick="openCombibyClick(101, 109); closeNav()">Categorize</a>
+				<a href=# onclick="openCombibyClick(101, 110); closeNav()">Foresee</a>
+				<a href=# onclick="openCombibyClick(101, 111); closeNav()">Identify</a>
+				<a href=# onclick="openCombibyClick(101, 113); closeNav()" class='nocombi'>Communicate</a>
+				<a href=# onclick="openCombibyClick(101, 117); closeNav()" class='nocombi'>Translate</a>
+				<a href=# onclick="openCombibyClick(101, 122); closeNav()">Understand</a>
+				<a href=# onclick="openCombibyClick(107, 112); closeNav()">Cluster</a>
+				<a href=# onclick="openCombibyClick(107, 114); closeNav()">Distinguish</a>
+				<a href=# onclick="openCombibyClick(107, 116); closeNav()">Recommend</a>
+				<a href=# onclick="openCombibyClick(107, 115); closeNav()">Generate</a>
+			</div>
+
+			<button class="dropdown-btn middropdown">Image data + 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container subdropdown">
+				<a href=# onclick="openCombibyClick(98, 109); closeNav()">Categorize</a>
+				<a href=# onclick="openCombibyClick(98, 110); closeNav()">Foresee</a>
+				<a href=# onclick="openCombibyClick(98, 111); closeNav()">Identify</a>
+				<a href=# onclick="openCombibyClick(98, 113); closeNav()">Communicate</a>
+				<a href=# onclick="openCombibyClick(98, 117); closeNav()">Translate</a>
+				<a href=# onclick="openCombibyClick(98, 122); closeNav()">Understand</a>
+				<a href=# onclick="openCombibyClick(104, 112); closeNav()">Cluster</a>
+				<a href=# onclick="openCombibyClick(104, 114); closeNav()">Distinguish</a>
+				<a href=# onclick="openCombibyClick(104, 116); closeNav()">Recommend</a>
+				<a href=# onclick="openCombibyClick(104, 115); closeNav()">Generate</a>
+			</div>
+			<button class="dropdown-btn middropdown">Text data + 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container subdropdown">
+				<a href=# onclick="openCombibyClick(100, 109); closeNav()">Categorize</a>
+				<a href=# onclick="openCombibyClick(100, 110); closeNav()">Foresee</a>
+				<a href=# onclick="openCombibyClick(100, 111); closeNav()">Identify</a>
+				<a href=# onclick="openCombibyClick(100, 113); closeNav()">Communicate</a>
+				<a href=# onclick="openCombibyClick(100, 117); closeNav()">Translate</a>
+				<a href=# onclick="openCombibyClick(100, 122); closeNav()">Understand</a>
+				<a href=# onclick="openCombibyClick(106, 112); closeNav()">Cluster</a>
+				<a href=# onclick="openCombibyClick(106, 114); closeNav()">Distinguish</a>
+				<a href=# onclick="openCombibyClick(106, 116); closeNav()">Recommend</a>
+				<a href=# onclick="openCombibyClick(106, 115); closeNav()">Generate</a>
+			</div>
+			<button class="dropdown-btn middropdown">Audio data + 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container subdropdown">
+				<a href=# onclick="openCombibyClick(97, 109); closeNav()">Categorize</a>
+				<a href=# onclick="openCombibyClick(97, 110); closeNav()" class='nocombi'>Foresee</a>
+				<a href=# onclick="openCombibyClick(97, 111); closeNav()">Identify</a>
+				<a href=# onclick="openCombibyClick(97, 113); closeNav()">Communicate</a>
+				<a href=# onclick="openCombibyClick(97, 117); closeNav()">Translate</a>
+				<a href=# onclick="openCombibyClick(97, 122); closeNav()">Understand</a>
+				<a href=# onclick="openCombibyClick(103, 112); closeNav()">Cluster</a>
+				<a href=# onclick="openCombibyClick(103, 114); closeNav()">Distinguish</a>
+				<a href=# onclick="openCombibyClick(103, 116); closeNav()">Recommend</a>
+				<a href=# onclick="openCombibyClick(103, 115); closeNav()">Generate</a>
+			</div>
+			<button class="dropdown-btn middropdown">Video data + 
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container subdropdown">
+				<a href=# onclick="openCombibyClick(102, 109); closeNav()">Categorize</a>
+				<a href=# onclick="openCombibyClick(102, 110); closeNav()">Foresee</a>
+				<a href=# onclick="openCombibyClick(102, 111); closeNav()">Identify</a>
+				<a href=# onclick="openCombibyClick(102, 113); closeNav()" class='nocombi'>Communicate</a>
+				<a href=# onclick="openCombibyClick(102, 117); closeNav()">Translate</a>
+				<a href=# onclick="openCombibyClick(102, 122); closeNav()">Understand</a>
+				<a href=# onclick="openCombibyClick(108, 112); closeNav()">Cluster</a>
+				<a href=# onclick="openCombibyClick(108, 114); closeNav()">Distinguish</a>
+				<a href=# onclick="openCombibyClick(108, 116); closeNav()">Recommend</a>
+				<a href=# onclick="openCombibyClick(108, 115); closeNav()">Generate</a>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="main">
+		<a><i class="fas fa-bars fa-2x openbtn" href="#" onclick="openNav()"></i></a>
+	</div>
 	<header>
 
 		<div class=centercenterText>
-			<h2>Waiting for tokens</h2>
+			<h2 id="awaitingTokens">Waiting for tokens</h2>
 			<!-- <p>To explore the different cards you can place the tokens on the board</p> -->
 		</div>
 		<p>

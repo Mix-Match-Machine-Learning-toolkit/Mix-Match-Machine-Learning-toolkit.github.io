@@ -1,0 +1,204 @@
+@media screen and (max-width: 1000px) {
+    .headerData {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 80%;
+        margin: auto;
+        padding-top: 10px;
+        max-width: 700px;
+    }
+    .tabDiv{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 80%;
+        margin: auto;
+        padding-top: 10px;
+        max-width: 700px;
+    }
+
+    .tab{
+        width: 100%;
+    }
+    .tab button{
+        font-size: 11px;
+    }
+    .application, .interactive{
+        width: 100%;
+    }
+
+    .tabcontent{
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .body {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .leftheader {
+        width: 200px;
+        padding: 0px;
+        height: 150px;
+        display: none;
+    }
+
+
+    .rightheader {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .divToken {
+        width: 80%;
+        height: inherit;
+        margin: auto;
+    }
+
+    .descriptionData {
+        width: 100%;
+
+    }
+
+    .description {
+        width: 100%;
+        padding: 0px;
+        text-align: justify;
+    }
+
+    h3 {
+        line-height: 80% !important;
+    }
+
+    .illustration {
+        width: 100%;
+        height: inherit;
+    }
+
+    .illustrationAbilityMobile {
+        display: block;
+        max-width: 100%;
+        min-width: 200px;
+        height: auto;
+        max-height: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .modeBox {
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .leftheadercombi {
+        display: none;
+    }
+
+    .rightheadercombi {
+        width: 100%;
+    }
+
+    .descriptioncombi {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .example {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .exImg {
+        width: 100%;
+        min-height: 10px;
+    }
+
+    .exampleImage {
+        max-width: 100%;
+    }
+
+    .exText {
+        width: 100%;
+    }
+
+    .exampleHeaderMobile {
+        display: inline;
+    }
+
+
+    .exampleHeaderApplication{
+        display: none;
+    }
+
+    #interactiveExample{
+        width: 100%;
+    }
+
+    #predictions, .input{
+        width: 100%;
+        padding: 0px;
+    }
+
+    #Classifier{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .labels_prob{
+        flex-wrap: wrap;
+    }
+
+    .inputSplit{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sidebar .closebtn {
+        margin-left: 5px;
+        left: 80%;
+    }
+}
+
+
+/* .labelimage {
+        width: auto;
+        height: 100%;
+    }
+
+    .dataimage {
+        height: 55%;
+        width: auto;
+        transform: translate(80%, 20%);
+    }
+
+    .overlaptext {
+        font-size: 20px;
+        transform: translate(45%, -110%);
+    }
+    .overlaptext2{
+        font-size: 8px;
+        transform: translate(30%, -150%);
+    } */

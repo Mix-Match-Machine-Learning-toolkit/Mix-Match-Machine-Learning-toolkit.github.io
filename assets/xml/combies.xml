@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <combinations xmlns:xlink="http://www.w3.org/1999/xlink">
   <images>
-    <im value='labeled'>assets/photos/ld.png</im>
-    <im value='unlabeled'>assets/photos/ud.png</im>
-    <im value='supervised'>assets/photos/sl.png</im>
-    <im value='unsupervised'>assets/photos/us.png</im>
-    <im value='output'>assets/photos/icons_v2-11.png</im>
-    <im value='output_l'>assets/photos/output_l.png</im>
-    <im value='combi'>assets/photos/icons_combi.svg</im>
-    <im value='humanintheloop'>assets/photos/hitl.png</im>
-  </images>
+  <im value='labeled'>assets/photos/ld.png</im>
+  <im value='unlabeled'>assets/photos/ud.png</im>
+  <im value='supervised'>assets/photos/sl.png</im>
+  <im value='unsupervised'>assets/photos/us.png</im>
+  <im value='output'>assets/photos/icons_v2-11.png</im>
+  <im value='output_l'>assets/photos/output_l.png</im>
+  <im value='combi'>assets/photos/icons_combi.svg</im>
+  <im value='humanintheloop'>assets/photos/hitl.png</im>
+  <im value='connectoricon'>assets/photos/icon_connectortoken.svg</im>
+</images>
   <combi>
     <name>Predictions based on images</name>
     <datatype>Image</datatype>
@@ -22,14 +23,13 @@
     <techterm>Classification, regression</techterm>
     <examples>
       <ex value='1'>
-        <exname>LikelyAI</exname>
-        <exdescription> LikelyAI will use your images as input and predicts how popular they will be when you post it on Instagram and choose the best. In this case it is using regression as it shows a percentage score of expected popularity for each image. It uses already existing images with known popularity, and the machine learning model will try to find patterns in these.</exdescription>
-        <eximage>assets/photos/likelyai.png</eximage>
-        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.likelyai.com/"></exlink>
+        <exname>FloodHub</exname>
+        <exdescription> The Flood Forecasting team at Google Research developed FloodHub. FloodHub can forecast when and where there is a chance of floods. To make these predictions, they have used satellite image data to create 3D height cards and model the behavior of water in rivers. These models are combined with river and weather data to make predictions and send out alerts. </exdescription>
+        <eximage>assets/photos/googlefloodhub.PNG</eximage>
+        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://sites.research.google/floods/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/analytics-vidhya/fastai-image-regression-age-prediction-based-on-image-68294d34f2ed"></diylink>
 
-        <source>by: LikelyAI</source>
-      </ex>
+      <source>by: Google (Data from the Google Flood Forecasting models that use data from ECMWF, NASA and NOAA) </source></ex>
     </examples>
   </combi>
   <combi>
@@ -54,13 +54,13 @@ You  might for example want to recognize different animals in a photo or handwri
       <source></source></ex> -->
       <ex value='1'>
         <exname>ObsIdentify</exname>
-        <exdescription>ObsIdentify is an app that can be used to recognize wild animals and plants. For this you will take an image and the app will recognize what is visible in the image and give percentages for how confident it is that it is a certain animal or plant.  Your observations are stored and shared.</exdescription>
+        <exdescription>ObsIdentify is an app that can be used to recognize certain animals, plants and fungi. To do this, you simply take an image and the app will recognize what is visible in the image and give percentages for how confident it is that it is a certain animal or plant. The technology used behind the app is NIA (Nature Identification API) and is also used on their platform Observation.org. The observations you make in the app are stored and shared if you create an account.
+        </exdescription>
         <eximage>assets/photos/ObsIdentify.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://tinyurl.com/yc7zdjxp">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://randerson112358.medium.com/classify-flower-images-using-machine-learning-python-549c98173ca4">Link to DIY</diylink>
 
-        <source>via: ObsIdentify</source>
-      </ex>
+      <source>by: ObsIdentify. ObsIdentify is a product of the Observation International Foundation, in collaboration with Naturalis Biodiversity Center and Natuurpunt</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support image data</reason>
@@ -81,12 +81,11 @@ You  might for example want to recognize different animals in a photo or handwri
         <exname>Google Lens Landmark</exname>
         <exdescription>Google Lens has many different functionalities, and one of them is recognizing specific landmarks in images. In this function, it recognizes unique buildings (e.g. the Big Ben) and not just that it is a building (this would be image categorization).
 However, it can only recognize objects on which it has been trained, so it might not be able to recognize it.</exdescription>
-        <eximage>assets/photos/googlens_landmark.jpg</eximage>
+        <eximage>assets/photos/googlelenslandmark.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://techengage.com/google-lens-now-detects-billion-items/">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/tutorials/images/classification">Link to DIY</diylink>
 
-        <source>by: https://www.droidapp.nl/nieuws/google-lens-filter-plaatsen/ (via Google Lens)</source>
-      </ex>
+      <source>by: Author (via: Google Lens)</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support image data</reason>
@@ -162,7 +161,7 @@ However, it can only recognize objects on which it has been trained, so it might
       <ex value='1'>
         <exname>Dall-e</exname>
         <exdescription>DALL-E uses the text captions that users can input to generate new images that visualize what was written in the text. It will generate different images for the same input so it can help for example with ideating or when you want to visualize something of which you do not have a photo.</exdescription>
-        <eximage>assets/photos/dall-e.JPG</eximage>
+        <eximage>assets/photos/image_generate_dalle.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://openai.com/blog/dall-e/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/image-generation-in-10-minutes-with-generative-adversarial-networks-c2afc56bfa3b"></diylink>
         <source>via: Dall-e (https://openai.com/blog/dall-e/)</source>
@@ -208,11 +207,10 @@ However, it can only recognize objects on which it has been trained, so it might
       <ex value='1'>
         <exname>Alternative text</exname>
         <exdescription>Describes the content of an image placed in Word or another Microsoft application</exdescription>
-        <eximage>assets/photos/alternativetext.JPG</eximage>
+        <eximage>assets/photos/alttext.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://blogs.microsoft.com/ai/azure-image-captioning/ "></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/swlh/automatic-image-captioning-using-deep-learning-5e899c127387"></diylink>
-        <source>by: Microsoft (https://blogs.microsoft.com/ai/azure-image-captioning/)</source>
-      </ex>
+      <source>by: Author (generated using automatic captioning in Word)</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support image data</reason>
@@ -231,11 +229,10 @@ However, it can only recognize objects on which it has been trained, so it might
       <ex value='1'>
         <exname>Innereye</exname>
         <exdescription> InnerEye is a research project from Microsoft Research Cambridge with the aim to create automatic, quantitative analysis of three-dimensional medical images possible. For this, it uses techniques such as image categorization to recognize what is shown in the image.</exdescription>
-        <eximage>assets/photos/innereye.jpg</eximage>
+        <eximage>assets/photos/imageunderstand_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.microsoft.com/en-us/research/project/medical-image-analysis/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://cainvas.ai-tech.systems/use-cases/breast-cancer-detection-app/"></diylink>
-        <source>by: InnerEye research project - Microsoft Research</source>
-      </ex>
+      <source>by: by National Cancer Institute on Unsplash</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support image data</reason>
@@ -252,13 +249,12 @@ However, it can only recognize objects on which it has been trained, so it might
     <techterm>Neural style transfer</techterm>
     <examples>
       <ex value='1'>
-        <exname>Deepart</exname>
+        <exname>Deep dream generator</exname>
         <exdescription> Based on the style of e.g. a famous painting, your uploaded image will be transformed to this style.  The models are trained on the reference images and when you upload your own image, the model will use what is has learned about the selected reference image and apply that style to your picture.</exdescription>
-        <eximage>assets/photos/deepart2.jpg</eximage>
-        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://deepart.io/"></exlink>
+        <eximage>assets/photos/deepdream.jpg</eximage>
+        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://deepdreamgenerator.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/tutorials/generative/style_transfer"></diylink>
-        <source>by: Lawrence Francis (content image: John Cena; style image: starry night by Vincent van Gogh)</source>
-      </ex>
+      <source>by: Deep Dream Generator (https://deepdreamgenerator.com/)</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support image data</reason>
@@ -324,7 +320,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <ex value='1'>
         <exname>Sentiment analysis</exname>
         <exdescription>This tool allows you to analyse the sentiment of a fragment of text and will predict if it is positive or negative, and also shows how confident is that it has predicted it correctly. You could use this information to monitor reviews about your product on for example social media.</exdescription>
-        <eximage>assets/photos/sentimentanalysis.JPG</eximage>
+        <eximage>assets/photos/visuals_sentimentanalyzer.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://monkeylearn.com/sentiment-analysis-online/">Link to example</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.tensorflow.org/text/tutorials/text_classification_rnn">Link to DIY</diylink>
         <source>via: MonkeyLearn sentiment analyzer</source>
@@ -506,11 +502,10 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <ex value='1'>
         <exname>Unique movies</exname>
         <exdescription>While anomalies might sound negative, it is also possible to use it to identify unique cases. This model will model the plot of movies into a vector space, where movies with the same plot will be close together. When you know this, you can also look at the movies who are the farthest from all the other movies, and these are the most unique movie plots.</exdescription>
-        <eximage>assets/photos/uniquemovies.png</eximage>
+        <eximage>assets/photos/movies.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://smartclick.ai/articles/how-artificial-intelligence-is-used-in-the-film-industry/">"</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.datadriveninvestor.com/unsupervised-outlier-detection-in-text-corpus-using-deep-learning-41d4284a04c8"></diylink>
-        <source>by: Avishek Nag </source>
-      </ex>
+      <source>by: Tyson Moultrie on Unsplash</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka has limited functionality for handling text data</reason>
@@ -573,7 +568,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <ex value='1'>
         <exname>Code oracle</exname>
         <exdescription>Code is one very specific form of text and can be quite hard to understand, especially when using an unfamiliar language. Code Oracle allows you to highlight a snippet of your code to see in "normal" language what it is doing.</exdescription>
-        <eximage>assets/photos/codexplainer.JPG</eximage>
+        <eximage>assets/photos/visuals_codeoracle.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://gpt3demo.com/apps/repl-it">"</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/analytics-vidhya/ai-generates-code-using-python-and-openais-gpt-3-2ddc95047cba"></diylink>
         <source>by: Amjad Masad</source>
@@ -606,11 +601,10 @@ For both concepts, the text will need to be preprocessed to make it understandab
       <ex value='1'>
         <exname>Google Translate</exname>
         <exdescription>Google Translate recognizes the input text and predicts which language it is, or you can select the input language manually. Next it will translate the whole text to the output language and also give some possible alternatives, e.g. synonyms.</exdescription>
-        <eximage>assets/photos/googletranslate_nc.jpg</eximage>
+        <eximage>assets/photos/googletranslate.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://translate.google.com/">"</exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/@ageitgey/build-your-own-google-translate-quality-machine-translation-system-d7dc274bd476"></diylink>
-        <source>by: Rubaitul Azad on Unsplash</source>
-      </ex>
+      <source>via: Google</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka has limited functionality for handling text data</reason>
@@ -641,11 +635,10 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>Stock market</exname>
         <exdescription>While perfect stock market predictions are not (yet) possible, it is possible to recognize some general trends based on time series data. For the stock market, it is important to take the time component into account, which is why time series data is used. So based on the historic data, the model will try to find patterns and use these to predict the future.</exdescription>
-        <eximage>assets/photos/stockmarket.JPG</eximage>
+        <eximage>assets/photos/stockmarket_unsplash.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.wallstreetzen.com/stock-screener/stock-forecast"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://data-flair.training/blogs/stock-price-prediction-machine-learning-project-in-python/"></diylink>
-        <source>via: wallstreetzen stock forecasts </source>
-      </ex>
+      <source>by: Nick Chong on Unsplash </source></ex>
     </examples>
     <weka exist='yes'>
       <instructions>
@@ -761,11 +754,10 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>Clustering earthquake signals</exname>
         <exdescription>Monitoring seismic data is very labor-intensive and there is more data than can be currently analyzed in a supervised manner. Therefore, clustering can be used to find patterns in these data and use these clusters to for example forecast earthquakes.</exdescription>
-        <eximage>assets/photos/earthquake.JPG</eximage>
+        <eximage>assets/photos/seismogram.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.nature.com/articles/s41467-020-17841-x"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/izzettunc/introduction-to-time-series-clustering"></diylink>
-        <source>by: Seydoux, L., Balestriero, R., Poli, P. et al. Clustering earthquake signals and background noises in continuous seismic data with unsupervised deep learning. Nat Commun 11, 3972 (2020). https://doi.org/10.1038/s41467-020-17841-x </source>
-      </ex>
+      <source>by:Tumisu from Pixabay </source></ex>
     </examples>
     <weka exist='yes'>
       <instructions>
@@ -835,12 +827,11 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>Synthetic time series data</exname>
         <exdescription>Creating extra time series data based on some starting data. More data can help to train a better model.</exdescription>
-        <eximage>assets/photos/synthetictimeseries.jpg</eximage>
+        <eximage>assets/photos/data_timeseriesUL.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.osti.gov/servlets/purl/1607585"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/creating-synthetic-time-series-data-67223ff08e34"></diylink>
-        <source>by: Zhang, Chi, Kuppannagari, Sanmukh, Kannan, Rajgopal, and Prasanna, Viktor K. Generative Adversarial Network for Synthetic Time Series Data Generation in Smart Grids. United States. https://doi.org/10.1109/SmartGridComm.2018.8587464
-        </source>
-      </ex>
+      <source>by: Author
+</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support generative algorithms</reason>
@@ -869,11 +860,10 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>Heart anomaly ECG</exname>
         <exdescription>One type of sensor data for which this capability can be used is ECG (heart) data. To manually monitor the ECG's of all patients is unfeasible, but by using this capability it is possible to train a model on what normal ECG's look like and then when there is an anomaly, the system will give an alarm to alert the nurses to check in on that patient.</exdescription>
-        <eximage>assets/photos/heartanomaly.jpg</eximage>
+        <eximage>assets/photos/ecg.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://ieeexplore.ieee.org/document/7344872"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.kaggle.com/devavratatripathy/ecg-anomaly-detection-using-autoencoders"></diylink>
-        <source>by: S. Chauhan and L. Vig, "Anomaly detection in ECG time signals via deep long short-term memory networks," 2015 IEEE International Conference on Data Science and Advanced Analytics (DSAA), 2015, pp. 1-7, doi: 10.1109/DSAA.2015.7344872.</source>
-      </ex>
+      <source>by: Jair Lázaro on Unsplash</source></ex>
     </examples>
   </combi>
   <combi exist='no' NLP='yes'>
@@ -1066,8 +1056,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/voicematch.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://support.google.com/chromecast/answer/9071681"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/jurgenarias/Portfolio/tree/master/Voice%20Classification"></diylink>
-        <source>by: Ryne Hager (via Google)</source>
-      </ex>
+      <source>by: Google</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support audio data</reason>
@@ -1100,8 +1089,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
         <eximage>assets/photos/birdsounds.JPG</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://experiments.withgoogle.com/ai/bird-sounds/view/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/clustering-music-to-create-your-personal-playlists-on-spotify-using-python-and-k-means-a39c4158589a"></diylink>
-        <source>via: https://experiments.withgoogle.com/ai/bird-sounds/view/</source>
-      </ex>
+      <source>by: Kyle McDonald, Manny Tan, Yotam Mann, and friends at Google Creative Lab</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support audio data</reason>
@@ -1163,12 +1151,11 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     <examples>
       <ex value='1'>
         <exname>AIVA</exname>
-        <exdescription>AIVA is a service that creates new music for different kind of purposes. You can select a genre for the new music piece or upload a track of music to with which it should match.</exdescription>
-        <eximage>assets/photos/aiva.png</eximage>
+        <exdescription>AIVA is a service that creates new music for different kinds of purposes. You can select a genre for the new music piece or upload a music track to which it should match.</exdescription>
+        <eximage>assets/photos/musicsliders.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.aiva.ai/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/neuronio/audio-generation-with-gans-428bc2de5a89"></diylink>
-        <source>by: AIVA</source>
-      </ex>
+      <source>by: Alexey Ruban on Unsplash</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support audio data</reason>
@@ -1230,12 +1217,11 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     <examples>
       <ex value='1'>
         <exname>Digital humans</exname>
-        <exdescription>A digital human can be seen as the upgraded function of a chatbot. Instead of communicating only via text, you will talk to a human face which shows expressions and which will talk back to you. For this it will of course needs to understand what you are saying (audio understanding), decide how to respond, and respond in understandable spoken human language. The digital human can - and are - used for, for example, customer support.</exdescription>
-        <eximage>assets/photos/digitalhuman.png</eximage>
+        <exdescription>A digital human can be seen as the upgraded function of a chatbot. Instead of communicating only via text, you will talk to a human face which shows expressions and which will talk back to you. For this it will of course need to understand what you are saying (audio understanding), decide how to respond, and respond in understandable spoken human language. The digital humanare used, for example, for customer support.</exdescription>
+        <eximage>assets/photos/digitalassistant_dalle.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://digitalhumans.com/what-are-digital-humans/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/human2b"></diylink>
-        <source>by: Uneeq</source>
-      </ex>
+      <source>generated using DALL·E 2</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support audio data</reason>
@@ -1298,11 +1284,10 @@ makes it possible to predict what could happen by making e.g. a regression plot 
       <ex value='1'>
         <exname>Live translate</exname>
         <exdescription>The live translate function from Microsoft makes it possible to speak in your own language and have it directly translated into different languages. This is done by first capturing what you are saying, converting that to words, translating those words and displaying this text to the other participants.</exdescription>
-        <eximage>assets/photos/livetranslate.jpg</eximage>
+        <eximage>assets/photos/visuals_livetranslate.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://translator.microsoft.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://www.geeksforgeeks.org/create-a-real-time-voice-translator-using-python/"></diylink>
-        <source>by: Microsoft</source>
-      </ex>
+      <source>by:  Austin Distel on Unsplash (with added text)</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support audio data</reason>
@@ -1448,8 +1433,7 @@ Based on all columns, except the one with the labels, the model will try to pred
         <eximage>assets/photos/mlabilities_icon_cluster.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.segmentify.com/blog/customer-consumer-user-segmentation-examples"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/codex/customer-segmentation-with-k-means-in-python-18336fb915be"></diylink>
-        <source>by: original image</source>
-      </ex>
+      <source>by: Author</source></ex>
     </examples>
     <weka exist='yes'>
       <instructions>
@@ -1520,12 +1504,11 @@ Based on all columns, except the one with the labels, the model will try to pred
     <examples>
       <ex value='1'>
         <exname>Tonic.ai</exname>
-        <exdescription>TONIC.ai is a company whose specialty it is to generate new, fake, data based on the original data you provide. So you can have a dataset of tabular data and TONIC.ai will use this to generate more data that is similar but still different.</exdescription>
+        <exdescription>Tonic.ai is a data mimicking company pioneering data de-identification, synthesis, and subsetting, i.e. taking parts of the data set, for modern data pipelines. Using the mimicked data, developers and data practitioners can create high-fidelity versions of their data for use in software development and testing, data analysis, and ML model training, while protecting customer privacy. </exdescription>
         <eximage>assets/photos/tonic.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.tonic.ai/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://medium.com/analytics-vidhya/a-step-by-step-guide-to-generate-tabular-synthetic-dataset-with-gans-d55fc373c8db"></diylink>
-        <source>by: TONIC.ai</source>
-      </ex>
+      <source>by: Tonic.ai</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support generative algorithms</reason>
@@ -1552,13 +1535,12 @@ Based on all columns, except the one with the labels, the model will try to pred
     <techterm>Anomaly detection</techterm>
     <examples>
       <ex value='1'>
-        <exname>Amazon monitron</exname>
-        <exdescription>Amazon Monitron use this capability to monitor industrial equipment so that you can detect abnormal conditions and predict when maintenance is needed. For example, the temperature might suddenly be higher than the average, indicating a possible problem.</exdescription>
-        <eximage>assets/photos/amazonmonitron.png</eximage>
-        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://aws.amazon.com/monitron/"></exlink>
+        <exname>Health care fraud</exname>
+        <exdescription>Health care fraud can cost the government much money. It can happen due to overbilling, waste and fraud by care providers as they will receive higher payments. By looking at the claims data, it is possible to detect patterns using unsupervised methods, i.e. no labels need to be present. The patterns will indicate if there is or is not fraud and are explainable to end users. </exdescription>
+        <eximage>assets/photos/healthcarefraud.jpg</eximage>
+        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://arxiv.org/abs/2211.02927"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/anomaly-detection-in-manufacturing-part-1-an-introduction-8c29f70fc68b"></diylink>
-        <source>by: Amazon Monitron</source>
-      </ex>
+      <source>by: Marcelo Leal on Unsplash</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka has limited functionality for handling tabular data</reason>
@@ -1588,11 +1570,10 @@ Based on all columns, except the one with the labels, the model will try to pred
       <ex value='1'>
         <exname>ToTTO</exname>
         <exdescription>This ML model can generate one sentence descriptions about the content in selected cells. These sentences are human understandable sentences. A challenge for these kinds of tasks is getting the labels, in this case the one sentence descriptions. </exdescription>
-        <eximage>assets/photos/totto.jpg</eximage>
+        <eximage>assets/photos/table qa.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://ai.googleblog.com/2021/01/totto-controlled-table-to-text.html"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/google-research-datasets/totto"></diylink>
-        <source>by: Google Research</source>
-      </ex>
+      <source>by: Author</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support NLP algorithms</reason>
@@ -1622,12 +1603,11 @@ Based on all columns, except the one with the labels, the model will try to pred
       <ex value='1'>
         <exname>Ask Questions to Tabular Data using Voice</exname>
         <exdescription>This example shows how you can use multiple ML models together to first ask your question using your voice, next transform your speech to text, and finally find the answer to the question in the table.
-        </exdescription>
-        <eximage>assets/photos/tableunderstand.jpg</eximage>
+</exdescription>
+        <eximage>assets/photos/questionmark.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/bhattbhavesh91/table-question-answering-with-automatic-speech-recognition"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/bhattbhavesh91/table-question-answering-with-automatic-speech-recognition"></diylink>
-        <source>by: Bhavesh Bhatt</source>
-      </ex>
+      <source>by: Towfiqu barbhuiya on Unsplash</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support NLP algorithms</reason>
@@ -1690,11 +1670,10 @@ Based on all columns, except the one with the labels, the model will try to pred
       <ex value='1'>
         <exname>Self-driving cars</exname>
         <exdescription>Video prediction is nowadays being used for self-driving cars. Here, a camera will film the environment of the car and detect where other vehicles or people are. Using the ability foresee, they are trying to predict the next frame, which in this situation will inform you where other vehicles or people are going to. This can then be used to anticipate and redirect the trajectory of the car if needed.</exdescription>
-        <eximage>assets/photos/selfdrivingcars.jpg</eximage>
+        <eximage>assets/photos/selfdrivingcar_nc.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://www.youtube.com/watch?v=yEtH23rKY8Q"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/deeppicar-part-1-102e03c83f2c"></diylink>
-        <source>by: NVIDIA (https://blogs.nvidia.com/blog/2020/07/22/drive-labs-predictionnet-self-driving-cars-future/)</source>
-      </ex>
+      <source>by: Roberto Nickson on Unsplash</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support video data</reason>
@@ -1724,11 +1703,10 @@ Another option is to see each frame of the video as an image and have labels for
       <ex value='1'>
         <exname>Zenia</exname>
         <exdescription>Zenia is an app which provide yoga classes and uses pose recognition to give personalized feedback. For this it will analyse each frame of the image, recognize the locations of the joints and next use this to see if you are doing the right pose and if you do the pose right.</exdescription>
-        <eximage>assets/photos/zenia.png</eximage>
+        <eximage>assets/photos/yoga.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://zenia.app/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://thecodingtrain.com/learning/ml5/7.1-posenet.html"></diylink>
-        <source>by: Zenia</source>
-      </ex>
+      <source>by:  Yannic Läderach on Unsplash (with added points and lines)</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support video data</reason>
@@ -1822,13 +1800,12 @@ Another option is to see each frame of the video as an image and have labels for
     <techterm>Video generative adversarial network (GAN)</techterm>
     <examples>
       <ex value='1'>
-        <exname>Deep fakes</exname>
+        <exname>Deepfakes</exname>
         <exdescription>Videos that are adapted from an original video where for example faces are swapped or where the person is saying something else compared to the original video.</exdescription>
-        <eximage>assets/photos/deepfake.jpg</eximage>
+        <eximage>assets/photos/deepfake.png</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://edition.cnn.com/interactive/2019/01/business/pentagons-race-against-deepfakes/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/xaliceli/video-GAN"></diylink>
-        <source>by: Justin Weiss, Shane Csontos-Popko, Padraic Driscoll (CNN business)</source>
-      </ex>
+      <source> (icons) by: Freepik </source></ex>
     </examples>
   </combi>
   <combi>
@@ -1855,11 +1832,10 @@ Next to that, videos can also contain audio and for this you can audio identific
       <ex value='1'>
         <exname>Face ID</exname>
         <exdescription>After an initial training phase where the ML model is learned to recognize your face specifically, it is possible to use this as a unique identifier to for example unlock your phone or verify your online payment.</exdescription>
-        <eximage>assets/photos/faceid.jpg</eximage>
+        <eximage>assets/photos/selfie.jpg</eximage>
         <exlink xlink:type="simple" xlink:show="new" xlink:href="https://support.apple.com/en-us/HT208108"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://github.com/ageitgey/face_recognition"></diylink>
-        <source>by: Apple </source>
-      </ex>
+      <source>by: S O C I A L . C U T on Unsplash </source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support video data</reason>
@@ -1983,15 +1959,14 @@ Next to that, videos can also contain audio and for this you can audio identific
     </limitations>
     <output><![CDATA[Video in a different style]]></output>
     <techterm>Neural style transfer</techterm>
-    <examples>
+    <examples exist='no'>
       <ex value='1'>
-        <exname>Video style transfer</exname>
+        <exname>EbSynth - Video style transfer</exname>
         <exdescription>With video style transfer you can give your video for example an animated look. You select a reference style and next this style will be transferred to your video frame for frame. To make sure that the frames still match, this is done sequentially so that the new frame can be connected to the previous frame,</exdescription>
-        <eximage>assets/photos/videostyletransfer.png</eximage>
-        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://rcorin.medium.com/video-style-transfer-with-art-app-d0d73abe7963"></exlink>
+        <eximage>assets/photos/ebsynth.jpg</eximage>
+        <exlink xlink:type="simple" xlink:show="new" xlink:href="https://ebsynth.com/"></exlink>
         <diylink xlink:type="simple" xlink:show="new" xlink:href="https://towardsdatascience.com/neural-style-transfer-on-real-time-video-with-full-implementable-code-ac2dbc0e9822"></diylink>
-        <source>by: Ricardo Corin (via art.app)</source>
-      </ex>
+      <source>by: EbSynth</source></ex>
     </examples>
     <weka exist='no'>
       <reason>Weka does not support video data</reason>
