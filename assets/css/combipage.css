@@ -407,6 +407,9 @@ vertical-align: text-top;
   /* border-top: none; */
 }
 
+#application{
+  display: flex;
+}
 
 
 /* Remove margins and padding from the list */
