@@ -224,6 +224,7 @@ width:800px;
   flex: 100%;
   width: 250px;
   border-radius: 10px;
+  height:250px
 }
 .button:hover{
   border-style: solid;

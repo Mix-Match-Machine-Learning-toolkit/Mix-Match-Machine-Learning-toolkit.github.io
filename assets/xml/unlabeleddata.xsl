@@ -96,7 +96,7 @@
           <p>
             <i class="fa-solid fa-triangle-exclamation fa-lg unlabeled">&#160;
             </i>
-            <i> Please be aware that these are datasets from the public domain, they might contain biased data. </i>
+            <i> Please be aware that these datasets have not been checked for compliance to ethical guidelines on the use of AI </i>
           </p>
           <table>
             <tr style="background-color: #26C6DA;">

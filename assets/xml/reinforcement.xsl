@@ -145,7 +145,7 @@
             <p>
               <i class="fa-solid fa-triangle-exclamation fa-lg reinforcement">&#160;
               </i>
-              <i> Please be aware that these are models from the public domain, they might contain biases. </i>
+              <i>Please be aware that these models have not been checked for compliance to ethical guidelines on the use of AI</i>
             </p>
           </div>
         </xsl:for-each>
