@@ -97,7 +97,7 @@
     </limitations>
     <examples>
       <e1 value="A classification model trained on cats and dogs will recognize these often correctly, but if you show it a photo of a fish, it will predict this as either a dog or a cat."></e1>
-      <e2 value="Based on the dimension of the petals and sepals of Iris, a classification model can predict to which class of Irises it belongs. However, it will cannot categorize other types of flowers."></e2>
+      <e2 value="Based on the dimension of the petals and sepals of Iris, a classification model can predict to which class of Irises it belongs. However, it cannot categorize other types of flowers."></e2>
       <e3 value="Sensors in your mobile phone or smartphone can give input data for a model that will classify which activity you are currently performing."></e3>
     </examples>
   </abilitytoken>

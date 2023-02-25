@@ -9,8 +9,8 @@
     <ltoken>98</ltoken>
     <ultoken>104</ultoken>
     <structure>Unstructured</structure>
-    <highlightLabeled>Image data can be photos, scans, photos of writing etc. The label tells you what is visible in the image or to what category it belongs.</highlightLabeled>
-    <highlightUnlabeled>Image data can be photos, scans, photos of writing etc.</highlightUnlabeled>
+    <highlightLabeled>Image data can be photos, scans, photos of writing, etc. The label tells you what is visible in the image or to what category it belongs.</highlightLabeled>
+    <highlightUnlabeled>Image data can be photos, scans, photos of writing, etc.</highlightUnlabeled>
     <descriptionLabeled>Images are unstructured forms of data. These could be photos of people, objects, the environment, medical scans, photos of writings, and more. Labeled image data can exist in two forms, one where the entire image belongs to one category (class) or where the different objects in an image are surrounded by a bounding box and each bounding box has a label to indicate to which category (class) it belongs.
 For good results, the photos should be taken with much variety, e.g. different backgrounds, lighting, and angles. Image data requires several steps of preprocessing, for example resizing to a smaller format.
     </descriptionLabeled>
@@ -76,10 +76,10 @@ For good results, the photos should be taken with much variety, e.g. different b
     <structure>Unstructured</structure>
     <highlightLabeled>Audio data measures audio waves over time, e.g. music or voices. The label tells what is heard in the audio or to which category it belongs. </highlightLabeled>
     <highlightUnlabeled>Audio data measures audio waves over time, e.g. music or voices.</highlightUnlabeled>
-    <descriptionLabeled>Audio data are unstructured data and are a special kind of time series data as they are audio waves (the amplitude) measured over time. Audio data can be voice recordings, music, animal sounds, sounds of machinery, and more. A label will be attached to each recording or segment to indicate to which category (class) it belongs. Audio data requires preprocessing and several methods exist, a well-known method is using Fourier Transform to get the frequencies.
+    <descriptionLabeled>Audio data are unstructured data and are a special kind of time series data as they are audio waves (the amplitude) measured over time. Audio data can be voice recordings, music, animal sounds, the sounds of machinery, and more. A label will be attached to each recording or segment to indicate to which category (class) it belongs. Audio data requires preprocessing and several methods exist, a well-known method is using Fourier Transform to get the frequencies.
     </descriptionLabeled>
     <descriptionUnlabeled>
-      Audio data are unstructured data and are a special kind of time series data as they are audio waves (the amplitude) measured over time. Audio data can be voice recordings, music, animal sounds, sounds of machinery, and more. Audio data requires preprocessing and several methods exist, a well-known method is using Fourier Transform to get the frequencies.
+      Audio data are unstructured data and are a special kind of time series data as they are audio waves (the amplitude) measured over time. Audio data can be voice recordings, music, animal sounds, the sounds of machinery, and more. Audio data requires preprocessing and several methods exist, a well-known method is using Fourier Transform to get the frequencies.
     </descriptionUnlabeled>
     <format>.mp3, .wav, .m4a</format>
     <image>assets/photos/audio.png</image>
