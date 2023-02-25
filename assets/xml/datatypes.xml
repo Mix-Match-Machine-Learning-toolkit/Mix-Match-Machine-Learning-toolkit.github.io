@@ -119,10 +119,10 @@ Time series are unstructured data since an extra step of preprocessing is often 
     <structure>Structured</structure>
     <highlightLabeled>Data organized in a table with instances on rows and the features and label as columns.</highlightLabeled>
     <highlightUnlabeled>Data organized in a table with instances on rows and features as columns.</highlightUnlabeled>
-    <descriptionLabeled>Tabular data is structured data and are organized in rows and columns, where each row (or column) represents one item. Labels are present as one column of the data and indicate to which category (class) that row of data belongs. The other columns are the features that are used to predict the label. For example, the label could be the rating of a movie and the features are the genre, the director, the release year, an overview of the movie, and its number of votes. Tabular data can be directly used in ML models.
+    <descriptionLabeled>Tabular data are structured data and are organized in rows and columns, where each row (or column) represents one item. Labels are present as one column of the data and indicate to which category (class) that row of data belongs. The other columns are the features that are used to predict the label. For example, the label could be the rating of a movie and the features are the genre, the director, the release year, an overview of the movie, and its number of votes. Tabular data can be directly used in ML models.
     </descriptionLabeled>
       <descriptionUnlabeled>
-        Tabular data is structured data and are organized in rows and columns, where each row (or column) represents one item. In the case of unlabeled data, the columns contain only features that might be used e.g. to cluster based on similarity. Tabular data can be directly used in ML models.
+        Tabular data are structured data and are organized in rows and columns, where each row (or column) represents one item. In the case of unlabeled data, the columns contain only features that might be used e.g. to cluster based on similarity. Tabular data can be directly used in ML models.
       </descriptionUnlabeled>
     <format>.csv, .xls, .json</format>
     <image>assets/photos/table.png</image>

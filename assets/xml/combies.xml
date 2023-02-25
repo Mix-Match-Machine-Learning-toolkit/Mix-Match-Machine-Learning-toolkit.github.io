@@ -1036,7 +1036,7 @@ makes it possible to predict what could happen by making e.g. a regression plot 
     <ability>Identify</ability>
     <datatoken>97</datatoken>
     <abilitytoken>111</abilitytoken>
-    <description>Audio identification resembles audio categorization, but instead of matching the audio to a general category, you know link it to an individual. For example, recognizing who is speaking or which song is playing. With audio identification you are not able to understand what is being said, for this you will need for example audio understanding. </description>
+    <description>Audio identification resembles audio categorization, but instead of matching the audio to a general category, you now link it to an individual. For example, recognizing who is speaking or which song is playing. With audio identification you are not able to understand what is being said, for this you will need for example audio understanding. </description>
     <capabilities>
       <c1 value=""></c1>
       <c2 value=""></c2>
