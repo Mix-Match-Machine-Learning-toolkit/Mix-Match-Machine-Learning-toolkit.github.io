@@ -451,7 +451,7 @@ For both concepts, the text will need to be preprocessed to make it understandab
     <ability>Generate</ability>
     <datatoken>100</datatoken>
     <abilitytoken>115</abilitytoken>
-    <description>Text generation can be used to generate completely new texts from scratch (based on a fewkey words), to complete texts or write it in a specific style (e.g. Shakespearean language). In order to have properly constructed sentences, this ML capability works together with other  capabilities: text understanding and communication, to write understandable texts.</description>
+    <description>Text generation can be used to generate completely new texts from scratch (based on a few key words), to complete texts or write it in a specific style (e.g. Shakespearean language). In order to have properly constructed sentences, this ML capability works together with other  capabilities: text understanding and communication, to write understandable texts.</description>
     <capabilities>
       <c1 value=""></c1>
       <c2 value=""></c2>

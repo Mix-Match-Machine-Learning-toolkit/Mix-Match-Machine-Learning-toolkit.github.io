@@ -221,7 +221,7 @@
       <l3 value="Seeing is believing is no longer true. Fake data can be made and can spread misinformation"></l3>
     </limitations>
     <examples>
-      <e1 value="Generate new images based on a text description. For example: an image of a stack of blocks in different colours. This will result in several images that visualize this"></e1>
+      <e1 value="Generate new images based on a text description. For example: an image of a stack of blocks in different colors. This will result in several images that visualize this"></e1>
       <e2 value="Deep fakes are videos in which this ability is used to generate copies of the original video, but where the person is saying different text"></e2>
       <e3 value="Create new texts or music from scratch which can be used e.g. without copyrights or as inspiration for your own creations"></e3>
     </examples>
@@ -415,7 +415,7 @@
     <record index="15">
       <ability>Categorize</ability>
       <data>Audio</data>
-      <description>YAMNet is a pretrained deep net that predicts 521 audio event classes based on the AudioSet-YouTube corpus, and employing the Mobilenet_v1 depthwise-separable convolution architecture</description>
+      <description>YAMNet is a pre-trained deep net that predicts 521 audio event classes based on the AudioSet-YouTube corpus, and employing the Mobilenet_v1 depthwise-separable convolution architecture</description>
       <mlmodel>YAMNet</mlmodel>
       <supervised>1</supervised>
       <url xlink:type="simple" xlink:show="new" xlink:href="https://github.com/tensorflow/models/tree/master/research/audioset/yamnet"></url>
