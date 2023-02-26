@@ -44,11 +44,11 @@
     <limitations>
       <l1 value="Cold start for collaborative filtering: when a new person starts using a recommender system, there is no data that can be used to find similar users"></l1>
       <l2 value="Risk of creating a filter bubble: only recommending one perspective/ vision/ opinion"></l2>
-      <l3 value="People update their preferences, can be unpredictable or someone else might use their account"></l3>
+      <l3 value="People update their preferences, this can be unpredictable or someone else might use their account"></l3>
     </limitations>
     <examples>
-      <e1 value="If you are looking at a product on for example bol.com or Amazon, it will recommend you items that are very similar (they share the same features). For example if you are looking at books about Machine Learning, it will recommend other books about the same topic (content-based recommender system)"></e1>
-      <e2 value="Spotify and YouTube will recommend you music and videos that people who listen/ watch to the same type of items as you also liked (collaborative filtering)."></e2>
+      <e1 value="If you are looking at a product on for example bol.com or Amazon, it will recommend items that are very similar (they share the same features). For example, if you are looking at books about Machine Learning, it will recommend other books about the same topic (content-based recommender system)"></e1>
+      <e2 value="Spotify and YouTube will recommend you music and videos that people who listen to/ watch the same type of items as you also liked (collaborative filtering)."></e2>
       <!-- <e3 value=""></e3> -->
     </examples>
   </abilitytoken>
@@ -61,19 +61,19 @@
         <imageHorizontal>assets/photos/mlabilities_horizontal_icon_distinguish.png</imageHorizontal>
     <techterm>Anomaly detection</techterm>
     <capabilities>
-      <c1 value="Can automatically monitor data and alert if their is something suspicious"></c1>
+      <c1 value="Can automatically monitor data and alert if there is something suspicious"></c1>
       <c2 value="It is not necessary to identify how something is different, but the model will look at the average or general patterns and distinguish points that seem to be different"></c2>
       <c3 value="Find observations or measurements that do not match the general pattern. For example, due to mistakes in a measurement"></c3>
     </capabilities>
     <limitations>
       <l1 value="Outliers and anomalies are rare and therefore more difficult to find"></l1>
-      <l2 value="If you use unsupervised learning, you will not be able to know what is different, only that it is different. In case you do want to know this, you could use the ML capability categorize and train one class with all normal events and one (or more) with the anomaliest"></l2>
+      <l2 value="If you use unsupervised learning, you will not be able to know what is different, only that it is different. In case you do want to know this, you could use the ML capability categorize and train one class with all normal events and one (or more) with the anomalies"></l2>
       <l3 value="An outlier is not always interesting and it might also be due to noise"></l3>
     </limitations>
     <examples>
       <e1 value="Use the capability to distinguish to monitor for example ECG signals to distinguish anomalies in the heart so that action be taken"></e1>
       <e2 value="Analyze the sound of machinery and distinguish sounds that are different from normal to know when it might need a control check or maintenance"></e2>
-      <e3 value="Look at the historic pattern of weather and compare it with the current pattern to get indications where climate change has influence on"></e3>
+      <e3 value="Look at the historic pattern of weather and compare it with the current pattern to get  indications of the influence of climate change"></e3>
     </examples>
   </abilitytoken>
   <abilitytoken>
@@ -141,7 +141,7 @@
     </capabilities>
     <limitations>
       <l1 value="A machine learning model will never be able to really understand, humans are always needed to make interpretations"></l1>
-      <l2 value="Human language is very complex and the meaning of words depend on their context and language."></l2>
+      <l2 value="Human language is very complex and the meaning of words depends on their context and language."></l2>
       <l3 value ="The intonations (or prosody) of language can be difficult to understand: e.g. change of intonation when you are asking a question or sarcasm"></l3>
     </limitations>
     <examples>
@@ -185,17 +185,17 @@
       <imageHorizontal>assets/photos/mlabilities_horizontal_icon_translate.png</imageHorizontal>
     <capabilities>
       <c1 value="Translate text from and to different languages"></c1>
-      <c2 value="Use the style from a painting to transform an image to that style"></c2>
+      <c2 value="Use the style from a painting to transform an image into that style"></c2>
       <!-- <c3 value=""></c3> -->
     </capabilities>
     <limitations>
       <l1 value="Most of the models for the translation of texts are trained on the most spoken languages. When translating to a less common language, the performance is often less good"></l1>
       <l2 value="The meaning of words depends on their context and this is crucial for getting good text translations"></l2>
       <l3 value="The order of words is different in some languages and this should also be done correctly when translating text between languages"></l3>
-      <l4 value="For some, not all, style transfer models you can only use the reference image as style unless you retrain the entire model with a new reference image"></l4>
+      <l4 value="For some, but not all, style transfer models you can only use the reference image as style unless you retrain the entire model with a new reference image"></l4>
     </limitations>
     <examples>
-      <e1 value="When reading a site  in a different language, Google provides the option to translate it to your own language"></e1>
+      <e1 value="When reading a site  in a different language, Google provides the option to translate it into your own language"></e1>
       <e2 value="Your portrait photo transformed into the style of a Van Gogh painting"></e2>
       <!-- <e3 value=""></e3> -->
     </examples>
@@ -246,7 +246,7 @@
     </limitations>
     <examples>
       <e1 value="AlphaGo Zero learned how to play the difficult game Go by playing a lot of sessions against itself and learning each time from its mistakes. This way it improved over time and was eventually able to beat the world champion"></e1>
-      <e2 value="Google Maps is constantly improving its routes and its predictions for where it will be busy, how fast people will drive at certain routes at certain times of the day. It will use the new data to see if it was correct and learn from this to improve."></e2>
+      <e2 value="Google Maps is constantly improving its routes and its predictions for where it will be busy, and how fast people will drive at certain routes at certain times of the day. It will use the new data to see if it was correct and learn from this to improve."></e2>
       <!-- <e3 value=""></e3> -->
     </examples>
   </abilitytoken>
@@ -283,12 +283,12 @@
     <imageHorizontal>assets/photos/mlabilities_horizontal_icon_cluster.png</imageHorizontal>
     <techterm>Clustering</techterm>
     <capabilities>
-      <c1 value="Find groups in large datasets without the need of labelling data"></c1>
+      <c1 value="Find groups in large datasets without having labeled data"></c1>
       <c2 value="Can be a step before categorizing"></c2>
       <c3 value="Finding clusters can also highlight anomalies since they do not belong to one of the clusters"></c3>
     </capabilities>
     <limitations>
-      <l1 value="It will not know what the groups are, only that they contain similar items. For the labeling you will need supervised learning"></l1>
+      <l1 value="It will not know what the groups are, only that they contain similar items. To name the clusters, you will need labels and supervised learning, e.g., categorize."></l1>
       <l2 value="Groups can overlap"></l2>
       <l3 value="Often you need to specify the number of clusters you want to find"></l3>
     </limitations>
