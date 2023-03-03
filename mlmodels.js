@@ -56,11 +56,11 @@ async function chooseMLmodel(token1, token2) {
 
     }
 
-    // // image generate(104, 115)
-    // if (token1 == 104 & token2 == 115) {
-    //     loadInteractiveExample("imageGenerate.html");
+    // image generate(104, 115)
+    if (token1 == 104 & token2 == 115) {
+        loadInteractiveExample("imageGenerate.html");
 
-    // }
+    }
 
 
     //table classification (99, 109)
