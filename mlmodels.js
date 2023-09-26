@@ -326,7 +326,7 @@ async function classifyPenguins() {
     // let bill_length = 50.4;
     // let flipper_length = 20;
     // let body_mass = 50;
-    let penguinClasses = ['Adelie', 'Gentoo', 'Chinstrap'];
+    let penguinClasses = ['adelie', 'gentoo', 'chinstrap'];
 
 
     tf.tidy(() => {
