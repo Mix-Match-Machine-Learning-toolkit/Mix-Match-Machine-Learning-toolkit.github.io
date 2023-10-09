@@ -20,11 +20,11 @@ async function chooseMLmodel(token1, token2) {
 
     }
 
-        // audio recommend (103, 116)
-        if (token1 == 103 & token2 == 116) {
-            loadInteractiveExample("audioRecommend.html");
-    
-        }
+    // audio recommend (103, 116)
+    if (token1 == 103 & token2 == 116) {
+        loadInteractiveExample("audioRecommend.html");
+
+    }
 
 
     //image classification (98, 109)
@@ -173,7 +173,7 @@ async function textClassification() {
     console.log(textData);
     var predictions = await textClassModel.classify(textData);
     document.getElementById('buttonClassify').innerHTML = 'Classify'
-    document.getElementById('predictions').style.display='block';
+    document.getElementById('predictions').style.display = 'block';
     console.log(predictions);
     jsonPredictions = JSON.stringify(predictions, null, 2);
 
@@ -205,7 +205,7 @@ async function classifyImage() {
     const imageData = document.getElementById('img');
     var predictions = await imageClassModel.classify(imageData);
     document.getElementById('buttonClassify').innerHTML = 'Classify'
-    document.getElementById('predictions').style.display='block';
+    document.getElementById('predictions').style.display = 'block';
     console.log(predictions);
     document.getElementById('label1').innerHTML = predictions[0].className;
     document.getElementById('prob1').innerHTML = (predictions[0].probability * 100).toFixed(2) + '%';
@@ -256,7 +256,7 @@ async function identifyImage() {
         .then((response) => response.json())
         .then((labelmapJSON) => {
             console.log(labelmapJSON[winners[0]].name, prob[0]);
-            document.getElementById('predictions').style.display='block';
+            document.getElementById('predictions').style.display = 'block';
             document.getElementById('label1').innerHTML = labelmapJSON[winners[0]].name;
             document.getElementById('prob1').innerHTML = (prob[0] * 100).toFixed(2) + '%';
         })
@@ -264,7 +264,40 @@ async function identifyImage() {
 }
 
 
+//---------------Image translate (style transfer)-------------------------------------------------
+// Copyright (c) 2019 ml5
+// 
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
 
+/* ===
+ml5 Example
+Style Transfer Image Example
+This uses a pre-trained model of The Great Wave off Kanagawa and Udnie (Young American Girl, The Dance)
+=== */
+
+const inputImg = document.getElementById('inputImg'); // The image we want to transfer
+const statusMsg = document.getElementById('statusMsg'); // The status message
+const styleA = document.getElementById('styleA'); // The div container that holds new style image A
+const styleB = document.getElementById('styleB'); // The div container that holds new style image B
+const pred = document.getElementById('predictions');
+
+ml5.styleTransfer('assets/MLmodels/wave')
+    .then(style1 => style1.transfer(inputImg))
+    .then(result => {
+        const newImage1 = new Image(250, 250);
+        newImage1.src = result.src;
+        pred.appendChild(newImage1);
+    });
+
+ml5.styleTransfer('assets/MLmodels/udnie')
+    .then(style2 => style2.transfer(inputImg))
+    .then(result => {
+        const newImage2 = new Image(250, 250);
+        newImage2.src = result.src;
+        pred.appendChild(newImage2);
+        statusMsg.innerHTML = 'Done!';
+    });
 
 
 //--------------Audio classification------------------------------------------------------------------
@@ -274,7 +307,7 @@ let recognizer;
 function predictWord() {
     // Array of words that the recognizer is trained to recognize.
     const words = recognizer.wordLabels();
-    document.getElementById('predictions').style.display='inline-block';
+    document.getElementById('predictions').style.display = 'inline-block';
     recognizer.listen(({ scores }) => {
         // Turn scores into a list of (score,word) pairs.
         scores = Array.from(scores).map((s, i) => ({ score: s, word: words[i] }));
@@ -303,7 +336,7 @@ function stopListening() {
 
         document.getElementById("startListening").style.display = 'inline-block';
         document.getElementById("stopListening").style.display = 'none';
-        document.getElementById("predictions").style.display='none';
+        document.getElementById("predictions").style.display = 'none';
         return recognizer.stopListening();
 
     }
@@ -354,7 +387,7 @@ async function classifyPenguins() {
             // const label3 = penguinClasses[winners[2]];
             // const prob3 = prob[2];
             document.getElementById('penguinImage').src = "assets/photos/" + penguinClasses[winners[0]] + '.png'
-            document.getElementById('predictions').style.display='block';
+            document.getElementById('predictions').style.display = 'block';
             document.getElementById('label1').innerHTML = penguinClasses[winners[0]];
             document.getElementById('prob1').innerHTML = (prob[0] * 100).toFixed(2) + '%';
             document.getElementById('label2').innerHTML = penguinClasses[winners[1]];
@@ -594,7 +627,7 @@ function translateText() {
         console.log(data[0][0][0])
     });
 
-    document.getElementById('predictions').style.display='block';
+    document.getElementById('predictions').style.display = 'block';
 }
 
 //--------------Movie recommender (table recommend) --------------
@@ -614,7 +647,7 @@ var recSchindlersList = ["Saving Private Ryan", "Empire of the Sun", "The Truce"
 
 function recommendMovie() {
     movie = document.getElementById('movies').value;
-    document.getElementById('predictions').style.display='block';
+    document.getElementById('predictions').style.display = 'block';
     console.log(movie);
     switch (movie) {
         case "The Dark Knigh Rises":
