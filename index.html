@@ -54,7 +54,7 @@
 		<header>
 
 
-			<h1 id='welcome'>Get started!</h1>
+			<h1 id='welcome'>Mix & Match ML toolkit</h1>
 
 		</header>
 		<div class=centerBlock>
@@ -63,13 +63,17 @@
 				and connect your laptop to the sensor board. Follow the next steps to get ready. </p> -->
 			<!-- <p class='bold'>Enter your group/ participant number: </p>
 			<input type="number" name="IDnumber" id='ID'><br> -->
-			<img class="instructiongif" src="assets/photos/instruction.gif" />
+			<!-- <img class="instructiongif" src="assets/photos/instruction.gif" /> -->
+			<img class="instructiongif" src='assets/photos/toolkit elements.png'/>
 			<div class="connectOrSkip">
 				<div class="connectDiv">
 					<a id=connectBLE href="#">Connect to sensor board</a>
 					<span id='connected'>Succesfully connected to board</span>
 					<br>
 					<p id='connecting'>Connecting to sensorboard</p>
+				</div>
+				<div class="connectDiv">
+					<a href="#" id='connectOOCSI' onClick="openOOCSIConnect()">Connect your phone</a>
 				</div>
 				<div class="connectDiv">
 					<a href="#" id='continue' onClick="openModeSelect()">Skip connection</a>
@@ -102,6 +106,8 @@
 	var educationMode = false;
 	var typePage = 'info';
 	var mode2 = "normal"; //normal or compare, operated by turning top part of sensorboard
+
+	var oocsiChannel=""
 
 	OOCSI.connect('wss://oocsi.id.tue.nl/ws');
 	console.log("Connected to oocsi");
@@ -137,6 +143,40 @@
 	// function showmenu(){
 	// 	document.getElementsByClassName('dropdown').style.visibility='visible';
 	// }
+
+	function receiveOOCSI(oocsiChannel){
+		OOCSI.subscribe(oocsiChannel, function(msg) {
+			console.log(msg.data);
+			processTokensOOCSI(msg.data.tokens);
+		});
+	}
+
+
+	function processTokensOOCSI(tokens) {
+    if (tokens.length === 1) {
+        if (labeledDataTokens.includes(tokens[0]) || unlabeledDataTokens.includes(tokens[0])) {
+            openDatabyClick(tokens[0]);
+        } else{
+			openAbilitybyClick(tokens[0])
+		}
+    } else if (tokens.length === 2) {
+        if ((labeledDataTokens.includes(tokens[0]) || unlabeledDataTokens.includes(tokens[0])) &&
+            (supTokens.includes(tokens[1]) || unsupTokens.includes(tokens[1]))) {
+            mode2 = 'normal';
+            openCombiPage(tokens[0], tokens[1]);
+        } else if ((labeledDataTokens.includes(tokens[1]) || unlabeledDataTokens.includes(tokens[1])) &&
+            (supTokens.includes(tokens[0]) || unsupTokens.includes(tokens[0]))) {
+            mode2 = 'normal';
+            openCombiPage(tokens[1], tokens[0]);
+			}
+		else {
+            mode2 = 'compare';
+            openCombiPage(tokens[0], tokens[1]);
+        }
+    } else {
+        openNoCombi();
+    }
+}
 
 
 
@@ -219,6 +259,41 @@
 
 	function educationMode() {
 		getElementById('descHidden').style.visibility = "visible";
+	}
+
+
+	function uuidv4() {
+    return '0000'
+    .replace(/[0-9]/g, function (c) {
+        const r = Math.floor(Math.random() * 10), 
+            v = c == '0' ? r : (r % 4);
+        return v.toString();
+    });
+}
+
+
+
+	function openOOCSIConnect(){
+		if (!ready) {
+			ready = true;
+			//	IDnumber = document.getElementById('ID').value;
+			//	console.log("ID number: " + IDnumber);
+			console.log("Device name:" + deviceName);
+			// console.log(uuidv4())
+		}
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function () {
+			if (this.readyState == 4 && this.status == 200) {
+				document.getElementById("replace").innerHTML = this.responseText;
+				oocsiChannel = "MMMLtoolkit_"+uuidv4();
+				console.log(oocsiChannel);
+				document.getElementById('oocsichannel').innerHTML = oocsiChannel;
+				receiveOOCSI(oocsiChannel);
+
+			}
+		};
+		xhttp.open("GET", "oocsiConnect.html", true);
+		xhttp.send();
 	}
 
 	//When you click continue, the body will be replaced with the page from infopage.html, but you stay at the same page so the BLE connection does not get broken
