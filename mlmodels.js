@@ -209,6 +209,9 @@ var loadFile = function (event) {
 
 async function classifyImage() {
   document.getElementById("buttonClassify").innerHTML = "Classifying";
+
+  await tf.ready();
+  await tf.setBackend("webgl");
   // Load the model.
   console.log("Loading");
   imageClassModel = await mobilenet.load();
@@ -250,6 +253,8 @@ var loadFile2 = function (event) {
   image.src = URL.createObjectURL(event.target.files[0]);
 };
 async function identifyImage() {
+  await tf.ready();
+  await tf.setBackend("webgl");
   document.getElementById("buttonClassify").innerHTML = "Identifying";
   const modelPath = "/assets/MLmodels//landmarksEurope_compressed/model.json";
   landmarkModel = await tf.loadGraphModel(modelPath);
@@ -412,6 +417,8 @@ function stopListening() {
 // }
 
 async function classifyPenguins() {
+  await tf.ready();
+  await tf.setBackend("webgl");
   let bill_length = document.getElementById("rs-range-line1").value;
   let bill_depth = document.getElementById("rs-range-line2").value;
   let flipper_length = document.getElementById("rs-range-line3").value;
